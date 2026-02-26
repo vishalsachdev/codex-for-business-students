@@ -27,7 +27,7 @@ We are going to use a tool called Next.js. You do not need to know what that is.
 ACTION: Navigate to the quiz-project directory and scaffold a new Next.js app.
 
 ```bash
-cd quiz-project && npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias "@/*" --yes
+cd ~/novabrew-workspace/quiz-project && npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias "@/*" --yes
 ```
 
 This will take a minute. While it runs, here is what is happening in plain English: it is creating the folder structure, installing the tools, and setting up the basics so we have a canvas to paint on.
@@ -35,7 +35,7 @@ This will take a minute. While it runs, here is what is happening in plain Engli
 ACTION: Wait for the scaffold to complete. Then confirm success.
 
 ```bash
-ls quiz-project/
+ls ~/novabrew-workspace/quiz-project/
 ```
 
 You will see a bunch of files and folders. Do not worry about most of them. The important one is the `app/` folder — that is where your quiz is going to live. Everything else is plumbing that makes the app work.
@@ -68,7 +68,7 @@ ACTION: If changes, update REQUIREMENTS.md accordingly.
 
 Here we go. I am going to build the complete quiz based on your requirements. This is going to take a minute or two — I will be creating several files that work together to make the quiz function.
 
-ACTION: Build the complete quiz application inside the `quiz-project/` Next.js project. This should include:
+ACTION: Build the complete quiz application inside the `~/novabrew-workspace/quiz-project/` Next.js project. This should include:
 
 1. **Main quiz page** (`app/page.tsx`) — The landing/start screen with a welcome message, NovaBrew branding, and a "Start Quiz" button.
 
@@ -108,7 +108,7 @@ The app is built. Let us see it.
 ACTION: Start the development server.
 
 ```bash
-cd quiz-project && npm run dev
+cd ~/novabrew-workspace/quiz-project && npm run dev
 ```
 
 ACTION: Open the app in the browser.
@@ -227,7 +227,7 @@ To start the next lesson, open a new Codex session in the `lesson-modules/2-vibe
 ## Important Notes for Codex
 
 - This lesson should take approximately 40 minutes
-- The scaffolding command must run from INSIDE the quiz-project directory. Make sure it exists and is empty before running create-next-app.
+- The scaffolding command must run from INSIDE ~/novabrew-workspace/quiz-project. Make sure it exists and is empty before running create-next-app.
 - REQUIREMENTS.md was created in lesson 2.2. Read it before building. If it does not exist, ask the student what happened and help them go back to 2.2 or quickly create one now.
 - Build the COMPLETE app. No placeholders, no "coming soon" sections, no TODOs in the code. The student should take the quiz and get a real result.
 - The dev server (npm run dev) should be started and the browser opened automatically. If port 3000 is in use, try 3001.
@@ -241,7 +241,7 @@ To start the next lesson, open a new Codex session in the `lesson-modules/2-vibe
 
 ## Success Criteria
 
-- [ ] Next.js project successfully scaffolded in quiz-project/
+- [ ] Next.js project successfully scaffolded in ~/novabrew-workspace/quiz-project/
 - [ ] Complete quiz app built matching REQUIREMENTS.md
 - [ ] Dev server running and quiz visible in browser
 - [ ] Student has taken the quiz at least once

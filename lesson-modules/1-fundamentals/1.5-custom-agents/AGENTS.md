@@ -105,13 +105,13 @@ Ready to put them to work? Say: **'Let us hear from the team'**"
 
 Type this:
 
-**'Have each of my three advisors — the CEO/Founder, Head of Product, and Customer Success Lead — independently review analysis/comprehensive-research-synthesis.md from their perspective. Compile all three reviews into reviews/synthesis-feedback.md.'**
+**'Have each of my three advisors — the CEO/Founder, Head of Product, and Customer Success Lead — independently review analysis/comprehensive-research-synthesis.md from their perspective. Compile all three reviews into ~/novabrew-workspace/reviews/synthesis-feedback.md.'**
 
 Watch what happens when three smart people with different priorities look at the same data."
 
 **STOP:** Wait for the student to type the instruction.
 
-**ACTION:** Read analysis/comprehensive-research-synthesis.md. Then generate three distinct reviews, each in the voice and perspective of the respective advisor. Create reviews/synthesis-feedback.md with:
+**ACTION:** Read analysis/comprehensive-research-synthesis.md. Then generate three distinct reviews, each in the voice and perspective of the respective advisor. Create ~/novabrew-workspace/reviews/synthesis-feedback.md with:
 
 **CEO/Founder Review:**
 - "The diagnosis is solid — this explains why nothing we have tried has worked"
@@ -140,7 +140,7 @@ Watch what happens when three smart people with different priorities look at the
 
 **When complete, say:**
 
-"reviews/synthesis-feedback.md is ready. Go take a look.
+"~/novabrew-workspace/reviews/synthesis-feedback.md is ready. Go take a look.
 
 But let me highlight the three most important quotes, because something is about to click:
 
@@ -268,7 +268,7 @@ The common thread: multiple informed perspectives on the same problem surface in
 Here is what you did:
 - Met your advisory team: CEO/Founder, Head of Product, Customer Success Lead
 - Had all three review the comprehensive research synthesis from their unique perspectives
-- Created reviews/synthesis-feedback.md with three distinct advisor perspectives
+- Created ~/novabrew-workspace/reviews/synthesis-feedback.md with three distinct advisor perspectives
 - Connected ALL the evidence to arrive at the strategic recommendation: **A Coffee Taste Profile Quiz**
 - Learned that custom agents are just text files with personality descriptions
 - Understood how to create your own custom agents for any scenario
@@ -313,7 +313,7 @@ When you are ready, start the next lesson. Your project memory awaits."
 - Do not let this become a 15-minute tangent — keep it moving
 
 **File Handling:**
-- Create reviews/synthesis-feedback.md with all three reviews clearly separated
+- Create ~/novabrew-workspace/reviews/synthesis-feedback.md with all three reviews clearly separated
 - If comprehensive-research-synthesis.md does not exist yet, create it first based on the Module 1.4 content
 - All advisor reviews should reference specific findings from the synthesis
 
@@ -329,7 +329,7 @@ When you are ready, start the next lesson. Your project memory awaits."
 
 Module 1.5 is successful if the student:
 - Understands the difference between parallel agents and custom agents
-- Has read all three advisory perspectives in reviews/synthesis-feedback.md
+- Has read all three advisory perspectives in ~/novabrew-workspace/reviews/synthesis-feedback.md
 - Experienced the AHA MOMENT — Coffee Taste Profile Quiz as the recommendation
 - Sees how ALL the evidence from Modules 1.2-1.4 connects to this recommendation
 - Understands that custom agents are just text files with personalities

@@ -92,7 +92,7 @@ Got it? Good. Let us put them to work. Say: **'Launch the agents'**"
 
 I want you to type this instruction:
 
-**'Analyze all 10 campaign files in inherited-chaos/old-campaigns using parallel agents. For each campaign, identify: the campaign name, the strategy used, the target audience, the results, and why it did or did not work. Then combine all findings into a single report at analysis/campaign-salvage-report.md.'**
+**'Analyze all 10 campaign files in inherited-chaos/old-campaigns using parallel agents. For each campaign, identify: the campaign name, the strategy used, the target audience, the results, and why it did or did not work. Then combine all findings into a single report at ~/novabrew-workspace/analysis/campaign-salvage-report.md.'**
 
 This is a big ask. You are asking Codex to read 10 files, analyze each one, and produce a unified report. Watch what happens."
 
@@ -105,7 +105,7 @@ This is a big ask. You are asking Codex to read 10 files, analyze each one, and 
 - Results (if available)
 - Why it succeeded or failed
 
-Then create analysis/campaign-salvage-report.md with:
+Then create ~/novabrew-workspace/analysis/campaign-salvage-report.md with:
 
 1. **Executive Summary** — One paragraph overview of all campaign efforts
 2. **Campaign-by-Campaign Analysis** — Each campaign with name, strategy, audience, results, assessment
@@ -136,7 +136,7 @@ This would take hours sequentially. We are doing it in parallel."
 
 **When complete, say:**
 
-"Done. analysis/campaign-salvage-report.md is ready. Take a look if you have your file explorer open.
+"Done. ~/novabrew-workspace/analysis/campaign-salvage-report.md is ready. Take a look if you have your file explorer open.
 
 But let me tell you the headline finding, because it is a big one:
 
@@ -173,7 +173,7 @@ So far, we have analyzed customer feedback, financial data, and campaign results
 
 Here is what I want you to do:
 
-**'Run a cross-source analysis using 4 parallel agents. Agent 1: re-analyze the financial data focusing on what happens right after campaigns end. Agent 2: cross-reference customer feedback with campaign timing. Agent 3: analyze competitor approaches to personalization and retention. Agent 4: synthesize all findings into a comprehensive research brief. Save the final output to analysis/comprehensive-research-synthesis.md.'**
+**'Run a cross-source analysis using 4 parallel agents. Agent 1: re-analyze the financial data focusing on what happens right after campaigns end. Agent 2: cross-reference customer feedback with campaign timing. Agent 3: analyze competitor approaches to personalization and retention. Agent 4: synthesize all findings into a comprehensive research brief. Save the final output to ~/novabrew-workspace/analysis/comprehensive-research-synthesis.md.'**
 
 This is the consulting firm approach — multiple analysts, each working a different angle, all feeding into one synthesis. Go ahead."
 
@@ -191,7 +191,7 @@ This is the consulting firm approach — multiple analysts, each working a diffe
 - Blue Bottle: Creates belonging through origin stories and roaster relationships
 - Key insight: successful competitors all create IDENTITY, not just transactions
 
-**Agent 4 — Master Synthesis:** Combine all findings into analysis/comprehensive-research-synthesis.md with:
+**Agent 4 — Master Synthesis:** Combine all findings into ~/novabrew-workspace/analysis/comprehensive-research-synthesis.md with:
 
 1. **Executive Summary** — The complete picture in 5 sentences
 2. **The Core Problem Statement** — NovaBrew's subscription has no personality. It is a transaction, not a relationship.
@@ -205,7 +205,7 @@ This is the consulting firm approach — multiple analysts, each working a diffe
 
 **When complete, say:**
 
-"Done. analysis/comprehensive-research-synthesis.md is the most important document we have created so far. Here is the headline:
+"Done. ~/novabrew-workspace/analysis/comprehensive-research-synthesis.md is the most important document we have created so far. Here is the headline:
 
 **'The subscription has no personality. It is transactional. Subscribers do not engage because there is nothing to engage WITH.'**
 
@@ -257,7 +257,7 @@ Here is what you did:
 - Processed 10 campaign files simultaneously using parallel agents
 - Discovered that every NovaBrew campaign is transactional — no identity, no belonging
 - Ran a 4-agent cross-source synthesis combining financial, feedback, campaign, and competitor data
-- Created analysis/campaign-salvage-report.md and analysis/comprehensive-research-synthesis.md
+- Created ~/novabrew-workspace/analysis/campaign-salvage-report.md and ~/novabrew-workspace/analysis/comprehensive-research-synthesis.md
 - Arrived at the core diagnosis: 'The subscription has no personality'
 
 You also learned when to use parallel agents (many similar independent tasks) and when not to (single complex interconnected analysis).
@@ -313,8 +313,8 @@ When you are ready, start the next lesson. Your advisory team is waiting to be a
 
 Module 1.4 is successful if the student:
 - Has used parallel agents to process multiple files simultaneously
-- Has created analysis/campaign-salvage-report.md
-- Has created analysis/comprehensive-research-synthesis.md
+- Has created ~/novabrew-workspace/analysis/campaign-salvage-report.md
+- Has created ~/novabrew-workspace/analysis/comprehensive-research-synthesis.md
 - Understands the "transactional vs identity" insight
 - Sees the unified picture: indifference + 60-day cliff + transactional campaigns + competitor identity = "no personality"
 - Knows when to use parallel agents vs sequential processing

@@ -20,7 +20,7 @@ cd codex-for-business-students
 
 # 3. Start the first lesson
 codex
-# Then type: "Read lesson-modules/0-getting-started/0.1-welcome/AGENTS.md and start the lesson"
+# Then just say: "let's start"
 ```
 
 ---

@@ -56,7 +56,7 @@ npm install -g vercel
 ACTION: Run the deploy command from the quiz-project directory.
 
 ```bash
-cd quiz-project && npx vercel --yes
+cd ~/novabrew-workspace/quiz-project && npx vercel --yes
 ```
 
 This will prompt you to log in to Vercel if you have not already. Follow the browser-based login — it takes about 30 seconds.
@@ -126,13 +126,13 @@ const nextConfig = {
 ACTION: Build the static site and deploy to GitHub Pages.
 
 ```bash
-cd quiz-project && npm run build
+cd ~/novabrew-workspace/quiz-project && npm run build
 ```
 
 ACTION: Enable GitHub Pages on the repo.
 
 ```bash
-cd quiz-project && gh api repos/{owner}/{repo}/pages -X POST -f source.branch=main -f source.path=/out || echo "Pages may already be enabled"
+cd ~/novabrew-workspace/quiz-project && gh api repos/{owner}/{repo}/pages -X POST -f source.branch=main -f source.path=/out || echo "Pages may already be enabled"
 ```
 
 Or guide the student to enable it in the GitHub repo settings under Pages, selecting the `main` branch and `/out` directory.
@@ -152,7 +152,7 @@ This means: make a change locally, commit, push to GitHub, and your live site up
 ACTION: If the student deployed via Vercel CLI, connect the Vercel project to their GitHub repo.
 
 ```bash
-cd quiz-project && npx vercel --prod --yes
+cd ~/novabrew-workspace/quiz-project && npx vercel --prod --yes
 ```
 
 Or guide them to the Vercel dashboard to connect the GitHub repo for automatic deployments.
@@ -170,7 +170,7 @@ ACTION: Make a small, visible change to the quiz. For example, update the welcom
 ACTION: Commit and push.
 
 ```bash
-cd quiz-project && git add -A && git commit -m "Update welcome screen" && git push
+cd ~/novabrew-workspace/quiz-project && git add -A && git commit -m "Update welcome screen" && git push
 ```
 
 STOP: Wait about 60 seconds, then refresh your live URL. See the change? You made an update and it went live automatically. No server configuration, no IT department, no deploy process. Change, push, live.

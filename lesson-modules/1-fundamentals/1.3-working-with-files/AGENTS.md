@@ -62,13 +62,13 @@ Let us start with the customer feedback. Say: **'Let us start with the feedback'
 
 Here is what I want you to do. Type this:
 
-**'Read all the customer feedback files in inherited-chaos/customer-feedback and create a synthesis document called analysis/customer-feedback-synthesis.md. Identify the top themes, include direct quotes, and note the overall sentiment.'**
+**'Read all the customer feedback files in inherited-chaos/customer-feedback and create a synthesis document called ~/novabrew-workspace/analysis/customer-feedback-synthesis.md. Identify the top themes, include direct quotes, and note the overall sentiment.'**
 
 That is a big ask — and that is exactly the point. You are going to ask Codex to do something that would normally take hours. Go ahead."
 
 **STOP:** Wait for the student to type the instruction.
 
-**ACTION:** Read all files in business-scenario/inherited-chaos/customer-feedback/. Create analysis/customer-feedback-synthesis.md with:
+**ACTION:** Read all files in business-scenario/inherited-chaos/customer-feedback/. Create ~/novabrew-workspace/analysis/customer-feedback-synthesis.md with:
 
 1. **Executive Summary** — 3-4 sentence overview of what customers are saying
 2. **Top 5 Themes** — Ranked by frequency, with direct quotes supporting each theme
@@ -88,7 +88,7 @@ If the customer feedback files are empty or do not exist yet, create realistic, 
 
 **Say:**
 
-"Done! I just created analysis/customer-feedback-synthesis.md.
+"Done! I just created ~/novabrew-workspace/analysis/customer-feedback-synthesis.md.
 
 If you have a file explorer open, go take a look. If not, you can ask me to show you what is in it. Either way, let me highlight the most important finding:
 
@@ -118,13 +118,13 @@ Hold that thought. Let us look at the financial data to see if the numbers tell 
 
 Here is your instruction:
 
-**'Analyze the financial data in inherited-chaos/financial and create analysis/financial-analysis.md. Include key metrics, subscriber trends over time, churn patterns by cohort, and any notable patterns you see.'**
+**'Analyze the financial data in inherited-chaos/financial and create ~/novabrew-workspace/analysis/financial-analysis.md. Include key metrics, subscriber trends over time, churn patterns by cohort, and any notable patterns you see.'**
 
 Go ahead."
 
 **STOP:** Wait for the student to type the instruction.
 
-**ACTION:** Read all files in business-scenario/inherited-chaos/financial/. Create analysis/financial-analysis.md with:
+**ACTION:** Read all files in business-scenario/inherited-chaos/financial/. Create ~/novabrew-workspace/analysis/financial-analysis.md with:
 
 1. **Key Metrics Summary** — Current subscriber count, churn rate, MRR, runway, LTV, CAC
 2. **Subscriber Trend** — Month-over-month subscriber growth/decline, peak vs current
@@ -145,7 +145,7 @@ If financial files are empty or do not exist yet, create realistic data and anal
 
 **Say:**
 
-"There it is. analysis/financial-analysis.md is ready.
+"There it is. ~/novabrew-workspace/analysis/financial-analysis.md is ready.
 
 Let me walk you through the most important finding, because this is where the qualitative and quantitative stories connect:
 
@@ -208,8 +208,8 @@ Say: **'What is next?'** when you are ready."
 "That is Module 1.3 complete!
 
 Here is what you created:
-- **analysis/customer-feedback-synthesis.md** — A full qualitative analysis with themes, quotes, and sentiment
-- **analysis/financial-analysis.md** — A quantitative deep dive with metrics, cohort analysis, and trends
+- **~/novabrew-workspace/analysis/customer-feedback-synthesis.md** — A full qualitative analysis with themes, quotes, and sentiment
+- **~/novabrew-workspace/analysis/financial-analysis.md** — A quantitative deep dive with metrics, cohort analysis, and trends
 
 And here is what you discovered:
 - Subscribers are leaving from **indifference**, not dissatisfaction
@@ -267,8 +267,8 @@ When you are ready, start the next lesson. We have campaigns to analyze and patt
 ## Success Criteria
 
 Module 1.3 is successful if the student:
-- Has created analysis/customer-feedback-synthesis.md with meaningful content
-- Has created analysis/financial-analysis.md with meaningful content
+- Has created ~/novabrew-workspace/analysis/customer-feedback-synthesis.md with meaningful content
+- Has created ~/novabrew-workspace/analysis/financial-analysis.md with meaningful content
 - Understands the core discovery: indifference, not anger
 - Sees the 60-90 day churn cliff pattern
 - Connects the qualitative and quantitative findings into a coherent story

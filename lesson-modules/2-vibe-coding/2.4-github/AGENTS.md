@@ -48,13 +48,13 @@ First, we tell Git to start tracking your quiz project. This is a one-time setup
 ACTION: Navigate to the quiz-project directory and initialize a Git repository.
 
 ```bash
-cd quiz-project && git init
+cd ~/novabrew-workspace/quiz-project && git init
 ```
 
 ACTION: Create a proper .gitignore file (the scaffold from create-next-app should have created one, but verify it exists and includes node_modules/, .next/, and .env*).
 
 ```bash
-cat quiz-project/.gitignore
+cat ~/novabrew-workspace/quiz-project/.gitignore
 ```
 
 If the .gitignore is missing or incomplete, create one with standard Next.js entries.
@@ -70,7 +70,7 @@ Now we create our first "save point." In Git, this is called a commit. Every com
 ACTION: Stage all files and create the first commit.
 
 ```bash
-cd quiz-project && git add -A && git commit -m "Initial commit: NovaBrew Coffee Taste Profile Quiz"
+cd ~/novabrew-workspace/quiz-project && git add -A && git commit -m "Initial commit: NovaBrew Coffee Taste Profile Quiz"
 ```
 
 Congratulations — you just made your first Git commit. That message, "Initial commit: NovaBrew Coffee Taste Profile Quiz," is now permanently attached to this snapshot of your project. If you ever need to come back to this exact version, you can.
@@ -94,7 +94,7 @@ If not authenticated, guide the student through `gh auth login` with clear instr
 ACTION: Create a new GitHub repository.
 
 ```bash
-cd quiz-project && gh repo create novabrew-quiz --public --source=. --description "Coffee Taste Profile Quiz for NovaBrew - built with Codex" --push
+cd ~/novabrew-workspace/quiz-project && gh repo create novabrew-quiz --public --source=. --description "Coffee Taste Profile Quiz for NovaBrew - built with Codex" --push
 ```
 
 Let me explain what just happened:
@@ -118,7 +118,7 @@ Let us see your project in the wild.
 ACTION: Open the GitHub repository in the browser.
 
 ```bash
-cd quiz-project && gh repo view --web
+cd ~/novabrew-workspace/quiz-project && gh repo view --web
 ```
 
 STOP: Take a look. That is YOUR project, live on GitHub. You can see all the files, the commit history, and the project description. Copy the URL — this is what you will share with employers, professors, and collaborators.
@@ -150,7 +150,7 @@ git push
 
 Let us try it right now. I will make a small improvement to your README file — the file that shows up on your GitHub page.
 
-ACTION: Create or update `quiz-project/README.md` with a professional, portfolio-ready description:
+ACTION: Create or update `~/novabrew-workspace/quiz-project/README.md` with a professional, portfolio-ready description:
 
 ```markdown
 # NovaBrew Coffee Taste Profile Quiz
@@ -172,13 +172,13 @@ Built as a customer personalization prototype to improve subscriber retention th
 ACTION: Commit and push the README update.
 
 ```bash
-cd quiz-project && git add README.md && git commit -m "Add project README" && git push
+cd ~/novabrew-workspace/quiz-project && git add README.md && git commit -m "Add project README" && git push
 ```
 
 ACTION: Refresh the GitHub page to show the updated README.
 
 ```bash
-cd quiz-project && gh repo view --web
+cd ~/novabrew-workspace/quiz-project && gh repo view --web
 ```
 
 STOP: Refresh your GitHub page. See how the README now shows up beautifully on the project page? That is what visitors, employers, and collaborators see first. It looks professional.
@@ -226,7 +226,7 @@ To start the next lesson, open a new Codex session in the `lesson-modules/2-vibe
 
 ## Success Criteria
 
-- [ ] Git repository initialized in quiz-project/
+- [ ] Git repository initialized in ~/novabrew-workspace/quiz-project/
 - [ ] First commit created with a clear message
 - [ ] GitHub repository created and visible online
 - [ ] Code pushed to GitHub successfully

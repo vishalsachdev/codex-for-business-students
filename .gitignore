@@ -5,9 +5,3 @@ out/
 .env.local
 .DS_Store
 *.log
-quiz-project/
-.progress.json
-analysis/*
-!analysis/.gitkeep
-reviews/*
-!reviews/.gitkeep

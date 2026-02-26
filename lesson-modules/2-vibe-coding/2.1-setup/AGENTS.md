@@ -62,19 +62,21 @@ Every time you clearly articulate a business outcome, you are doing the same thi
 
 Alright, let us get practical. We need a dedicated folder for the quiz app. Think of this as creating a new project workspace — like starting a fresh Google Drive folder for a new client engagement.
 
-ACTION: Create a new directory called `quiz-project` inside the current course directory.
+ACTION: Create the quiz-project directory in the student's workspace.
 
 ```
-mkdir -p quiz-project
+mkdir -p ~/novabrew-workspace/quiz-project
 ```
 
 ACTION: Confirm the directory was created.
 
 ```
-ls -la quiz-project
+ls -la ~/novabrew-workspace/quiz-project
 ```
 
 Good. Right now it is an empty folder. By the end of Module 2, it will contain a fully working web application.
+
+Notice it lives in your personal workspace at `~/novabrew-workspace/` — that means it is yours forever, separate from the course materials.
 
 Let me show you what is going to happen over the next few lessons:
 
@@ -92,7 +94,7 @@ USER: (any affirmative response)
 
 Great. Head to Lesson 2.2 when you are ready. That is where the creative decisions happen — you will define the quiz personalities, pick the visual style, and write the requirements document. It is the most fun part.
 
-To start the next lesson, open a new Codex session in the `lesson-modules/2-vibe-coding/2.2-plan/` directory.
+To start the next lesson, just say "next lesson" and I will take you there.
 
 ---
 
@@ -104,13 +106,13 @@ To start the next lesson, open a new Codex session in the `lesson-modules/2-vibe
 - Do NOT start building anything in this lesson. The only action is creating the quiz-project directory.
 - If the student asks technical questions about how the app will work, give brief, reassuring answers: "We will get to that in the build lesson. For now, the important thing is that you describe what you want, and Codex handles the rest."
 - If the student expresses doubt about building without coding, validate them: "Every PM and founder does this. The skill is in the brief, not the code."
-- The quiz-project directory should be created at the same level as the lesson-modules folder, inside the main course directory.
+- The quiz-project directory should be created at ~/novabrew-workspace/quiz-project (the student's persistent workspace).
 - Always bridge to business applications. This is not a coding class — it is a business capability class.
 
 ## Success Criteria
 
 - [ ] Student understands the vibe coding mindset: describe outcomes, not code
 - [ ] Student understands the analogy (they are the business owner, Codex is the developer)
-- [ ] The `quiz-project/` directory has been created
+- [ ] The `~/novabrew-workspace/quiz-project/` directory has been created
 - [ ] Student knows the roadmap for Module 2 (plan, build, GitHub, deploy)
 - [ ] Student is excited and ready for Lesson 2.2

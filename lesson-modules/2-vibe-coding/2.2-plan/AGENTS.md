@@ -121,13 +121,13 @@ The quiz needs a look and feel. Rather than me describing options, let me show y
 
 ACTION: Generate three HTML preview files in quiz-project/ that the student can open in their browser. Each should be a single self-contained HTML file showing a mock quiz question with distinct styling:
 
-**File 1: `quiz-project/style-preview-minimal.html`**
+**File 1: `~/novabrew-workspace/quiz-project/style-preview-minimal.html`**
 Clean, minimal, lots of white space. San-serif fonts. Muted earth tones. Think Apple product page meets specialty coffee shop. Subtle animations.
 
-**File 2: `quiz-project/style-preview-bold.html`**
+**File 2: `~/novabrew-workspace/quiz-project/style-preview-bold.html`**
 Rich, dark background. Gold and cream accents. Big typography. Feels premium and confident. Think high-end cocktail bar menu.
 
-**File 3: `quiz-project/style-preview-playful.html`**
+**File 3: `~/novabrew-workspace/quiz-project/style-preview-playful.html`**
 Warm colors, rounded shapes, friendly illustrations or emoji. Playful fonts mixed with clean body text. Think BuzzFeed quiz meets modern brand. Fun and inviting.
 
 Each file should show a sample quiz question with 4 answer options so the student can see how the actual quiz would feel.
@@ -135,9 +135,9 @@ Each file should show a sample quiz question with 4 answer options so the studen
 ACTION: Open each file in the browser so the student can see them.
 
 ```
-open quiz-project/style-preview-minimal.html
-open quiz-project/style-preview-bold.html
-open quiz-project/style-preview-playful.html
+open ~/novabrew-workspace/quiz-project/style-preview-minimal.html
+open ~/novabrew-workspace/quiz-project/style-preview-bold.html
+open ~/novabrew-workspace/quiz-project/style-preview-playful.html
 ```
 
 STOP: Take a look at all three in your browser. Which visual style do you want for the NovaBrew quiz? You can pick one as-is, or say something like "I like the dark background of Bold but with the rounded buttons from Playful." Make it yours.
@@ -196,7 +196,7 @@ ACTION: If they request changes, make them and present the revised set. Repeat u
 
 Excellent. You have made every major decision. Now let us capture it all in a single document that Codex will use to build the quiz in the next lesson.
 
-ACTION: Create `quiz-project/REQUIREMENTS.md` with the following structure. Fill in every section with the student's actual decisions:
+ACTION: Create `~/novabrew-workspace/quiz-project/REQUIREMENTS.md` with the following structure. Fill in every section with the student's actual decisions:
 
 ```markdown
 # NovaBrew Coffee Taste Profile Quiz — Requirements
@@ -276,7 +276,7 @@ To start the next lesson, open a new Codex session in the `lesson-modules/2-vibe
 - Never show code. Everything should be described in business terms.
 - The personality-to-answer mapping in the quiz questions should be non-obvious. The quiz should feel like a fun personality quiz, not a product survey.
 - If the student wants more than 4 personality types or fewer, accommodate them. The suggestion of 4 is a starting point, not a rule.
-- All files should be created inside the `quiz-project/` directory.
+- All files should be created inside `~/novabrew-workspace/quiz-project/`.
 
 ## Success Criteria
 
@@ -287,6 +287,6 @@ To start the next lesson, open a new Codex session in the `lesson-modules/2-vibe
 - [ ] Student has picked a visual style from the previews (or described a mashup)
 - [ ] Student has decided on images and icons (yes/no)
 - [ ] Quiz questions have been generated and approved by the student
-- [ ] REQUIREMENTS.md has been saved to quiz-project/ with all decisions captured
+- [ ] REQUIREMENTS.md has been saved to ~/novabrew-workspace/quiz-project/ with all decisions captured
 - [ ] Student understands the business parallel: this is what PRDs and product specs look like
 - [ ] Student is ready and excited for the build lesson

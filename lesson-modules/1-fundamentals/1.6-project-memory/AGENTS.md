@@ -105,13 +105,15 @@ Think of it this way: if you were writing a one-page brief for a new team member
 
 Now, here is what I want you to do:
 
-**'Create an AGENTS.md file in the project root directory. Include NovaBrew company context, the key discoveries from our analysis, the Coffee Taste Profile Quiz recommendation, stakeholder information, and current goals.'**
+**'Create a project memory file at ~/novabrew-workspace/novabrew-agents.md. Include NovaBrew company context, the key discoveries from our analysis, the Coffee Taste Profile Quiz recommendation, stakeholder information, and current goals.'**
+
+This goes in your personal workspace — not the course materials folder — so it is yours forever, even if you update the course later.
 
 Go ahead."
 
 **STOP:** Wait for the student to type the instruction.
 
-**ACTION:** Create AGENTS.md in the project root directory (/Users/vishal/teaching/codex-for-business-students/AGENTS.md or similar) with this structure:
+**ACTION:** Create ~/novabrew-workspace/novabrew-agents.md with this structure:
 
 ```markdown
 # NovaBrew Coffee Co. — Strategy Engagement
@@ -168,11 +170,13 @@ This was foreshadowed by the previous PM's "coffee personality" concept, validat
 
 **Say:**
 
-"Done! Your AGENTS.md is created. Go take a look at it in your file explorer — it should be in the project root directory.
+"Done! Your project memory file is at ~/novabrew-workspace/novabrew-agents.md.
 
-This is everything Codex needs to know about NovaBrew. From now on, every time you start a new Codex session in this project directory, Codex will read this file first and immediately have full context.
+This is everything Codex needs to know about NovaBrew. When you work in the workspace directory, Codex reads this file automatically and has full context from the start.
 
 No more re-explaining. No more context-setting. Just straight to productive work.
+
+And because it lives in your personal workspace, it survives even if you re-download the course materials.
 
 Now let us test it. Say: **'Let us test the memory'**"
 
