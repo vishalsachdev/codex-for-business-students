@@ -3,7 +3,7 @@
 **If you can pitch it, you can build it.**
 
 [![Works on FREE ChatGPT plan](https://img.shields.io/badge/Works%20on-FREE%20ChatGPT%20plan-00A67E?style=for-the-badge&logo=openai&logoColor=white)](https://chatgpt.com)
-[![Open in GitHub Codespaces](https://img.shields.io/badge/Open%20in-GitHub%20Codespaces-24292e?style=for-the-badge&logo=github&logoColor=white)](https://codespaces.new/YOUR_USERNAME/codex-for-business-students?quickstart=1)
+[![Open in GitHub Codespaces](https://img.shields.io/badge/Open%20in-GitHub%20Codespaces-24292e?style=for-the-badge&logo=github&logoColor=white)](https://codespaces.new/vishalsachdev/codex-for-business-students?quickstart=1)
 
 A hands-on course that teaches business students, PMs, and aspiring founders how to use OpenAI's Codex CLI to turn ideas into working prototypes — without writing a single line of code.
 
@@ -27,7 +27,7 @@ Everything is pre-configured — Codex CLI, full-auto mode (no permission prompt
 npm install -g @openai/codex
 
 # 2. Clone this course
-git clone https://github.com/YOUR_USERNAME/codex-for-business-students.git
+git clone https://github.com/vishalsachdev/codex-for-business-students.git
 cd codex-for-business-students
 
 # 3. Start the first lesson
