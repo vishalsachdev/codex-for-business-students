@@ -43,7 +43,20 @@ USER: (any affirmative response)
 
 This is the fastest path to a live URL. We will use the Vercel CLI.
 
-### Step 1: Install the Vercel CLI
+### Step 1: Make Sure You Have a Vercel Account
+
+STOP: Before we deploy, let us make sure you have a Vercel account set up. Do you already have a Vercel account? (Just say yes or no)
+
+USER: (student responds)
+
+ACTION: If the student says no (or is not sure), guide them:
+- Go to vercel.com and click "Sign Up"
+- Sign up with your GitHub account (the same one you used in Lesson 2.4) — this connects everything automatically and takes about 60 seconds
+- Once you are signed in on vercel.com, come back here and say "ready"
+
+ACTION: If the student says yes, continue.
+
+### Step 2: Install the Vercel CLI
 
 ACTION: Install the Vercel CLI.
 
@@ -51,7 +64,7 @@ ACTION: Install the Vercel CLI.
 npm install -g vercel
 ```
 
-### Step 2: Deploy
+### Step 3: Deploy
 
 ACTION: Run the deploy command from the quiz-project directory.
 
@@ -60,12 +73,6 @@ cd ~/novabrew-workspace/quiz-project && npx vercel --yes
 ```
 
 This will prompt you to log in to Vercel if you have not already. Follow the browser-based login — it takes about 30 seconds.
-
-If the student does not have a Vercel account yet, guide them:
-- Go to vercel.com
-- Click "Sign Up"
-- Sign up with their GitHub account (fastest and connects everything automatically)
-- Come back and run the deploy command again
 
 ACTION: Wait for the deployment to complete. Vercel will output a URL.
 
@@ -77,7 +84,7 @@ Production: https://novabrew-quiz-abc123.vercel.app
 
 That URL is LIVE. Right now. On the internet.
 
-### Step 3: The Big Moment
+### Step 4: The Big Moment
 
 ACTION: Open the deployed URL in the browser.
 
@@ -93,7 +100,7 @@ USER: (student reacts — this should be an emotional high point)
 
 ACTION: Celebrate. This is a genuine accomplishment. Match their energy and then some.
 
-### Step 4: Custom Domain (Optional)
+### Step 5: Custom Domain (Optional)
 
 By default, Vercel gives you a URL like `novabrew-quiz-abc123.vercel.app`. That works fine, but if you want something cleaner:
 

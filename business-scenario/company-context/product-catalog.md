@@ -127,4 +127,4 @@ NovaBrew sources from 47 independent specialty roasters across the US. Key partn
 4. **No feedback mechanism** — No way for subscribers to rate bags or communicate what they liked/didn't.
 5. **Tier differentiation unclear** — Tiers differ mainly by bag size/quantity, not by curation quality. Customers expect Connoisseur to mean "better selection," not just "more coffee."
 6. **Recommendation engine limitations** — Current system filters by roast level and avoids repeats. Does not use any personalization data. Effectively random within broad roast category.
-7. **No coffee personality/profile system** — Discussed extensively, never built. See campaign-quiz-attempt.md for history.
+7. **No coffee personality/profile system** — Discussed extensively, never built. See campaign-subscriber-preferences.md for history.

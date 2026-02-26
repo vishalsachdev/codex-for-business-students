@@ -176,9 +176,19 @@ Now. Let us connect the dots."
 
 **From the CS Lead:** 'Customers keep asking us to help them find their perfect coffee.'
 
-Do you see it?
+Before I connect the dots, I want to hear from you."
 
-The solution is staring us in the face:
+**STOP:** "Given everything we have found — the indifference in feedback, the 60-day cliff, the transactional campaigns, and what competitors are doing — what do you think the answer is? What would YOU recommend NovaBrew build?"
+
+**USER:** (student guesses)
+
+**ACTION:** If the student says anything related to "quiz," "personalization," "profile," "taste preferences," "matching," or "getting to know subscribers" — celebrate enthusiastically: "You nailed it. That is exactly where the evidence points." Then continue with the reveal below, framing it as confirmation of their insight.
+
+If the student says something different, validate what is smart about their answer — there may be a real insight in it — and then guide them: "That is a great instinct. Let me add one more layer to it..." Then continue with the reveal, framing it as building on their thinking.
+
+**Say:**
+
+"The solution is staring us in the face:
 
 **A Coffee Taste Profile Quiz.**
 

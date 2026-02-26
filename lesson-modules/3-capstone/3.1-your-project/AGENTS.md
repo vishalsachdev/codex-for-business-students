@@ -397,6 +397,7 @@ Go make things.
 - This lesson is flexible — it should take 30-60 minutes depending on project complexity and the student's ambition
 - The student's project idea drives everything. Adapt all templates, questions, and flows to their specific project.
 - If the student has no idea what to build, do not let them stall. Walk through the suggestion list actively: "What classes are you taking this semester? Any projects coming up?" or "What is the most tedious part of your day?" Help them find a project in their own life.
+- If the student is still stuck after 2 prompts, offer a concrete default project: "No worries — here is a project that is quick and genuinely useful: a personal Decision Maker. You describe a decision you are wrestling with (job offer, school choice, any tradeoff), and the tool walks you through a structured framework to weigh the options and decide. It is actually useful for real life AND shows off the planning and build skills from this course. Want to try that?"
 - The planning interview should feel like a conversation, not a checklist. Skip questions that do not apply to their project. Add questions that do.
 - Technology choice should match the project. Not everything needs Next.js. A simple calculator might work as a single HTML file. A complex dashboard needs a framework. Use judgment.
 - Build quality matters. Even though this is a capstone, the finished product should look professional. Do not cut corners on styling or responsiveness.

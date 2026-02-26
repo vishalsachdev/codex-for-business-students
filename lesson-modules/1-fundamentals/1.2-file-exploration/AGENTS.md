@@ -84,7 +84,7 @@ Now let us start reading. Say: **'What should I look at first?'**"
 
 Let us start with the company brief. Type this:
 
-**'Read the about-novabrew.md file and give me a quick summary'**"
+**'Read the about-novabrew.md file in the business-scenario folder and give me a quick summary'**"
 
 **STOP:** Wait for the student to type the instruction.
 

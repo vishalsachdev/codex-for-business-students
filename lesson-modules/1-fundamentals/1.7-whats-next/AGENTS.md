@@ -92,19 +92,15 @@ Say: **'How long did that take?'**"
 
 **Your time:** About 2-3 hours (with learning along the way)
 
-**What this would cost from a consulting firm:**
-- Data room review: 1-2 days of analyst time
-- Customer feedback synthesis: 1-2 days
-- Financial analysis and cohort modeling: 2-3 days
-- Campaign audit: 1-2 days
-- Cross-source synthesis: 1-2 days for a senior consultant
-- Advisory review and recommendation: 1-2 days for a partner
+**How long would this take without Codex?**
 
-**Total:** 7-13 days of consulting time. At standard rates, that is roughly $35,000-$65,000 worth of work.
+If you did this by hand — reading every file, writing each synthesis from scratch, manually comparing sources — you would be looking at several full days of focused work. A consulting team doing this for a client would typically allocate 1-2 weeks of analyst and associate time across these workstreams.
 
-You did it in an afternoon. For free. On the free ChatGPT plan.
+The point is NOT that you replaced a consulting firm. Real consultants bring deep domain expertise, client relationships, and pattern recognition from hundreds of engagements. That is genuinely valuable and cannot be replicated by any tool.
 
-I am not saying this to diminish the value of professional consultants — deep expertise and relationships matter. But the analytical grunt work, the data synthesis, the pattern recognition, the multi-source integration? That is what Codex does. And it means you can focus your time on the STRATEGIC decisions instead of the analytical busywork.
+But the analytical throughput — reading, synthesizing, cross-referencing, structuring — that used to be the bottleneck. It used to take most of the calendar time on an engagement. With Codex, that part collapses from days to minutes. Which means you can spend your time where it actually matters: interpreting the findings, making strategic judgments, and deciding what to do next.
+
+That is a real shift in how business analysis gets done.
 
 Say: **'What do we build?'** when you are ready for the preview."
 
@@ -188,9 +184,9 @@ Great work. Seriously. See you in Module 2."
 - Do not make it feel like a homework assignment review — make it feel like a strategy engagement debrief
 
 **The Time Comparison:**
-- Use real consulting rate benchmarks (junior analyst at $200-300/day, senior consultant at $500-800/day, partner at $1000+/day)
-- Do not be overly precise — "roughly $35,000-$65,000" is more credible than "$47,350"
-- The point is not "consulting is a rip-off" — it is "you can now do the analytical work yourself and focus your human energy on strategic decisions"
+- Frame the time comparison honestly — the analytical throughput collapsed from days to minutes
+- Explicitly acknowledge what consultants bring that Codex cannot (domain expertise, relationships, pattern recognition from hundreds of engagements)
+- The point is not "you replaced a consulting firm" — it is "the analytical bottleneck is gone, freeing you for strategic thinking"
 
 **Module 2 Preview:**
 - Keep it high-level — do not get into specific technical details

@@ -24,7 +24,7 @@ By the end of this module, students should:
 1. Feel officially "in role" as the NovaBrew strategy consultant
 2. Understand what Module 1 covers at a high level
 3. Appreciate the business framing — this is consulting work, not a coding class
-4. Know where to find reference materials on the course website
+4. Know where to find reference materials in the course repo
 5. Be eager and ready to start exploring files in 1.2
 
 ---
@@ -100,7 +100,7 @@ The only difference is speed. What takes a consulting team weeks, you are going 
 
 If that sounds too good to be true, you will see for yourself in about 15 minutes.
 
-One more thing — the course website has reference guides for every lesson. If you ever want to review a concept later or share it with someone, those guides cover everything we teach here in written form. But for now, the best way to learn is to do. And that is what we are about to do.
+One more thing — all the lesson materials are in the course folder on GitHub if you ever want to review a concept later or share it with someone. But for now, the best way to learn is to do. And that is what we are about to do.
 
 Ready to start exploring? Say: **'Let us dig in'**"
 
@@ -142,7 +142,7 @@ When you are ready, start the next lesson. Let us go find out what NovaBrew is h
 **Handle questions:**
 - If the student asks about specific lessons, give a brief preview and say "we will cover that in detail in [lesson number]"
 - If they want to skip ahead, gently redirect: "I love the enthusiasm! The lessons build on each other, so let us go in order."
-- If they ask about the course website, mention that reference guides are available for every lesson at the course URL
+- If they ask about reference materials, mention that all lesson scripts are available in the course repo on GitHub
 
 **Key phrases to emphasize:**
 - "You are doing in hours what consulting firms charge $50,000 for"
@@ -157,6 +157,6 @@ Module 1.1 is successful if the student:
 - Feels officially "in role" as the NovaBrew consultant
 - Understands the arc of Module 1 (explore, analyze, parallelize, advise, remember)
 - Sees this as business work, not technical work
-- Knows reference guides exist on the course website
+- Knows lesson materials are available in the course repo on GitHub
 - Is energized and ready for 1.2
 - The whole thing took about 5 minutes

@@ -68,7 +68,7 @@ That is a big ask — and that is exactly the point. You are going to ask Codex 
 
 **STOP:** Wait for the student to type the instruction.
 
-**ACTION:** Read all files in business-scenario/inherited-chaos/customer-feedback/. Create ~/novabrew-workspace/analysis/customer-feedback-synthesis.md with:
+**ACTION:** First, ensure the workspace directories exist: `mkdir -p ~/novabrew-workspace/analysis ~/novabrew-workspace/reviews`. Then read all files in business-scenario/inherited-chaos/customer-feedback/. Create ~/novabrew-workspace/analysis/customer-feedback-synthesis.md with:
 
 1. **Executive Summary** — 3-4 sentence overview of what customers are saying
 2. **Top 5 Themes** — Ranked by frequency, with direct quotes supporting each theme

@@ -1,18 +1,18 @@
-# Campaign: Coffee Taste Profile Quiz (ABANDONED)
+# Campaign: Subscriber Preference Survey (ABANDONED)
 **Dates:** Started August 2025, abandoned September 2025
 **Owner:** Alex (PM) — left the company before completion
-**Goal:** Build an interactive taste profile quiz to improve personalization and reduce churn.
+**Goal:** Collect subscriber taste preferences to improve personalization and reduce churn.
 
 ## Background
 
-This was supposed to be the big one. After months of customer feedback pointing to a lack of personalization, Alex started building a "Coffee Taste Profile Quiz" that would:
+This was supposed to be the big one. After months of customer feedback pointing to a lack of personalization, Alex started building a subscriber preference collection tool that would:
 
 1. Ask subscribers 8-10 questions about their taste preferences
-2. Generate a "Coffee Personality" profile (Maya's concept)
+2. Generate a subscriber taste profile (Maya's concept)
 3. Match subscribers to specific coffees in our catalog based on their profile
 4. Evolve over time based on feedback and ratings
 
-The quiz was inspired by Driftaway's taste profile system but intended to be more sophisticated — incorporating not just roast/flavor preferences but also brewing method, adventurousness, caffeine sensitivity, and origin preferences.
+The project was inspired by Driftaway's taste profile system but intended to be more sophisticated — incorporating not just roast/flavor preferences but also brewing method, adventurousness, caffeine sensitivity, and origin preferences.
 
 ## What Got Built
 
@@ -36,11 +36,11 @@ The quiz was inspired by Driftaway's taste profile system but intended to be mor
 
 ## What's Left
 
-- Alex's draft quiz questions (in a Google Doc — ask Maya for access)
-- Maya's Coffee Personality framework (napkin sketch + the 6 archetypes above)
+- Alex's draft preference questions (in a Google Doc — ask Maya for access)
+- Maya's taste profile framework (napkin sketch + the 6 archetypes above)
 - The A/B test results showing that even 3 basic taste questions improved retention by ~7 points
 - Tessa's suggestion to start with Driftaway's simple 4-profile model and iterate
-- Customer demand: 15% of survey respondents unprompted asked for a quiz/profile system
+- Customer demand: 15% of survey respondents unprompted asked for a preference/profile system
 - A half-built Figma wireframe somewhere in the design folder
 
 ## Status
@@ -49,6 +49,6 @@ The quiz was inspired by Driftaway's taste profile system but intended to be mor
 
 ## Why This Matters
 
-Every other retention tactic NovaBrew has tried (loyalty points, seasonal blends, referral bonuses, discounts) has failed to meaningfully move the churn needle. The quiz/personalization concept is the only initiative that showed real signal in testing (the A/B test). Customer feedback overwhelmingly supports it. Competitors who have personalization (Trade, Driftaway) retain better.
+Every other retention tactic NovaBrew has tried (loyalty points, seasonal blends, referral bonuses, discounts) has failed to meaningfully move the churn needle. The preference/personalization concept is the only initiative that showed real signal in testing (the A/B test). Customer feedback overwhelmingly supports it. Competitors who have personalization (Trade, Driftaway) retain better.
 
 This abandoned campaign is arguably the most important artifact in NovaBrew's history. The idea is right. The execution stalled. Someone needs to pick it back up.

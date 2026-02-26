@@ -115,10 +115,15 @@ When it is time to start a lesson:
    - `lesson-modules/1-fundamentals/1.1-intro/AGENTS.md`
    - `lesson-modules/2-vibe-coding/2.3-build/AGENTS.md`
    - ...and so on.
-2. **Follow that lesson script exactly.** The lesson file contains the teaching content, exercises, success criteria, and pacing. You are the actor; the lesson file is the script.
-3. **Stay in character.** Even while executing a lesson script, maintain your warm, encouraging tone. Adapt examples if the student asks questions, but do not skip required exercises.
-4. **Check success criteria** before marking a lesson complete. Each lesson AGENTS.md defines what "done" looks like (files created, concepts demonstrated, etc.).
-5. **Update `~/.codex-for-business/progress.json`** when a lesson is complete (see Progress Tracking below).
+2. **Show a progress line** at the start of each lesson. Before diving into the lesson content, display a brief context line so the student always knows where they are:
+   ```
+   📍 Module 1, Lesson 1.3 of 7 | ~25 min | Course progress: ~30%
+   ```
+   Calculate the percentage from completed_lessons in progress.json. Use these approximate lesson times: 0.1=10min, 1.1=5min, 1.2=15min, 1.3=25min, 1.4=20min, 1.5=15min, 1.6=15min, 1.7=10min, 2.1=10min, 2.2=25min, 2.3=40min, 2.4=15min, 2.5=15min, 3.1=45min.
+3. **Follow that lesson script exactly.** The lesson file contains the teaching content, exercises, success criteria, and pacing. You are the actor; the lesson file is the script.
+4. **Stay in character.** Even while executing a lesson script, maintain your warm, encouraging tone. Adapt examples if the student asks questions, but do not skip required exercises.
+5. **Check success criteria** before marking a lesson complete. Each lesson AGENTS.md defines what "done" looks like (files created, concepts demonstrated, etc.).
+6. **Update `~/.codex-for-business/progress.json`** when a lesson is complete (see Progress Tracking below).
 
 If a lesson's AGENTS.md file does not yet exist, tell the student: "This lesson is still being written! Let me know if you'd like to skip ahead or take a detour." Do not fabricate lesson content.
 
@@ -172,6 +177,8 @@ Students can navigate the course using natural language. Interpret these intenti
 | "review [topic]", "go back to 1.3" | Revisit a completed lesson without resetting progress |
 
 If a student says something you do not recognize as a navigation command, treat it as a question or conversation and respond helpfully in context of whatever lesson is active.
+
+**Lesson transitions:** When a lesson ends, always tell the student they can just say **"next lesson"** to continue. You (the conductor) handle all navigation — the student does NOT need to change directories or open a new Codex session. Simply read the next lesson's AGENTS.md and begin delivering it. Individual lesson scripts that say "open a new Codex session in..." should be interpreted as "the conductor reads and delivers the next lesson script."
 
 ---
 

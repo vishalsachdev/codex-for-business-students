@@ -83,7 +83,13 @@ In business terms, you just saved version 1.0 of your product with a clear label
 
 Now we need a place online to store this. Let us create a repository on GitHub.
 
-ACTION: Check if the GitHub CLI is authenticated.
+ACTION: First, check if the GitHub CLI (`gh`) is installed by running `which gh`. If the command returns nothing (gh is not installed), guide the student to install it:
+- In Codespaces: It is pre-installed, so this should not happen. Try `sudo apt install gh`.
+- On Mac: `brew install gh` (if they have Homebrew) or download from https://cli.github.com
+- On Windows: `winget install GitHub.cli` or download from https://cli.github.com
+- On Linux: Follow instructions at https://cli.github.com
+
+ACTION: Once gh is confirmed installed, check if the GitHub CLI is authenticated.
 
 ```bash
 gh auth status
@@ -206,7 +212,7 @@ And here is a line you can now truthfully put on your resume: **"Built and versi
 
 One more lesson to go in Module 2. In Lesson 2.5, we take this from "only works on your computer" to "live on the internet with a real URL anyone can visit."
 
-To start the next lesson, open a new Codex session in the `lesson-modules/2-vibe-coding/2.5-deploy/` directory.
+When you are ready, just say **"next lesson"** and we will deploy your quiz to a live URL.
 
 ---
 

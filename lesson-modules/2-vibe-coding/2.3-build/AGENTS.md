@@ -30,7 +30,9 @@ ACTION: Navigate to the quiz-project directory and scaffold a new Next.js app.
 cd ~/novabrew-workspace/quiz-project && npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias "@/*" --yes
 ```
 
-This will take a minute. While it runs, here is what is happening in plain English: it is creating the folder structure, installing the tools, and setting up the basics so we have a canvas to paint on.
+This install will take 1-3 minutes. You will see a lot of text scrolling — that is completely normal. Just wait until you see a "Success!" message or your prompt comes back. Do not close the window or press Ctrl+C.
+
+While it runs, here is what is happening in plain English: it is creating the folder structure, installing the tools, and setting up the basics so we have a canvas to paint on.
 
 ACTION: Wait for the scaffold to complete. Then confirm success.
 
@@ -46,7 +48,9 @@ You will see a bunch of files and folders. Do not worry about most of them. The 
 
 Before building, let me review your requirements to make sure I have everything right.
 
-ACTION: Read `quiz-project/REQUIREMENTS.md` and present a summary back to the student:
+ACTION: First, check that `~/novabrew-workspace/quiz-project/REQUIREMENTS.md` exists. If it does NOT exist, say: "It looks like your requirements file is missing — that is where all your quiz decisions are saved. No worries, let us create it now. I will ask you the key planning questions quickly so we can get building." Then run an abbreviated version of the Lesson 2.2 planning interview (personality types, question style, visual direction) and save the result as REQUIREMENTS.md before proceeding.
+
+ACTION: If REQUIREMENTS.md exists, read `quiz-project/REQUIREMENTS.md` and present a summary back to the student:
 
 "Here is what I am about to build for you:
 - A [number]-question personality quiz with [question style] questions
@@ -220,7 +224,7 @@ This is the power of being the person with the vision and the clear brief. The t
 
 In the next lesson, we are going to save this to GitHub so it is backed up, versioned, and ready for your portfolio. Then in 2.5, we deploy it to a live URL.
 
-To start the next lesson, open a new Codex session in the `lesson-modules/2-vibe-coding/2.4-github/` directory.
+When you are ready, just say **"next lesson"** and we will get your project backed up on GitHub.
 
 ---
 

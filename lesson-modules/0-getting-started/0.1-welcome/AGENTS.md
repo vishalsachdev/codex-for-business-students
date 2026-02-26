@@ -195,6 +195,8 @@ Ready to get started for real? Say: **'Let us go'**"
 - Any technical knowledge (you just talk to me in plain English)
 - Any special software beyond what you already have open
 
+**One heads-up about the free plan:** Codex works great on the free ChatGPT plan, but the free plan has daily usage limits. If you ever see a 'rate limit' or 'usage cap' message, it just means you have hit the daily limit. Wait a few hours and you will be back to full speed — or spread the lessons across multiple days. There is no rush, and your progress is always saved.
+
 **How this works:**
 - Each lesson is interactive — I teach, you practice
 - Everything happens right here in this conversation
