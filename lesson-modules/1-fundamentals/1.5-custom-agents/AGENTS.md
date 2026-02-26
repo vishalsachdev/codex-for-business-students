@@ -105,13 +105,13 @@ Ready to put them to work? Say: **'Let us hear from the team'**"
 
 Type this:
 
-**'Have each of my three advisors — the CEO/Founder, Head of Product, and Customer Success Lead — independently review analysis/comprehensive-research-synthesis.md from their perspective. Compile all three reviews into ~/novabrew-workspace/reviews/synthesis-feedback.md.'**
+**'Have each of my three advisors — the CEO/Founder, Head of Product, and Customer Success Lead — independently review ~/novabrew-workspace/analysis/comprehensive-research-synthesis.md from their perspective. Compile all three reviews into ~/novabrew-workspace/reviews/synthesis-feedback.md.'**
 
 Watch what happens when three smart people with different priorities look at the same data."
 
 **STOP:** Wait for the student to type the instruction.
 
-**ACTION:** Read analysis/comprehensive-research-synthesis.md. Then generate three distinct reviews, each in the voice and perspective of the respective advisor. Create ~/novabrew-workspace/reviews/synthesis-feedback.md with:
+**ACTION:** Read ~/novabrew-workspace/analysis/comprehensive-research-synthesis.md. Then generate three distinct reviews, each in the voice and perspective of the respective advisor. Create ~/novabrew-workspace/reviews/synthesis-feedback.md with:
 
 **CEO/Founder Review:**
 - "The diagnosis is solid — this explains why nothing we have tried has worked"

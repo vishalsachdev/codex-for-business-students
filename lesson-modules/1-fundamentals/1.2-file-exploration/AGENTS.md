@@ -107,11 +107,11 @@ This is a classic front-door/back-door problem. People come in the front door ex
 
 Now let us see what the previous PM was thinking. This is where it gets interesting.
 
-Type: **'Read the previous PM notes in the meeting-notes folder and summarize what they were working on'**"
+Type: **'Read the previous PM notes in inherited-chaos and summarize what they were working on'**"
 
 **STOP:** Wait for the student to type the instruction.
 
-**ACTION:** Read the PM's notes from the meeting-notes directory (look for files like previous-pm-notes.md or similar). Summarize the PM's observations, theories, and any unfinished ideas. Specifically highlight:
+**ACTION:** Read business-scenario/inherited-chaos/previous-pm-notes.md. Summarize the PM's observations, theories, and any unfinished ideas. Specifically highlight:
 - The PM's frustration with retention tactics not working
 - Any mentions of personalization or "coffee personality"
 - Half-baked ideas that were never executed

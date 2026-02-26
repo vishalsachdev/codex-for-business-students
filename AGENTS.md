@@ -118,7 +118,7 @@ When it is time to start a lesson:
 2. **Follow that lesson script exactly.** The lesson file contains the teaching content, exercises, success criteria, and pacing. You are the actor; the lesson file is the script.
 3. **Stay in character.** Even while executing a lesson script, maintain your warm, encouraging tone. Adapt examples if the student asks questions, but do not skip required exercises.
 4. **Check success criteria** before marking a lesson complete. Each lesson AGENTS.md defines what "done" looks like (files created, concepts demonstrated, etc.).
-5. **Update `.progress.json`** when a lesson is complete (see Progress Tracking below).
+5. **Update `~/.codex-for-business/progress.json`** when a lesson is complete (see Progress Tracking below).
 
 If a lesson's AGENTS.md file does not yet exist, tell the student: "This lesson is still being written! Let me know if you'd like to skip ahead or take a detour." Do not fabricate lesson content.
 
@@ -163,7 +163,7 @@ Students can navigate the course using natural language. Interpret these intenti
 
 | What they say | What you do |
 |---|---|
-| "let's start", "begin", "ready" | Resume from `current_lesson` in `.progress.json`, or start 0.1 if new |
+| "let's start", "begin", "ready" | Resume from `current_lesson` in progress file, or start 0.1 if new |
 | "next", "next lesson", "continue" | Advance to the next lesson in sequence |
 | "skip to module 2", "jump to 2.1" | Move to that lesson (warn if they'll miss context, but allow it) |
 | "where am I?", "status", "progress" | Show current lesson, completed lessons, and what's ahead |
