@@ -8,18 +8,21 @@
   <meta name="keywords" content="Codex, OpenAI, business students, MBA, prototype, no-code, AI tools, product management">
   <meta name="author" content="Codex for Business">
 
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vishalsachdev.github.io/codex-for-business-students/">
+
   <!-- Open Graph -->
   <meta property="og:title" content="Codex for Business — Build Prototypes Without Writing Code">
   <meta property="og:description" content="The only course taught INSIDE Codex that turns business ideas into working prototypes in hours. Works on the FREE ChatGPT plan.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://github.com/vishalsachdev/codex-for-business-students">
-  <meta property="og:image" content="https://via.placeholder.com/1200x630/1a1a2e/e8b430?text=Codex+for+Business">
+  <meta property="og:url" content="https://vishalsachdev.github.io/codex-for-business-students/">
+  <meta property="og:image" content="https://vishalsachdev.github.io/codex-for-business-students/assets/og-image.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Codex for Business — Build Prototypes Without Writing Code">
   <meta name="twitter:description" content="The only course taught INSIDE Codex that turns business ideas into working prototypes in hours. Works on the FREE ChatGPT plan.">
-  <meta name="twitter:image" content="https://via.placeholder.com/1200x630/1a1a2e/e8b430?text=Codex+for+Business">
+  <meta name="twitter:image" content="https://vishalsachdev.github.io/codex-for-business-students/assets/og-image.png">
 
   <!-- Favicon placeholder -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F4BB;</text></svg>">
@@ -31,19 +34,20 @@
   <!-- ============ Navigation ============ -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="container nav__inner">
-      <a href="#" class="nav__brand">
+      <a href="https://vishalsachdev.github.io/codex-for-business-students/" class="nav__brand">
         <span class="nav__brand-icon">&#x1F4BB;</span>
         Codex for Business
       </a>
-      <button class="nav__toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav__links').classList.toggle('is-open')">
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="var l=document.querySelector('.nav__links');l.classList.toggle('is-open');this.setAttribute('aria-expanded',l.classList.contains('is-open'))">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <ul class="nav__links">
         <li><a href="#what-youll-build">What You Build</a></li>
-        <li><a href="#modules">Modules</a></li>
+        <li><a href="#who-this-is-for">Who It's For</a></li>
         <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#modules">Modules</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#getting-started" class="nav__cta">Get Started</a></li>
       </ul>
@@ -141,6 +145,46 @@
     </div>
   </section>
 
+  <!-- ============ How It Works ============ -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow">How It Works</span>
+        <h2 class="section__title">Four steps. Seriously.</h2>
+        <p class="section__subtitle">No complicated setup. No configuration files. Just you and an AI that codes for you.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step__number">1</div>
+          <h3 class="step__title">Open in Codespaces</h3>
+          <p class="step__desc">Click one button on GitHub. No install, no terminal setup. Everything is pre-configured in the cloud.</p>
+          <span class="step__code">&#x201C;Open in Codespaces&#x201D;</span>
+        </div>
+        <div class="step">
+          <div class="step__number">2</div>
+          <h3 class="step__title">Log In</h3>
+          <p class="step__desc">Sign in with your free ChatGPT account. That's the only setup.</p>
+          <span class="step__code">codex login</span>
+        </div>
+        <div class="step">
+          <div class="step__number">3</div>
+          <h3 class="step__title">Say "Let's Start"</h3>
+          <p class="step__desc">Codex becomes your teacher. Interactive, conversational, hands-on.</p>
+          <span class="step__code">&#x201C;Let's start the course&#x201D;</span>
+        </div>
+        <div class="step">
+          <div class="step__number">4</div>
+          <h3 class="step__title">Deploy &amp; Share</h3>
+          <p class="step__desc">Your finished app gets a live URL on <a href="https://vercel.com" style="color: var(--color-gold);">Vercel</a> &mdash; free, instant, and shareable. Text it to a friend.</p>
+          <span class="step__code">your-app.vercel.app</span>
+        </div>
+      </div>
+      <div class="steps-punchline">
+        That's it. From idea to live URL in one afternoon.
+      </div>
+    </div>
+  </section>
+
   <!-- ============ Course Modules ============ -->
   <section class="section section--alt" id="modules">
     <div class="container">
@@ -216,46 +260,6 @@
     </div>
   </section>
 
-  <!-- ============ How It Works ============ -->
-  <section class="section" id="how-it-works">
-    <div class="container">
-      <div class="section__header">
-        <span class="section__eyebrow">How It Works</span>
-        <h2 class="section__title">Four steps. Seriously.</h2>
-        <p class="section__subtitle">No complicated setup. No configuration files. Just you and an AI that codes for you.</p>
-      </div>
-      <div class="steps">
-        <div class="step">
-          <div class="step__number">1</div>
-          <h3 class="step__title">Open in Codespaces</h3>
-          <p class="step__desc">Click one button on GitHub. No install, no terminal setup. Everything is pre-configured in the cloud.</p>
-          <span class="step__code">&#x201C;Open in Codespaces&#x201D;</span>
-        </div>
-        <div class="step">
-          <div class="step__number">2</div>
-          <h3 class="step__title">Log In</h3>
-          <p class="step__desc">Sign in with your free ChatGPT account. That's the only setup.</p>
-          <span class="step__code">codex login</span>
-        </div>
-        <div class="step">
-          <div class="step__number">3</div>
-          <h3 class="step__title">Say "Let's Start"</h3>
-          <p class="step__desc">Codex becomes your teacher. Interactive, conversational, hands-on.</p>
-          <span class="step__code">&#x201C;Let's start the course&#x201D;</span>
-        </div>
-        <div class="step">
-          <div class="step__number">4</div>
-          <h3 class="step__title">Deploy &amp; Share</h3>
-          <p class="step__desc">Your finished app gets a live URL on <a href="https://vercel.com" style="color: var(--color-gold);">Vercel</a> &mdash; free, instant, and shareable. Text it to a friend.</p>
-          <span class="step__code">your-app.vercel.app</span>
-        </div>
-      </div>
-      <div class="steps-punchline">
-        That's it. From idea to live URL in one afternoon.
-      </div>
-    </div>
-  </section>
-
   <!-- ============ Getting Started ============ -->
   <section class="section section--cream" id="getting-started">
     <div class="container">
@@ -282,14 +286,14 @@
           <div class="build-card__label">Easiest &mdash; nothing to install</div>
           <h3 class="build-card__title">GitHub Codespaces</h3>
           <p class="build-card__desc">Click one button. Everything is pre-configured in the cloud. Works on any computer with a browser.</p>
-          <a href="https://codespaces.new/vishalsachdev/codex-for-business-students?quickstart=1" class="btn btn--primary" style="margin-top: 1rem;">Open in Codespaces &rarr;</a>
+          <a href="https://codespaces.new/vishalsachdev/codex-for-business-students?quickstart=1" class="btn btn--primary" style="margin-top: 1rem;" target="_blank" rel="noopener noreferrer">Open in Codespaces &rarr;</a>
         </div>
         <div class="build-card" style="text-align: center;">
           <div class="build-card__icon">&#x1F4BB;</div>
           <div class="build-card__label">Mac users</div>
           <h3 class="build-card__title">Codex Desktop App</h3>
           <p class="build-card__desc">Download the app, open the course folder, and start. A dedicated workspace with a clean interface.</p>
-          <a href="https://openai.com/codex/get-started/" class="btn btn--outline" style="margin-top: 1rem;">Download Codex App &rarr;</a>
+          <a href="https://openai.com/codex/get-started/" class="btn btn--outline" style="margin-top: 1rem;" target="_blank" rel="noopener noreferrer">Download Codex App &rarr;</a>
         </div>
       </div>
 
@@ -313,7 +317,7 @@
   <section class="section section--navy" id="testimonials">
     <div class="container">
       <div class="section__header">
-        <span class="section__eyebrow">What Students Say</span>
+        <span class="section__eyebrow">What's Possible</span>
         <h2 class="section__title">From idea to deployed app.</h2>
       </div>
       <div class="testimonials-grid">
@@ -398,6 +402,15 @@
       <div class="footer__built">Built with Codex, of course.</div>
     </div>
   </footer>
+
+  <script>
+    // Fix #9: Scroll details into view when expanded
+    document.querySelectorAll('details').forEach(function(d) {
+      d.addEventListener('toggle', function() {
+        if (this.open) this.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+    });
+  </script>
 
 </body>
 </html>

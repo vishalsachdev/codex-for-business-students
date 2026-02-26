@@ -501,11 +501,7 @@ a:hover {
   transition: all var(--transition);
 }
 
-.module-card:hover {
-  border-color: var(--coral);
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
-}
+/* No hover state — module cards are display-only, not clickable */
 
 .module-card__number {
   width: 72px;
@@ -598,7 +594,7 @@ a:hover {
 /* --- How It Works Section --- */
 .steps {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 32px;
   margin-bottom: 40px;
 }
@@ -785,8 +781,8 @@ a:hover {
 .testimonials-note {
   text-align: center;
   margin-top: 32px;
-  font-size: 0.8rem;
-  color: var(--gray-400);
+  font-size: 0.9rem;
+  color: var(--gray-200);
   font-style: italic;
 }
 
@@ -806,10 +802,7 @@ a:hover {
   transition: all var(--transition);
 }
 
-.faq-item:hover {
-  border-color: var(--gold);
-  box-shadow: var(--shadow-sm);
-}
+/* No hover state — FAQ items are display-only, not interactive */
 
 .faq-item__q {
   font-size: 1.05rem;
@@ -888,8 +881,12 @@ a:hover {
   }
 
   .steps {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
