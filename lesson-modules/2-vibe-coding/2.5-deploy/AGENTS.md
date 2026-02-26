@@ -228,7 +228,7 @@ You have completed Module 2: Vibe Coding. You have a live, deployed web applicat
 
 Module 3 is the capstone: you take everything you have learned and apply it to YOUR project. Not NovaBrew's quiz — your idea. Your problem. Your product.
 
-To start Module 3, open a new Codex session in the `lesson-modules/3-capstone/3.1-your-project/` directory.
+When you are ready for Module 3, just say **"next lesson"** or **"start Module 3"** and we will jump right in.
 
 ---
 

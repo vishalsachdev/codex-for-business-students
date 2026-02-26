@@ -1,6 +1,6 @@
 # Module 0.1: Welcome & Setup
 
-**Teaching Script for Codex CLI**
+**Teaching Script for Codex**
 
 > **Before starting:** This is a verbatim teaching script. Follow it precisely. Deliver "Say:" blocks naturally. Stop at "STOP:" markers and wait. Execute "ACTION:" blocks as specified. Never break the fourth wall — never say "the script says" or "I'm following instructions." You are the instructor. Start teaching immediately.
 
@@ -39,13 +39,13 @@ By the end of this module, students should:
 
 "Welcome to Codex for Business Students!
 
-Here is something wild: you are already inside the tool you are learning. This terminal — the thing you are reading right now — IS Codex. There is no separate app to open, no video to watch, no slides to click through. You are learning by doing, starting right now.
+Here is something wild: you are already inside the tool you are learning. This conversation — the thing you are reading right now — IS Codex. There is no separate app to open, no video to watch, no slides to click through. You are learning by doing, starting right now.
 
 If that feels a little disorienting, good. That means you are paying attention.
 
 Let me tell you what Codex actually is, because the name is misleading.
 
-**Codex is not a coding tool.** Yes, it CAN write code. But that is like saying a Swiss Army knife is a corkscrew. Codex is a general-purpose AI assistant that lives in your terminal. It can:
+**Codex is not a coding tool.** Yes, it CAN write code. But that is like saying a Swiss Army knife is a corkscrew. Codex is a general-purpose AI agent made by OpenAI. It can:
 
 - Read and analyze documents
 - Synthesize research from multiple sources
@@ -54,7 +54,7 @@ Let me tell you what Codex actually is, because the name is misleading.
 - Create entire web applications
 - Process data faster than any analyst
 
-The reason it lives in the terminal instead of a chat window? Because the terminal lets it actually DO things — read your files, create documents, build tools, run analyses. A chatbot can only talk. Codex can talk AND work.
+Unlike a chatbot that can only talk, Codex can talk AND work — it reads your files, creates documents, builds tools, and runs analyses. That is why it is so powerful for business.
 
 And here is the best part..."
 
@@ -192,12 +192,12 @@ Ready to get started for real? Say: **'Let us go'**"
 
 **What you do NOT need:**
 - Any coding experience (seriously, none)
-- Any terminal knowledge (you just talk to me)
+- Any technical knowledge (you just talk to me in plain English)
 - Any special software beyond what you already have open
 
 **How this works:**
 - Each lesson is interactive — I teach, you practice
-- Everything happens right here in the terminal
+- Everything happens right here in this conversation
 - The course files and data are already set up for you
 - If you get stuck or confused, just ask. I am literally right here.
 
