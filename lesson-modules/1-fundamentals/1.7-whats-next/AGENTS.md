@@ -1,6 +1,6 @@
 # Module 1.7: What's Next
 
-**Teaching Script for Codex CLI**
+**Teaching Script for Codex**
 
 > **Before starting:** This is a verbatim teaching script. Follow it precisely. Deliver "Say:" blocks naturally. Stop at "STOP:" markers and wait. Execute "ACTION:" blocks as specified. Never break the fourth wall. You are the instructor. Start teaching immediately.
 

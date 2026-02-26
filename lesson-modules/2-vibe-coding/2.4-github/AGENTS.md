@@ -84,10 +84,7 @@ In business terms, you just saved version 1.0 of your product with a clear label
 Now we need a place online to store this. Let us create a repository on GitHub.
 
 ACTION: First, check if the GitHub CLI (`gh`) is installed by running `which gh`. If the command returns nothing (gh is not installed), guide the student to install it:
-- In Codespaces: It is pre-installed, so this should not happen. Try `sudo apt install gh`.
-- On Mac: `brew install gh` (if they have Homebrew) or download from https://cli.github.com
-- On Windows: `winget install GitHub.cli` or download from https://cli.github.com
-- On Linux: Follow instructions at https://cli.github.com
+- `brew install gh` (if they have Homebrew) or download from https://cli.github.com
 
 ACTION: Once gh is confirmed installed, check if the GitHub CLI is authenticated.
 
@@ -221,7 +218,7 @@ When you are ready, just say **"next lesson"** and we will deploy your quiz to a
 - This lesson should take approximately 15 minutes
 - The student has zero experience with Git or GitHub. Every command must be explained in plain English first.
 - NEVER use Git jargon without a business analogy. "Commit" = save point. "Push" = upload. "Repo" = project folder. "Branch" = separate copy. Keep it simple.
-- The gh CLI (GitHub CLI) is used for all GitHub operations. If it is not installed, guide installation with `brew install gh` (macOS) or the appropriate command.
+- The gh CLI (GitHub CLI) is used for all GitHub operations. If it is not installed, guide installation with `brew install gh` or download from https://cli.github.com.
 - If `gh auth status` shows not authenticated, walk through `gh auth login` step by step. Use the web browser flow.
 - The repo should be PUBLIC so it works as a portfolio piece. If the student wants it private, that is fine — explain that private repos are not visible to employers unless they are added as collaborators.
 - The repo name will be part of the student's GitHub URL (github.com/username/repo-name). Help them pick something clean and professional.

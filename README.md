@@ -3,37 +3,22 @@
 **If you can pitch it, you can build it.**
 
 [![Works on FREE ChatGPT plan](https://img.shields.io/badge/Works%20on-FREE%20ChatGPT%20plan-00A67E?style=for-the-badge&logo=openai&logoColor=white)](https://chatgpt.com)
-[![Open in GitHub Codespaces](https://img.shields.io/badge/Open%20in-GitHub%20Codespaces-24292e?style=for-the-badge&logo=github&logoColor=white)](https://codespaces.new/vishalsachdev/codex-for-business-students?quickstart=1)
 
-A hands-on course that teaches business students, PMs, and aspiring founders how to use OpenAI's Codex CLI to turn ideas into working prototypes — without writing a single line of code.
+A hands-on course that teaches business students, PMs, and aspiring founders how to use OpenAI's Codex to turn ideas into working prototypes — without writing a single line of code.
 
 ---
 
 ## Quick Start
 
-### Option A: GitHub Codespaces (recommended — nothing to install)
+1. **Download the Codex app** for Mac from [chatgpt.com/codex](https://chatgpt.com/codex)
+2. **Get the course files** — clone this repo or download the ZIP from GitHub:
+   ```bash
+   git clone https://github.com/vishalsachdev/codex-for-business-students.git
+   ```
+3. **Open the course folder** in the Codex app
+4. **Say "let's start"**
 
-1. Click the **"Open in GitHub Codespaces"** badge above (or the green "Code" button → Codespaces tab)
-2. Wait ~60 seconds for the environment to spin up
-3. Run `codex login` to sign in with your free ChatGPT account
-4. Run `codex` and say **"let's start"**
-
-Everything is pre-configured — Codex CLI, full-auto mode (no permission prompts), and your workspace.
-
-### Option B: Run locally
-
-```bash
-# 1. Install Codex CLI
-npm install -g @openai/codex
-
-# 2. Clone this course
-git clone https://github.com/vishalsachdev/codex-for-business-students.git
-cd codex-for-business-students
-
-# 3. Start the first lesson
-codex
-# Then just say: "let's start"
-```
+> **Windows and Linux:** The Codex desktop app currently supports Mac only. Windows and Linux support is coming soon.
 
 ---
 
@@ -53,7 +38,7 @@ You play a **strategy consultant** for NovaBrew Coffee Co., a real-feeling start
 
 | # | Module | Time | What You'll Do |
 |---|--------|------|----------------|
-| **0** | **Getting Started** | 10 min | Install Codex, meet NovaBrew, run your first prompt |
+| **0** | **Getting Started** | 10 min | Meet NovaBrew, run your first prompt |
 | **1.1** | Your First Business Prompt | 20 min | Process inherited PM notes, learn how Codex reads/writes files |
 | **1.2** | File Exploration & Context | 25 min | Parse meeting notes, earnings transcripts, survey data |
 | **1.3** | Working with Business Files | 30 min | Create financial models, customer analyses, strategy docs |
@@ -73,9 +58,9 @@ You play a **strategy consultant** for NovaBrew Coffee Co., a real-feeling start
 
 ## Prerequisites
 
-- A computer (Mac, Windows, or Linux)
-- [Node.js](https://nodejs.org/) installed (v18 or later)
-- A free [OpenAI account](https://platform.openai.com/) (or ChatGPT Plus for faster responses)
+- A Mac computer
+- The [Codex desktop app](https://chatgpt.com/codex) (free download)
+- A free [ChatGPT account](https://chatgpt.com/) (or ChatGPT Plus for faster responses)
 - A free [GitHub account](https://github.com/) (for deploying your project)
 - **Zero coding experience required** — just business thinking
 
@@ -124,7 +109,7 @@ Each template includes instructions for how to use it with Codex.
 
 ## Credits
 
-Inspired by [Claude Code for Everyone](https://www.yourfirstcursor.com/) by Carl Vellotti — the original (and excellent) course that teaches AI-assisted development inside the tool itself. This version adapts the concept for business students using OpenAI's Codex CLI.
+Inspired by [Claude Code for Everyone](https://www.yourfirstcursor.com/) by Carl Vellotti — the original (and excellent) course that teaches AI-assisted development inside the tool itself. This version adapts the concept for business students using OpenAI's Codex.
 
 ---
 

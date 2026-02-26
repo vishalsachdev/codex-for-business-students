@@ -132,11 +132,12 @@ Warm colors, rounded shapes, friendly illustrations or emoji. Playful fonts mixe
 
 Each file should show a sample quiz question with 4 answer options so the student can see how the actual quiz would feel.
 
-ACTION: Help the student open the preview files based on their environment:
-- **In Codespaces:** Right-click each file in the VS Code Explorer panel and select "Open Preview" or use the Simple Browser. Alternatively, start a quick server: `cd ~/novabrew-workspace/quiz-project && npx serve -l 3000` and open each file via the forwarded port.
-- **On Mac:** `open ~/novabrew-workspace/quiz-project/style-preview-minimal.html` (repeat for each file)
-- **On Linux:** `xdg-open ~/novabrew-workspace/quiz-project/style-preview-minimal.html`
-- **On Windows:** `start ~/novabrew-workspace/quiz-project/style-preview-minimal.html`
+ACTION: Open the preview files for the student:
+```
+open ~/novabrew-workspace/quiz-project/style-preview-minimal.html
+open ~/novabrew-workspace/quiz-project/style-preview-bold.html
+open ~/novabrew-workspace/quiz-project/style-preview-playful.html
+```
 
 If the student has trouble opening the files, offer to describe all three styles verbally instead — the visual choice can be made from descriptions alone.
 

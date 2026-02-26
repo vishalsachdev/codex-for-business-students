@@ -26,9 +26,7 @@ body:
     attributes:
       label: How did you run the course?
       options:
-        - GitHub Codespaces
         - Codex Desktop App (Mac)
-        - Terminal / CLI
     validations:
       required: true
 

@@ -1,6 +1,6 @@
 # Module 1.2: File Exploration & Workspace
 
-**Teaching Script for Codex CLI**
+**Teaching Script for Codex**
 
 > **Before starting:** This is a verbatim teaching script. Follow it precisely. Deliver "Say:" blocks naturally. Stop at "STOP:" markers and wait. Execute "ACTION:" blocks as specified. Never break the fourth wall. You are the instructor. Start teaching immediately.
 
@@ -27,7 +27,7 @@ By the end of this module, students should:
 3. Have explored the inherited-chaos directory structure
 4. Have read the key NovaBrew context documents
 5. Have discovered the "coffee personality" seed idea in the PM notes
-6. Understand the dual-pane workflow concept (terminal + file explorer)
+6. Understand the dual-pane workflow concept (Codex app + file explorer)
 7. Feel comfortable navigating a project through conversation
 
 ---
@@ -175,18 +175,17 @@ We are going to dig into all of these in the next lesson. But first, let me show
 
 **The dual-pane workflow:** Keep two things open side by side:
 
-1. **This terminal** (where you talk to Codex) on one side
-2. **A file explorer or text editor** (like VS Code, Cursor, Finder, or even just a second terminal window) on the other side
+1. **This conversation in Codex** on one side
+2. **A file explorer or text editor** (like VS Code, Cursor, or Finder) on the other side
 
-Why? Because when Codex creates files or analyzes documents, you will want to see the results in real time. Having a file explorer open next to this terminal means you can watch files appear and read them in a nice, formatted view.
+Why? Because when Codex creates files or analyzes documents, you will want to see the results in real time. Having a file explorer open next to Codex means you can watch files appear and read them in a nice, formatted view.
 
 Here is how to set it up:
 
-- **Mac:** Open Finder and navigate to the course folder. Put it side-by-side with this terminal (drag the windows to split the screen).
-- **VS Code or Cursor:** Open the course folder in the editor. The sidebar shows all your files. Put it next to this terminal.
-- **Simple option:** Just keep a second terminal window open and use it to view files when you want to.
+- **Mac:** Open Finder and navigate to the course folder. Put it side-by-side with Codex (drag the windows to split the screen).
+- **VS Code or Cursor:** Open the course folder in the editor. The sidebar shows all your files. Put it next to the Codex app.
 
-You do not HAVE to do this. Codex can read files and show you the contents right here. But the dual-pane setup makes it faster because you can browse files visually while talking to Codex.
+You do not HAVE to do this. Codex can read files and show you the contents right here in this conversation. But the dual-pane setup makes it faster because you can browse files visually while talking to Codex.
 
 If you have a second window open, great. If not, no worries — we will work just fine right here."
 
@@ -253,7 +252,7 @@ When you are ready, start the next lesson. The data room is open and you have go
 **Dual-pane workflow:**
 - Present it as helpful but optional
 - Do not spend too long on technical setup instructions
-- If the student is confused about setting it up, reassure them: "We can work just fine right here in the terminal"
+- If the student is confused about setting it up, reassure them: "We can work just fine right here in this conversation"
 
 **Pacing:**
 - This module should take about 15 minutes

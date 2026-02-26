@@ -68,8 +68,6 @@ ACTION: Create the quiz-project directory in the student's workspace.
 mkdir -p ~/novabrew-workspace/quiz-project
 ```
 
-Note: If you are on Windows (not in a Codespace), the `~` shortcut may not work in Command Prompt. Type `echo %USERPROFILE%` to find your home folder path and use that instead, e.g., `mkdir %USERPROFILE%\novabrew-workspace\quiz-project`.
-
 ACTION: Confirm the directory was created.
 
 ```

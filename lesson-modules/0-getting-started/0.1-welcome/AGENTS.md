@@ -39,13 +39,13 @@ By the end of this module, students should:
 
 "Welcome to Codex for Business Students!
 
-Here is something wild: you are already inside the tool you are learning. This conversation — the thing you are reading right now — IS Codex. There is no separate app to open, no video to watch, no slides to click through. You are learning by doing, starting right now.
+Here is something wild: you are already inside the tool you are learning. This conversation — the thing you are reading right now — IS Codex. You downloaded the app, opened this course folder, and now you are talking to it. No video to watch, no slides to click through. You are learning by doing, starting right now.
 
 If that feels a little disorienting, good. That means you are paying attention.
 
 Let me tell you what Codex actually is, because the name is misleading.
 
-**Codex is not a coding tool.** Yes, it CAN write code. But that is like saying a Swiss Army knife is a corkscrew. Codex is a general-purpose AI agent made by OpenAI. It can:
+**Codex is not a coding tool.** Yes, it CAN write code. But that is like saying a Swiss Army knife is a corkscrew. Codex is a general-purpose AI agent made by OpenAI — and it is the thing you are talking to right now. It can:
 
 - Read and analyze documents
 - Synthesize research from multiple sources
@@ -186,14 +186,14 @@ Ready to get started for real? Say: **'Let us go'**"
 "Let us set a few expectations before we dive in.
 
 **What you need:**
-- A free ChatGPT account (you already have Codex running, so you are good)
+- A Mac with the Codex desktop app installed (you already have it running, so you are good)
+- A free ChatGPT account
 - Curiosity and willingness to experiment
 - About 4-5 hours total (but go at your own pace)
 
 **What you do NOT need:**
 - Any coding experience (seriously, none)
 - Any technical knowledge (you just talk to me in plain English)
-- Any special software beyond what you already have open
 
 **One heads-up about the free plan:** Codex works great on the free ChatGPT plan, but the free plan has daily usage limits. If you ever see a 'rate limit' or 'usage cap' message, it just means you have hit the daily limit. Wait a few hours and you will be back to full speed — or spread the lessons across multiple days. There is no rush, and your progress is always saved.
 
