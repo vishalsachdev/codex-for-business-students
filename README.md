@@ -3,12 +3,24 @@
 **If you can pitch it, you can build it.**
 
 [![Works on FREE ChatGPT plan](https://img.shields.io/badge/Works%20on-FREE%20ChatGPT%20plan-00A67E?style=for-the-badge&logo=openai&logoColor=white)](https://chatgpt.com)
+[![Open in GitHub Codespaces](https://img.shields.io/badge/Open%20in-GitHub%20Codespaces-24292e?style=for-the-badge&logo=github&logoColor=white)](https://codespaces.new/YOUR_USERNAME/codex-for-business-students?quickstart=1)
 
 A hands-on course that teaches business students, PMs, and aspiring founders how to use OpenAI's Codex CLI to turn ideas into working prototypes — without writing a single line of code.
 
 ---
 
 ## Quick Start
+
+### Option A: GitHub Codespaces (recommended — nothing to install)
+
+1. Click the **"Open in GitHub Codespaces"** badge above (or the green "Code" button → Codespaces tab)
+2. Wait ~60 seconds for the environment to spin up
+3. Run `codex login` to sign in with your free ChatGPT account
+4. Run `codex` and say **"let's start"**
+
+Everything is pre-configured — Codex CLI, full-auto mode (no permission prompts), and your workspace.
+
+### Option B: Run locally
 
 ```bash
 # 1. Install Codex CLI

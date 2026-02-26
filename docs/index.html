@@ -221,21 +221,21 @@
       <div class="steps">
         <div class="step">
           <div class="step__number">1</div>
-          <h3 class="step__title">Clone the Repo</h3>
-          <p class="step__desc">One command copies all the course materials to your computer.</p>
-          <span class="step__code">git clone ...</span>
+          <h3 class="step__title">Open in Codespaces</h3>
+          <p class="step__desc">Click one button on GitHub. No install, no terminal setup. Everything is pre-configured in the cloud.</p>
+          <span class="step__code">&#x201C;Open in Codespaces&#x201D;</span>
         </div>
         <div class="step">
           <div class="step__number">2</div>
-          <h3 class="step__title">Open in Codex</h3>
-          <p class="step__desc">Type one word and you're inside the learning environment.</p>
-          <span class="step__code">codex</span>
+          <h3 class="step__title">Log In</h3>
+          <p class="step__desc">Sign in with your free ChatGPT account. That's the only setup.</p>
+          <span class="step__code">codex login</span>
         </div>
         <div class="step">
           <div class="step__number">3</div>
-          <h3 class="step__title">Follow the Lessons</h3>
-          <p class="step__desc">Codex becomes your teacher. Interactive, conversational, and hands-on.</p>
-          <span class="step__code">&#x201C;Let's start the course&#x201D;</span>
+          <h3 class="step__title">Say "Let's Start"</h3>
+          <p class="step__desc">Codex becomes your teacher. Interactive, conversational, hands-on. No permission prompts.</p>
+          <span class="step__code">codex</span>
         </div>
       </div>
       <div class="steps-punchline">
@@ -256,14 +256,31 @@
       <div class="getting-started__prereqs">
         <h3>Prerequisites</h3>
         <ul class="prereq-list">
-          <li>A ChatGPT account (free plan works!)</li>
-          <li>A computer (Mac, Windows, or Linux)</li>
-          <li>10 minutes to set up</li>
+          <li>A free GitHub account</li>
+          <li>A free ChatGPT account</li>
+          <li>That's it. Really.</li>
         </ul>
       </div>
 
+      <div style="text-align: center; margin: 2rem 0;">
+        <a href="https://codespaces.new/YOUR_USERNAME/codex-for-business-students?quickstart=1" class="btn btn--primary btn--large" style="font-size: 1.2rem; padding: 1rem 2.5rem;">Open in GitHub Codespaces &rarr;</a>
+      </div>
+
       <div class="getting-started__code">
-        <pre><span class="code-comment"># 1. Install Codex CLI</span>
+        <pre><span class="code-comment"># Once the Codespace opens:</span>
+
+<span class="code-comment"># 1. Log in with your free ChatGPT account</span>
+<span class="code-command">codex login</span>
+
+<span class="code-comment"># 2. Start the course</span>
+<span class="code-command">codex</span>
+<span class="code-comment"># Say: "let's start"</span></pre>
+      </div>
+
+      <details style="margin-top: 1.5rem;">
+        <summary style="cursor: pointer; font-weight: 600; color: var(--color-navy);">Prefer to run locally? (click to expand)</summary>
+        <div class="getting-started__code" style="margin-top: 1rem;">
+          <pre><span class="code-comment"># 1. Install Codex CLI</span>
 <span class="code-command">npm install -g @openai/codex</span>
 
 <span class="code-comment"># 2. Clone the course</span>
@@ -272,7 +289,8 @@
 
 <span class="code-comment"># 3. Start learning</span>
 <span class="code-command">codex</span></pre>
-      </div>
+        </div>
+      </details>
 
       <div class="getting-started__prompt">
         Just tell Codex: <code>"Let's start the course"</code> &mdash; and you're off.
