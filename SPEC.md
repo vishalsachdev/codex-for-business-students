@@ -36,7 +36,7 @@ We now adapt it **specifically for business students** — people who need to mo
 **Phase 0: Setup (1 day – do this today)**  
 1. Fork the original everyone-course repo (or the PM-course repo — better starting point).  
 2. Rename → `codex-for-business-course`  
-3. Install Codex CLI + macOS app (or use ChatGPT sidebar).  
+3. Install the Codex desktop app for Mac.  
 4. Tell Codex:  
    `"You are now my co-creator for Codex for Business. Analyze the Claude Code PM course structure and output a full mapping + business-student version of every module with new project examples."`  
    (Codex will generate 90% of the content for you.)

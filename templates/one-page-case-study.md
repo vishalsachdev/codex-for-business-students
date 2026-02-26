@@ -67,7 +67,7 @@
 
 | Tool | How It Was Used |
 |------|----------------|
-| Codex CLI | |
+| Codex | |
 | | |
 | | |
 | | |

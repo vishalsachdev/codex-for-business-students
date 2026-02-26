@@ -21,14 +21,14 @@ body:
     validations:
       required: true
 
-  - type: dropdown
+  - type: input
     id: setup
     attributes:
       label: How did you run the course?
-      options:
-        - Codex Desktop App (Mac)
+      description: e.g., Codex Desktop App on Mac (Intel/Apple Silicon), OS version
+      placeholder: "Codex Desktop App on Mac (Apple Silicon, macOS 15)"
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: what-worked
