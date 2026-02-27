@@ -125,7 +125,7 @@
           "title": "Deploy & Go Live",
           "slug": "deploy",
           "path": "lesson-modules/2-vibe-coding/2.5-deploy/AGENTS.md",
-          "description": "Ship to Vercel with one command — get a live URL you can share with professors, investors, or LinkedIn",
+          "description": "Ship to GitHub Pages — get a live URL you can share with professors, investors, or LinkedIn",
           "estimatedMinutes": 15
         }
       ]

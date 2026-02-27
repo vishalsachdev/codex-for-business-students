@@ -166,7 +166,7 @@ A personality-based coffee matching quiz built for NovaBrew Coffee Co. Take the 
 ## Built With
 - Next.js
 - Tailwind CSS
-- Deployed on [Vercel/GitHub Pages] (coming in next lesson)
+- Deployed on GitHub Pages (coming in next lesson)
 
 ## About
 Built as a customer personalization prototype to improve subscriber retention through taste-profile matching.

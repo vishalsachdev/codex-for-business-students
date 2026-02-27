@@ -29,7 +29,7 @@ We now adapt it **specifically for business students** — people who need to mo
 | Parallel agents             | Cloud tasks + custom Skills       | Run market research, competitor analysis, and financial sensitivity models simultaneously |
 | CLAUDE.md / project memory  | AGENTS.md + Skills                | Create reusable “Business Analyst”, “VC Pitch Coach”, “Ops Automator” agents |
 | Vibe coding                 | Describe the business outcome     | “Build me a SaaS dashboard that looks like Linear but for my consulting firm” |
-| Deploy to Vercel            | One-command deploy                | Live URL you can send to your professor/investor/LinkedIn |
+| Deploy to GitHub Pages      | Push-to-deploy                    | Live URL you can send to your professor/investor/LinkedIn |
 
 ### Step-by-Step Conversion Plan (1–2 weeks with Codex doing 80% of the work)
 
@@ -43,7 +43,7 @@ We now adapt it **specifically for business students** — people who need to mo
 
 **Phase 1: Branding & Website (1–2 days)**  
 - Mirror the beautiful Nextra site exactly (same Next.js setup).  
-- New domain: codexforbusiness.com or codexforbs.com (point via Vercel).  
+- New domain: codexforbusiness.com or codexforbs.com (point via GitHub Pages).
 - Update every page:  
   - Hero: “Business students & PMs — stop waiting for engineers. Build your own prototypes today.”  
   - Testimonials section: “Used it to ship my MBA capstone MVP in 4 hours — got an A+ and investor meetings.”  
@@ -75,7 +75,7 @@ Create `course-materials/` with business-flavored starter projects and lesson sc
   - Lesson 2.2: Minimum Lovable Product (MLP) for your startup idea  
   - Lesson 2.3: Investor-ready live demo + one-click deploy  
 - Version control & GitHub: Codex handles PRs and READMEs so they look professional.  
-- Go live: Deploy to Vercel + optional Stripe test checkout for SaaS feel.
+- Go live: Deploy to GitHub Pages + optional Stripe test checkout for SaaS feel.
 
 **Bonus Business-Only Module (optional, 30–60 min)**  
 - “Capstone Project”: Turn your actual class idea / side hustle / internship problem into a shipped tool.  
@@ -89,7 +89,7 @@ Create `course-materials/` with business-flavored starter projects and lesson sc
 
 **Phase 4: Polish & Launch (1–2 days)**  
 - One-click zip download of course-materials for students.  
-- Deploy to Vercel.  
+- Deploy to GitHub Pages.
 - Optional: Paid tier with private community / office hours (Carl’s model works great).  
 - Launch post: “Built this for my fellow business students — no more ‘I don’t code’ excuses.”
 

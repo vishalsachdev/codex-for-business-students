@@ -50,7 +50,7 @@ You play a **strategy consultant** for NovaBrew Coffee Co., a real-feeling start
 | **2.2** | The Planning Interview | 25 min | Codex runs a Socratic planning session like a senior PM |
 | **2.3** | Build & Iterate | 30 min | Describe features in plain English, watch them appear |
 | **2.4** | GitHub & Version Control | 15 min | Push to GitHub with a professional README |
-| **2.5** | Deploy & Go Live | 15 min | Ship to Vercel — get a live URL for your portfolio |
+| **2.5** | Deploy & Go Live | 15 min | Ship to GitHub Pages — get a live URL for your portfolio |
 | **3.1** | Capstone Project | 45 min | Build your own project, write a case study, export portfolio assets |
 | | **Total** | **~5.5 hrs** | |
 

@@ -44,7 +44,7 @@ body:
     attributes:
       label: What didn't work or was confusing?
       description: Be honest — we'd rather fix problems than hear nice things.
-      placeholder: "e.g., I got stuck on deployment because Vercel asked for a credit card."
+      placeholder: "e.g., I got stuck on deployment because GitHub Pages showed a 404."
     validations:
       required: false
 

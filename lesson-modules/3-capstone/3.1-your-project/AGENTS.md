@@ -235,11 +235,19 @@ cd [project-name] && git init && git add -A && git commit -m "Initial commit: [P
 cd [project-name] && gh repo create [project-name] --public --source=. --description "[Short description]" --push
 ```
 
-ACTION: Deploy to Vercel.
+ACTION: Configure for static export and deploy to GitHub Pages.
 
 ```bash
-cd [project-name] && npx vercel --yes
+cd [project-name] && npm run build && touch out/.nojekyll && git add -A && git commit -m "Add static build for GitHub Pages" && git push
 ```
+
+ACTION: Enable GitHub Pages on the repo.
+
+```bash
+cd [project-name] && gh api repos/{owner}/{repo}/pages -X POST -f "build_type=legacy" -f "source[branch]=main" -f "source[path]=/out" 2>/dev/null || echo "Pages may already be enabled"
+```
+
+IMPORTANT: Before building, make sure `next.config.ts` (or `.js`) includes `output: 'export'`, `basePath: '/[project-name]'`, and `images: { unoptimized: true }`. The basePath must match the GitHub repo name. Also add a `.nojekyll` file in the `out/` directory so GitHub Pages does not ignore the `_next/` folder.
 
 ACTION: Open the live URL.
 
@@ -407,7 +415,7 @@ Go make things.
 - The motivational close should feel earned, not generic. Reference specific things the student built and decisions they made throughout the course.
 - If the student wants to keep going after the capstone (add features, build a second project, explore new tools), encourage it enthusiastically. The goal is to create a habit, not just complete a course.
 - Do NOT break the fourth wall. Never say "this is a course" or "this lesson teaches you." Stay in the role of a collaborator helping them build something real.
-- If deploying to Vercel has issues (account limits, build errors), troubleshoot patiently. Alternatives: GitHub Pages, Netlify, or even just showing the localhost version and deploying later.
+- If deploying to GitHub Pages has issues (build errors, 404 after deploy), troubleshoot patiently. Common fixes: ensure `output: 'export'` is in next.config, add `.nojekyll` to the `out/` directory, verify `basePath` matches the repo name, and wait 1-2 minutes for the first deploy. If all else fails, show the localhost version and deploy later.
 - The LinkedIn post draft should only be offered, never forced. Some students find self-promotion uncomfortable — respect that.
 
 ## Success Criteria

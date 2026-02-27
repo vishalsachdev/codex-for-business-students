@@ -24,14 +24,14 @@ In the simplest terms, deployment means putting your app on a server so anyone w
 
 Think of it like this: right now, your quiz is like a presentation saved on your laptop. Deployment is like uploading it to a conference room screen where the whole audience can see it.
 
-We are going to use a service called **Vercel**. Here is why:
+We are going to use **GitHub Pages**. Here is why:
 
-- It is **free** for personal projects (no credit card needed)
-- It was **built by the same team** that created Next.js (so it works perfectly with your app)
+- It is **free** (no credit card needed)
+- You **already have a GitHub account** from the last lesson — no new signup required
 - It gives you a **real URL** instantly
 - Every time you push updates to GitHub, it **automatically redeploys** (your live site stays current)
 
-Companies like Washington Post, Under Armour, and Hulu use Vercel. You are in good company.
+Your quiz will live at a URL like `https://username.github.io/novabrew-quiz/`. That is a real, shareable, professional link.
 
 STOP: Ready to go live?
 
@@ -39,57 +39,96 @@ USER: (any affirmative response)
 
 ---
 
-## Option A: Deploy with Vercel (Recommended)
+## Step 1: Configure for Static Export
 
-This is the fastest path to a live URL. We will use the Vercel CLI.
+GitHub Pages hosts static files — HTML, CSS, and JavaScript. We need to tell Next.js to produce those static files when it builds.
 
-### Step 1: Make Sure You Have a Vercel Account
-
-STOP: Before we deploy, let us make sure you have a Vercel account set up. Do you already have a Vercel account? (Just say yes or no)
-
-USER: (student responds)
-
-ACTION: If the student says no (or is not sure), guide them:
-- Go to vercel.com and click "Sign Up"
-- Sign up with your GitHub account (the same one you used in Lesson 2.4) — this connects everything automatically and takes about 60 seconds
-- Once you are signed in on vercel.com, come back here and say "ready"
-
-ACTION: If the student says yes, continue.
-
-### Step 2: Install the Vercel CLI
-
-ACTION: Install the Vercel CLI.
+ACTION: Update `next.config.ts` (or `next.config.js`) in the quiz-project directory to enable static export and set the base path:
 
 ```bash
-npm install -g vercel
+cd ~/novabrew-workspace/quiz-project
 ```
 
-### Step 3: Deploy
+ACTION: Read the current next.config file to understand its structure, then update it to include:
 
-ACTION: Run the deploy command from the quiz-project directory.
+```javascript
+const nextConfig = {
+  output: 'export',
+  basePath: '/novabrew-quiz',
+  images: {
+    unoptimized: true,
+  },
+};
+```
+
+IMPORTANT: The `basePath` must match the GitHub repository name from Lesson 2.4. If the student named their repo something other than `novabrew-quiz`, use that name instead.
+
+The `images: { unoptimized: true }` setting is needed because GitHub Pages does not support Next.js image optimization (that requires a server). Static export works with unoptimized images just fine.
+
+In plain English: we are telling Next.js to produce a folder of plain HTML files instead of running a server. That folder is what GitHub Pages will host.
+
+---
+
+## Step 2: Build the Static Site
+
+ACTION: Build the project to generate the static files.
 
 ```bash
-cd ~/novabrew-workspace/quiz-project && npx vercel --yes
+cd ~/novabrew-workspace/quiz-project && npm run build
 ```
 
-This will prompt you to log in to Vercel if you have not already. Follow the browser-based login — it takes about 30 seconds.
+This creates an `out/` folder containing your entire quiz as plain HTML files. This is what will go live on the internet.
 
-ACTION: Wait for the deployment to complete. Vercel will output a URL.
+ACTION: If the build fails, troubleshoot calmly:
+- Read the error message carefully
+- Common issues: missing dependencies (`npm install` first), image optimization errors (make sure `images: { unoptimized: true }` is set), or dynamic routes that need `generateStaticParams`
+- Fix the issue and run `npm run build` again
 
-The deployment will show something like:
+---
 
+## Step 3: Deploy to GitHub Pages
+
+ACTION: Add a `.nojekyll` file to the output directory (this tells GitHub Pages not to process the files with Jekyll, which can break Next.js output):
+
+```bash
+touch ~/novabrew-workspace/quiz-project/out/.nojekyll
 ```
-Production: https://novabrew-quiz-abc123.vercel.app
+
+ACTION: Commit the build output and push to GitHub.
+
+```bash
+cd ~/novabrew-workspace/quiz-project && git add -A && git commit -m "Add static build for GitHub Pages" && git push
 ```
 
-That URL is LIVE. Right now. On the internet.
+ACTION: Enable GitHub Pages on the repository using the `gh` CLI. This tells GitHub to serve the site from the `out/` directory on the `main` branch:
 
-### Step 4: The Big Moment
+```bash
+cd ~/novabrew-workspace/quiz-project && gh api repos/{owner}/{repo}/pages -X POST -f "build_type=legacy" -f "source[branch]=main" -f "source[path]=/out" 2>/dev/null || echo "Pages may already be enabled — checking status..." && gh api repos/{owner}/{repo}/pages 2>/dev/null | head -5
+```
+
+ACTION: If the API call fails or GitHub Pages needs to be configured differently, guide the student through the GitHub web interface:
+- Go to the repository on GitHub (use `gh repo view --web`)
+- Click **Settings** → **Pages** (in the left sidebar)
+- Under **Source**, select **Deploy from a branch**
+- Select the **main** branch and the **/out** folder
+- Click **Save**
+
+ACTION: Wait about 60 seconds for GitHub Pages to build and deploy, then check the deployment status:
+
+```bash
+cd ~/novabrew-workspace/quiz-project && gh api repos/{owner}/{repo}/pages --jq '.html_url'
+```
+
+The URL will be something like: `https://username.github.io/novabrew-quiz/`
+
+---
+
+## Step 4: The Big Moment
 
 ACTION: Open the deployed URL in the browser.
 
 ```bash
-open [THE_VERCEL_URL]
+open $(cd ~/novabrew-workspace/quiz-project && gh api repos/{owner}/{repo}/pages --jq '.html_url')
 ```
 
 STOP: Open that link. Your quiz is live on the internet. Take it on your browser. Then pull out your phone and open the same URL there. Send it to a friend if you want. This is a real product with a real URL.
@@ -100,87 +139,33 @@ USER: (student reacts — this should be an emotional high point)
 
 ACTION: Celebrate. This is a genuine accomplishment. Match their energy and then some.
 
-### Step 5: Custom Domain (Optional)
-
-By default, Vercel gives you a URL like `novabrew-quiz-abc123.vercel.app`. That works fine, but if you want something cleaner:
-
-STOP: Happy with the Vercel URL, or do you want to explore a custom domain? A custom domain costs about $10-15/year and would give you something like `novabrew-quiz.com`. Totally optional — the Vercel URL is perfectly professional.
-
-USER: (student decides — most will skip this)
-
-ACTION: If they want a custom domain, guide them through Vercel's domain settings. If they skip it, move on.
-
----
-
-## Option B: Deploy with GitHub Pages (Alternative)
-
-If the student prefers not to use Vercel or has issues, GitHub Pages is an alternative.
-
-ACTION: Only go this route if the student specifically asks or if Vercel is not working.
-
-### Step 1: Configure for Static Export
-
-ACTION: Update `next.config.ts` (or `next.config.js`) to enable static export:
-
-```javascript
-const nextConfig = {
-  output: 'export',
-};
-```
-
-### Step 2: Build and Deploy
-
-ACTION: Build the static site and deploy to GitHub Pages.
-
-```bash
-cd ~/novabrew-workspace/quiz-project && npm run build
-```
-
-ACTION: Enable GitHub Pages on the repo.
-
-```bash
-cd ~/novabrew-workspace/quiz-project && gh api repos/{owner}/{repo}/pages -X POST -f source.branch=main -f source.path=/out || echo "Pages may already be enabled"
-```
-
-Or guide the student to enable it in the GitHub repo settings under Pages, selecting the `main` branch and `/out` directory.
-
-ACTION: Push the built files and wait for GitHub Pages to deploy (usually 1-2 minutes).
-
-The URL will be something like: `https://username.github.io/novabrew-quiz/`
-
----
-
-## Connecting GitHub to Vercel (Automatic Deploys)
-
-Here is something powerful. Remember how we pushed your project to GitHub in the last lesson? Vercel can watch your GitHub repo and automatically redeploy whenever you push changes.
-
-This means: make a change locally, commit, push to GitHub, and your live site updates within 60 seconds. No manual deployment needed.
-
-ACTION: If the student deployed via Vercel CLI, connect the Vercel project to their GitHub repo.
-
-```bash
-cd ~/novabrew-workspace/quiz-project && npx vercel --prod --yes
-```
-
-Or guide them to the Vercel dashboard to connect the GitHub repo for automatic deployments.
-
-In business terms, this is called **continuous deployment** or CD. It means your product is always up to date. Every improvement you make goes live automatically. This is how professional software teams work — and now you do too.
+ACTION: If the page shows a 404, wait another minute and refresh — GitHub Pages can take up to 2 minutes on the first deploy. If it still does not work:
+- Verify the `out/` directory was pushed: `ls ~/novabrew-workspace/quiz-project/out/`
+- Verify Pages is enabled: `gh api repos/{owner}/{repo}/pages`
+- Check that the `basePath` in next.config matches the repo name exactly
+- Try opening the URL directly: `https://USERNAME.github.io/REPO-NAME/`
 
 ---
 
 ## Prove It Works: A Quick Update
 
+Here is something powerful. GitHub Pages automatically redeploys whenever you push changes to your main branch.
+
+This means: make a change locally, build, commit, push, and your live site updates within a couple of minutes. No manual deployment needed.
+
+In business terms, this is called **continuous deployment** or CD. It means your product is always up to date. Every improvement you make goes live automatically. This is how professional software teams work — and now you do too.
+
 Let us prove that the pipeline works end to end.
 
 ACTION: Make a small, visible change to the quiz. For example, update the welcome screen title or add a subtitle.
 
-ACTION: Commit and push.
+ACTION: Rebuild, commit, and push.
 
 ```bash
-cd ~/novabrew-workspace/quiz-project && git add -A && git commit -m "Update welcome screen" && git push
+cd ~/novabrew-workspace/quiz-project && npm run build && touch out/.nojekyll && git add -A && git commit -m "Update welcome screen" && git push
 ```
 
-STOP: Wait about 60 seconds, then refresh your live URL. See the change? You made an update and it went live automatically. No server configuration, no IT department, no deploy process. Change, push, live.
+STOP: Wait about 60-90 seconds, then refresh your live URL. See the change? You made an update and it went live automatically. No server configuration, no IT department, no deploy process. Change, build, push, live.
 
 USER: (student confirms they see the update)
 
@@ -243,27 +228,30 @@ When you are ready for Module 3, just say **"next lesson"** or **"start Module 3
 
 - This lesson should take approximately 15 minutes
 - This is the EMOTIONAL PEAK of Module 2. The moment they get a live URL should feel like a launch. Celebrate it.
-- Vercel is the primary deployment path. Only fall back to GitHub Pages if Vercel has issues.
-- The `npx vercel --yes` command should handle most of the setup. If it prompts for login, guide the student through the browser-based flow.
-- If the student does not have a Vercel account, signing up with their GitHub account is the fastest path (and connects automatic deploys).
+- GitHub Pages is the deployment target. The student already has a GitHub account from Lesson 2.4, so there is zero additional signup friction.
+- The `basePath` in next.config MUST match the GitHub repo name. If the student named their repo something other than `novabrew-quiz`, adjust accordingly.
+- The `output: 'export'` setting is required for static export. The `images: { unoptimized: true }` setting is required because GitHub Pages cannot run the Next.js image optimizer.
+- The `.nojekyll` file in the `out/` directory is important — without it, GitHub Pages may try to process files with Jekyll, which breaks Next.js output (especially files/folders starting with underscores like `_next/`).
 - If deployment fails, troubleshoot calmly. Common issues:
   - Build errors: run `npm run build` locally first to check
+  - 404 after deploy: wait 1-2 minutes, GitHub Pages takes time on first deploy
+  - Missing `.nojekyll`: underscored directories like `_next/` will be ignored
+  - Wrong basePath: must exactly match the repository name
   - Node version issues: verify with `node --version`
   - Missing dependencies: run `npm install` first
-- The URL should work immediately after deployment. Test it before showing the student.
-- The "prove it works" section (making a change and seeing it go live) is important for cementing the concept. Do not skip it.
-- Do NOT explain infrastructure, servers, CDNs, DNS, or any backend concepts. The student does not need to know how Vercel works, just that it works.
+- The URL should work within 1-2 minutes after pushing. If it takes longer, check the Pages settings.
+- The "prove it works" section (making a change and seeing it go live) is important for cementing the concept. Do not skip it. Remember to rebuild before pushing since GitHub Pages serves static files.
+- Do NOT explain infrastructure, servers, CDNs, DNS, or any backend concepts. The student does not need to know how GitHub Pages works, just that it works.
 - The career applications section should feel genuine, not salesy. These are real things the student can do with this skill.
-- If the student wants to buy a custom domain, that is fine, but do not push it. The free Vercel URL is perfectly professional.
 - Make sure the live site works on mobile. If it does not, fix it before celebrating.
 
 ## Success Criteria
 
-- [ ] Quiz deployed to a live URL (Vercel or GitHub Pages)
+- [ ] Quiz deployed to a live URL on GitHub Pages
 - [ ] Student has visited their live URL in a browser
 - [ ] Student has tested the quiz on the live URL
-- [ ] Automatic deploys are configured (GitHub push triggers redeploy)
-- [ ] Student has seen a change go live via the push-deploy pipeline
+- [ ] Automatic deploys are configured (push triggers redeploy via GitHub Pages)
+- [ ] Student has seen a change go live via the build-push-deploy pipeline
 - [ ] Student understands what deployment is (in business terms)
 - [ ] Student has their live URL saved and ready to share
 - [ ] Student sees the career applications of this skill
