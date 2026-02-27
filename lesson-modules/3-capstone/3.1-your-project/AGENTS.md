@@ -237,8 +237,12 @@ cd [project-name] && gh repo create [project-name] --public --source=. --descrip
 
 ACTION: Configure for static export and deploy to GitHub Pages.
 
+IMPORTANT: Before building, update `next.config.ts` (or `.js`) to include `output: 'export'`, `basePath: '/[project-name]'`, and `images: { unoptimized: true }`. The basePath MUST match the GitHub repo name — verify with `gh repo view --json name --jq '.name'`.
+
+ACTION: Remove `/out/` from `.gitignore` (Next.js includes it by default), then build and push:
+
 ```bash
-cd [project-name] && npm run build && touch out/.nojekyll && git add -A && git commit -m "Add static build for GitHub Pages" && git push
+cd [project-name] && sed -i '' '/^\/out\/$/d' .gitignore && npm run build && touch out/.nojekyll && git add -A && git commit -m "Add static build for GitHub Pages" && git push
 ```
 
 ACTION: Enable GitHub Pages on the repo.
@@ -246,8 +250,6 @@ ACTION: Enable GitHub Pages on the repo.
 ```bash
 cd [project-name] && gh api repos/{owner}/{repo}/pages -X POST -f "build_type=legacy" -f "source[branch]=main" -f "source[path]=/out" 2>/dev/null || echo "Pages may already be enabled"
 ```
-
-IMPORTANT: Before building, make sure `next.config.ts` (or `.js`) includes `output: 'export'`, `basePath: '/[project-name]'`, and `images: { unoptimized: true }`. The basePath must match the GitHub repo name. Also add a `.nojekyll` file in the `out/` directory so GitHub Pages does not ignore the `_next/` folder.
 
 ACTION: Open the live URL.
 
