@@ -183,6 +183,7 @@ Why? Because when Codex creates files or analyzes documents, you will want to se
 Here is how to set it up:
 
 - **Mac:** Open Finder and navigate to the course folder. Put it side-by-side with Codex (drag the windows to split the screen).
+- **Windows:** Open File Explorer and navigate to the course folder. Use Snap Layouts (drag to the edge of the screen) to put it side-by-side with Codex.
 - **VS Code or Cursor:** Open the course folder in the editor. The sidebar shows all your files. Put it next to the Codex app.
 
 You do not HAVE to do this. Codex can read files and show you the contents right here in this conversation. But the dual-pane setup makes it faster because you can browse files visually while talking to Codex.

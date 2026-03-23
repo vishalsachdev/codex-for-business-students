@@ -186,7 +186,7 @@ Ready to get started for real? Say: **'Let us go'**"
 "Let us set a few expectations before we dive in.
 
 **What you need:**
-- A Mac with the Codex desktop app installed (you already have it running, so you are good)
+- A Mac or Windows computer with the Codex desktop app installed (you already have it running, so you are good)
 - A free ChatGPT account
 - Curiosity and willingness to experiment
 - About 4-5 hours total (but go at your own pace)

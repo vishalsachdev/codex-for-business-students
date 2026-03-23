@@ -10,7 +10,7 @@ A hands-on course that teaches business students, PMs, and aspiring founders how
 
 ## Quick Start
 
-1. **Download the Codex app** for Mac from [chatgpt.com/codex](https://chatgpt.com/codex)
+1. **Download the Codex app** for Mac or Windows from [chatgpt.com/codex](https://chatgpt.com/codex)
 2. **Get the course files** — clone this repo or download the ZIP from GitHub:
    ```bash
    git clone https://github.com/vishalsachdev/codex-for-business-students.git
@@ -18,7 +18,7 @@ A hands-on course that teaches business students, PMs, and aspiring founders how
 3. **Open the course folder** in the Codex app
 4. **Say "let's start"**
 
-> **Windows and Linux:** The Codex desktop app currently supports Mac only. Windows and Linux support is coming soon.
+> **Linux:** The Codex desktop app currently supports Mac and Windows. Linux support is coming soon.
 
 ---
 
@@ -58,7 +58,7 @@ You play a **strategy consultant** for NovaBrew Coffee Co., a real-feeling start
 
 ## Prerequisites
 
-- A Mac computer
+- A Mac or Windows computer
 - The [Codex desktop app](https://chatgpt.com/codex) (free download)
 - A free [ChatGPT account](https://chatgpt.com/) (or ChatGPT Plus for faster responses)
 - A free [GitHub account](https://github.com/) (for deploying your project)
