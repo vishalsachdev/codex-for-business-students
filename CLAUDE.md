@@ -12,14 +12,12 @@ An interactive course ("Codex for Business") delivered through AI agent scripts.
 - **`lesson-modules/`** — 14 lessons across 4 modules (0-3), each an `AGENTS.md` file. Modules: Getting Started → Fundamentals → Vibe Coding → Capstone.
 - **`business-scenario/`** — NovaBrew Coffee Co. case study data (read-only). Students discover these files during Module 1.
 - **`templates/`** — Reusable business frameworks (BMC, competitive analysis, pitch deck, case study).
-- **`docs/`** — Landing page (static HTML + CSS). Deployed via GitHub Actions to GitHub Pages AND manually to Vercel at `codex-for-business.vercel.app`.
+- **`docs/`** — Landing page (static HTML + CSS). Deployed via GitHub Actions to GitHub Pages.
 - **`course-structure.json`** — Machine-readable lesson index with paths, descriptions, and timing estimates.
 
 ## Deployment
 
-**Landing page** has two deploy targets:
-- **GitHub Pages**: Auto-deploys from `docs/` on push to main (`.github/workflows/pages.yml`)
-- **Vercel**: Manual deploy — `cd docs && vercel --prod`, then alias to `codex-for-business.vercel.app`
+**Landing page**: Auto-deploys from `docs/` on push to main via GitHub Actions (`.github/workflows/pages.yml`).
 
 **Student apps** (built during lessons 2.5 and 3.1) deploy to GitHub Pages via static export (`output: 'export'` in next.config).
 
@@ -38,13 +36,12 @@ Key rules: never break character, never use CS jargon without a business analogy
 
 **Updating lesson content**: Edit the `AGENTS.md` in the relevant `lesson-modules/X.Y-slug/` directory. Keep timing estimates in `course-structure.json` in sync.
 
-**Updating landing page**: Edit `docs/index.html` and `docs/styles.css`. No build step — just push to main (GitHub Pages auto-deploys) and run `cd docs && vercel --prod` for Vercel.
+**Updating landing page**: Edit `docs/index.html` and `docs/styles.css`. No build step — just push to main and GitHub Pages auto-deploys.
 
 **Adding a new lesson**: Create a new directory under the appropriate module, add an `AGENTS.md` following the existing pattern, and add the entry to `course-structure.json`. Update the root `AGENTS.md` lesson routing table.
 
 ## Gotchas
 
-- The `docs/.vercel/` directory is gitignored — it holds local Vercel project config. If deleted, re-link with `cd docs && vercel link --yes`.
 - Student deploy instructions use GitHub Pages with static export. The default `create-next-app` `.gitignore` excludes `/out/` — lessons explicitly remove that line before committing.
 - `basePath` in student next.config must match their GitHub repo name exactly, or the deployed site 404s.
 - The `.nojekyll` file in `out/` is critical — without it GitHub Pages ignores `_next/` directories.
