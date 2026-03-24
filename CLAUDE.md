@@ -48,7 +48,7 @@ Key rules: never break character, never use CS jargon without a business analogy
 
 ## Current Focus
 
-Replace Vercel with GitHub Pages for student deployments — completed.
+Maintenance pass complete. Next: end-to-end student walkthrough test.
 
 ## Roadmap
 
@@ -59,6 +59,10 @@ Replace Vercel with GitHub Pages for student deployments — completed.
 - [ ] Collect first round of student feedback and iterate on pain points
 
 ## Session Log
+
+### 2026-03-23
+- Completed: Maintenance pass for public visitors. Added Windows support across all files (6 files). Removed Vercel deployment (deleted both projects), consolidated to GitHub Pages only. Redesigned landing page with Canvas MCP color theme (Clash Display + DM Sans, teal accent, glass cards, grid backgrounds, entry animations).
+- Next: End-to-end test of the deploy flow with a fresh student walkthrough
 
 ### 2026-02-26
 - Completed: Replaced Vercel with GitHub Pages across 8 files, fixed 6 UX issues (gitignore, auto-deploy messaging, capstone ordering, basePath verification, README template, landing page copy), deployed landing page to Vercel
