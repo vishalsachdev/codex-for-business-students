@@ -529,39 +529,46 @@ Additional conventions for this course:
 
 ## 11. Facilitation Schedule
 
-Recommended structure for a single-day workshop (~7 hours including breaks):
+Two half-day structure (recommended, confirmed):
+
+**DAY 1: Fundamentals (~3.5 hours)**
 
 ```
-0:00  Brad's brief (live or video, 5 min)
+0:00  Brad's brief (live, 5 min) — sets stakes, names specific people
 0:05  Module 0.1: Setup + connection verification (25 min)
       → FACILITATOR GATE: all 22 confirmed working before proceeding
 0:30  Modules 1.1–1.3, self-paced (75 min)
 1:45  Facilitator check-in #1: "Show me your persona output" (5 min)
-1:50  Module 1.4–1.5, self-paced (55 min)
+1:50  Modules 1.4–1.5, self-paced (55 min)
 2:45  Consolidation debrief: whole room, 10 min
       → "What's the difference between a custom agent and a regular prompt?"
-2:55  Module 1.6, self-paced (25 min)
-3:20  BREAK (15 min)
-      → Track selection happens during break (facilitator circulates with diagnostic)
-3:35  Module 1.7: HARD STOP — Team Sync, whole room together (20 min)
+2:55  Module 1.6: Connecting to Your Team's AI, self-paced (25 min)
+3:20  Module 1.7: HARD STOP — Team Sync, whole room together (20 min)
       → Facilitator drives this on screen. Not self-paced.
-3:55  Module 2, self-paced by track (90 min)
-5:25  BREAK (10 min)
-5:35  Module 3.1: Your Deliverable (30 min)
-6:05  Module 3.2: Team Showcase, whole room (15 min)
-      → Brad present for this if possible
-6:20  Close + next steps discussion (10 min)
-6:30  END
+3:40  Day 1 close: Track selection (facilitator circulates with diagnostic)
+      → "Think overnight about what you want to build tomorrow"
+3:50  END DAY 1
 ```
 
-**Two non-negotiable facilitation moves:**
-1. The connection gate at 0:30 — nobody proceeds until everyone works
-2. The hard stop for 1.7 Team Sync — this is the payoff, not an optional step
+**DAY 2: Build + Showcase (~3 hours)**
 
-**Alternate: Two half-day structure:**
-- Day 1 (3.5 hours): Modules 0 + 1 (through Team Sync)
-- Day 2 (3 hours): Module 2 + 3 (build + showcase)
-- Advantage: team has overnight to process Module 1 concepts before building
+```
+0:00  Quick recap + track confirmation (10 min)
+0:10  Module 2, self-paced by track (90 min)
+1:40  BREAK (10 min)
+1:50  Module 3.1: Your Deliverable (30 min)
+2:20  Module 3.2: Team Showcase, whole room (20 min)
+      → Brad present for this
+2:40  Close + "what's next" discussion (20 min)
+      → What worked? What will you keep using? What do you need next?
+3:00  END DAY 2
+```
+
+**Advantage of two half-days**: Team has overnight to process Module 1 concepts, think about what they want to build, and arrive at Day 2 with intent. Day 2 energy is focused on building, not learning.
+
+**Two non-negotiable facilitation moves:**
+1. The connection gate at Day 1 0:30 — nobody proceeds until everyone works
+2. The hard stop for 1.7 Team Sync — this is the payoff, not an optional step
 
 ---
 
@@ -584,10 +591,15 @@ These are suggestions, not requirements. Staff can build anything relevant to th
 
 ---
 
-## 13. Open Questions for Admin
+## 13. Decisions & Open Questions
 
-1. **Box shared folder retention**: Does the Box folder persist after the workshop? Do builds/ and team/ outputs remain accessible? Who owns cleanup?
-2. **Netlify URLs**: Track A deploys produce public URLs. Are there any concerns about MSBA Online content (pricing, positioning) being visible on a public URL before official launch?
-3. **Post-workshop support**: Is there a 30-day check-in planned? Who helps staff who want to go deeper? Is this a one-time event or the start of an ongoing capability?
-4. **Module 4 conversation**: After the training, should there be an advanced follow-up for power users (Priyanka, Tyrone, Garrett) who want to build more sophisticated tools?
-5. **Box Drive "online-only" mode**: Does UIUC IT configure Box Drive in online-only mode by default? If so, files won't be locally cached and Codex can't read them. Need to verify and potentially request IT override for workshop machines.
+**Resolved:**
+- **Box Drive**: Confirmed — Box Drive syncs files locally. Codex reads them normally. No "online-only" concern.
+- **Post-workshop continuity**: Box folder persists. This is a test run, but may become the foundation of a new team workflow. Infrastructure stays up.
+- **Knowledge-base curation**: Lighter-touch process. Vishal curates, no formal CMO sign-off gate required. Use judgment on sensitive email threads.
+- **Workshop format**: Two half-days. Day 1: Modules 0 + 1 (setup through Team Sync). Day 2: Module 2 + 3 (build + showcase). Overnight processing time between fundamentals and building.
+- **Pilot run**: Vishal runs through the full course first (QA pass + artifact generation). Consider asking one team member (Priyanka or Garrett) for a dry run if time allows. Pilot artifacts shown to Brad as proof of concept before scheduling the team workshop.
+
+**Still open:**
+1. **Netlify URLs**: Track A deploys produce public URLs. Any concerns about MSBA Online content being visible before official launch? (May need to use draft/unlisted URLs.)
+2. **Module 4 / follow-up**: After the training, is there an advanced follow-up for power users who want to build more sophisticated tools?
