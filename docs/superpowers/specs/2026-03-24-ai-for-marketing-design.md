@@ -403,9 +403,8 @@ Pre-training provisioning (done by Vishal):
 □ Box shared folder (create via Box MCP)
   └── Full folder structure per Section 5
   └── knowledge-base/ populated with CURATED MSBA Online materials
-      └── CMO review gate: Brad signs off on what goes in
-      └── No raw email threads without Brad's approval
-      └── Strategy docs, program docs, and approved discussion excerpts
+      └── Lighter-touch: Vishal curates, uses judgment on sensitive threads
+      └── Strategy docs, program docs, and curated discussion excerpts
   └── Permissions: read-write on team/ and builds/, read-only on knowledge-base/
   └── Starter AGENTS.md in shared/
   └── Course folder (ai-for-marketing/) placed in Box alongside knowledge-base/
@@ -466,7 +465,7 @@ Pre-training provisioning (done by Vishal):
 
 7. **Markdown for deliverables.** AI works best with plain text. Staff draft in markdown with Codex, convert to polished formats as needed. CSV for spreadsheet use cases.
 
-8. **The training IS the work.** Brad gets real go-to-market artifacts at the end, not throwaway exercises. The AHA moment in Module 1.8 is when the team sees how individual analyses combine into a unified narrative.
+8. **The training IS the work.** Brad gets real go-to-market artifacts at the end, not throwaway exercises. The AHA moment in Module 1.7 (Team Sync) is when the team sees how individual analyses combine into a unified narrative.
 
 ---
 
