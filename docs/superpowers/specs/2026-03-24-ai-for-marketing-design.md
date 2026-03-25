@@ -600,6 +600,7 @@ These are suggestions, not requirements. Staff can build anything relevant to th
 - **Workshop format**: Two half-days. Day 1: Modules 0 + 1 (setup through Team Sync). Day 2: Module 2 + 3 (build + showcase). Overnight processing time between fundamentals and building.
 - **Pilot run**: Vishal runs through the full course first (QA pass + artifact generation). Consider asking one team member (Priyanka or Garrett) for a dry run if time allows. Pilot artifacts shown to Brad as proof of concept before scheduling the team workshop.
 
-**Still open:**
-1. **Netlify URLs**: Track A deploys produce public URLs. Any concerns about MSBA Online content being visible before official launch? (May need to use draft/unlisted URLs.)
-2. **Module 4 / follow-up**: After the training, is there an advanced follow-up for power users who want to build more sophisticated tools?
+**Also resolved:**
+- **Netlify URLs**: Public URLs on personal accounts are fine. No concerns.
+- **Pilot method**: Vishal (via Claude) simulates a staff member going through the full course. Serves as QA pass + artifact generation for Brad.
+- **Module 4 / follow-up**: Not planned. Revisit if demand emerges after the workshop.
