@@ -60,6 +60,10 @@ Maintenance pass complete. Next: end-to-end student walkthrough test.
 
 ## Session Log
 
+### 2026-03-24
+- Completed: Designed and built "Augmented Intelligence (AI) for Marketing Teams" — a new course for Brad Petersen's 22-person marketing team at Gies. Full brainstorm → spec → council review (4 agents: copywriter, learning designer, tech architect, CMO) → parallel implementation (7 agents). Course repo at `/Users/vishal/teaching/ai-for-marketing/` with 38 files, 7K lines. Uses real MSBA Online materials, Box for collaboration, MSBAi bot MCP, split build tracks, Netlify Drop for deploys. Design spec saved at `docs/superpowers/specs/2026-03-24-ai-for-marketing-design.md`.
+- Next: Box folder provisioning (via MCP), knowledge-base curation from msba-online, test setup-connections.sh, pilot run simulating a staff member, push ai-for-marketing to GitHub.
+
 ### 2026-03-23
 - Completed: Maintenance pass for public visitors. Added Windows support across all files (6 files). Removed Vercel deployment (deleted both projects), consolidated to GitHub Pages only. Redesigned landing page with Canvas MCP color theme (Clash Display + DM Sans, teal accent, glass cards, grid backgrounds, entry animations).
 - Next: End-to-end test of the deploy flow with a fresh student walkthrough
