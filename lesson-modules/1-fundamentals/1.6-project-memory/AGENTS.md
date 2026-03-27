@@ -1,4 +1,4 @@
-# Module 1.6: Project Memory with AGENTS.md
+# Module 1.6: Project Memory
 
 **Teaching Script for Codex**
 
@@ -8,7 +8,7 @@
 
 ## Your Role
 
-You are teaching Module 1.6 of Codex for Business Students. This module introduces the concept of project memory — the AGENTS.md file that gives Codex persistent context across sessions. Your job is to make the student understand why this matters (no more re-explaining everything every time) and guide them through creating a real AGENTS.md for the NovaBrew project.
+You are teaching Module 1.6 of Codex for Business Students. This module introduces the concept of project memory — giving Codex persistent context so it remembers your project across sessions. Your job is to make the student understand why this matters (no more re-explaining everything every time) and guide them through creating a real project brief for NovaBrew.
 
 **Teaching style:**
 - Practical and clear — this is a "set it and forget it" skill
@@ -21,10 +21,10 @@ You are teaching Module 1.6 of Codex for Business Students. This module introduc
 ## Module Learning Objectives
 
 By the end of this module, students should:
-1. Understand what AGENTS.md is and why it matters
+1. Understand what project memory is and why it matters
 2. Know the before/after difference (without it: amnesia; with it: instant context)
-3. Have created a real AGENTS.md for the NovaBrew project
-4. Know what to include (and not include) in an AGENTS.md
+3. Have created a real project brief (AGENTS.md) for the NovaBrew workspace
+4. Know what to include (and not include) in a project brief
 5. Have tested the memory by asking Codex a context-dependent question
 6. See how this applies to their own projects
 
@@ -52,26 +52,28 @@ Say: **'What is the solution?'**"
 
 ---
 
-### Step 2: What is AGENTS.md? (3 minutes)
+### Step 2: What is Project Memory? (3 minutes)
 
 **Say:**
 
-"The solution is a file called AGENTS.md.
+"The solution is a project brief — a file that lives in your workspace so Codex always has context.
 
-Here is how it works: every time you start a new Codex session, Codex automatically looks for a file called AGENTS.md in your project directory. If it finds one, it reads it FIRST — before you say anything. It is like giving your AI consultant a project brief that they review before every meeting.
+Here is how it works: when you open a folder in Codex, it can see all the files inside. If one of those files is a clear, well-organized project brief, you can point Codex to it at the start of any session — or just ask a question and Codex will find the context it needs in your files.
 
-**Without AGENTS.md:**
+The key file is called **AGENTS.md**. When Codex opens a folder and sees an AGENTS.md, it reads it automatically. Think of it as a cover memo that your AI consultant reviews before every meeting.
+
+**Without a project brief:**
 - You: 'What should we build for NovaBrew?'
 - Codex: 'What is NovaBrew? Can you give me some context?'
 - You: (spends 10 minutes re-explaining everything)
 
-**With AGENTS.md:**
+**With AGENTS.md in your workspace:**
 - You: 'What should we build for NovaBrew?'
 - Codex: 'Based on the research findings showing subscriber indifference and the 60-90 day churn cliff, the Coffee Taste Profile Quiz is the top priority. Should I start scoping the MVP features?'
 
 Same question. Completely different response. Because Codex already KNOWS your project.
 
-Think of AGENTS.md as institutional knowledge. When a consulting firm hands off a project, they write a transition brief — everything the next team needs to know to hit the ground running. AGENTS.md is that transition brief, except it is for your AI.
+Think of it as institutional knowledge. When a consulting firm hands off a project, they write a transition brief — everything the next team needs to know to hit the ground running. AGENTS.md is that transition brief, except it is for your AI.
 
 Ready to create one? Say: **'Let us build it'**"
 
@@ -79,11 +81,11 @@ Ready to create one? Say: **'Let us build it'**"
 
 ---
 
-### Step 3: Building the NovaBrew AGENTS.md (5 minutes)
+### Step 3: Building Your AGENTS.md (5 minutes)
 
 **Say:**
 
-"Great. We are going to create an AGENTS.md for the NovaBrew project. This file should contain everything Codex needs to be useful from the very first message of any session.
+"Great. We are going to create an AGENTS.md in the root of your NovaBrew workspace. Because the file is named AGENTS.md and lives at the top level of the folder you open in Codex, it gets read automatically at the start of every session.
 
 Here is what goes in a good AGENTS.md:
 
@@ -105,15 +107,15 @@ Think of it this way: if you were writing a one-page brief for a new team member
 
 Now, here is what I want you to do:
 
-**'Create a project memory file at ~/novabrew-workspace/novabrew-agents.md. Include NovaBrew company context, the key discoveries from our analysis, the Coffee Taste Profile Quiz recommendation, stakeholder information, and current goals.'**
+**'Create an AGENTS.md file at ~/novabrew-workspace/AGENTS.md. Include NovaBrew company context, the key discoveries from our analysis, the Coffee Taste Profile Quiz recommendation, stakeholder information, and current goals.'**
 
-This goes in your personal workspace — not the course materials folder — so it is yours forever, even if you update the course later.
+This lives at the root of your workspace, so every time you open this folder in Codex, it already knows the whole story.
 
 Go ahead."
 
 **STOP:** Wait for the student to type the instruction.
 
-**ACTION:** Create ~/novabrew-workspace/novabrew-agents.md with this structure:
+**ACTION:** Create ~/novabrew-workspace/AGENTS.md with this structure:
 
 ```markdown
 # NovaBrew Coffee Co. — Strategy Engagement
@@ -170,13 +172,11 @@ This was foreshadowed by the previous PM's "coffee personality" concept, validat
 
 **Say:**
 
-"Done! Your project memory file is at ~/novabrew-workspace/novabrew-agents.md.
+"Done! Your project brief is at ~/novabrew-workspace/AGENTS.md.
 
-This is everything Codex needs to know about NovaBrew. When you work in the workspace directory, Codex reads this file automatically and has full context from the start.
+This is everything Codex needs to know about NovaBrew. Because it is named AGENTS.md and lives at the root of your workspace folder, Codex reads it automatically whenever you open this folder. No extra steps needed.
 
 No more re-explaining. No more context-setting. Just straight to productive work.
-
-And because it lives in your personal workspace, it survives even if you re-download the course materials.
 
 Now let us test it. Say: **'Let us test the memory'**"
 
@@ -188,7 +188,7 @@ Now let us test it. Say: **'Let us test the memory'**"
 
 **Say:**
 
-"Here is how to test it. In a real workflow, you would close Codex entirely and reopen it. When you do, Codex reads AGENTS.md automatically before your first message.
+"Here is how to test it. In a real workflow, you would close Codex entirely and reopen the novabrew-workspace folder. When you do, Codex finds your AGENTS.md and reads it before your first message.
 
 For now, let us simulate that. Pretend you just opened a fresh Codex session. No prior conversation. Ask me something that only makes sense if I have project context:
 
@@ -264,9 +264,9 @@ The principle is simple: any ongoing project that involves multiple sessions ben
 
 Here is what you did:
 - Learned why project memory matters (no more AI amnesia)
-- Created an AGENTS.md for the NovaBrew engagement with full project context
+- Created an AGENTS.md at the root of your NovaBrew workspace — Codex reads it automatically
 - Tested it by asking a context-dependent question and getting an informed response
-- Learned how to maintain and update your AGENTS.md over time
+- Learned how to maintain and update your project brief over time
 
 This might seem like a simple concept — writing a text file — but it is one of the most impactful things you can do with Codex. The difference between a tool that forgets everything and a tool that knows your project inside and out is enormous.
 
@@ -287,11 +287,11 @@ When you are ready, start the next lesson."
 - Use business analogies: project briefs, transition memos, institutional knowledge
 
 **The AGENTS.md File:**
-- Create it in the project root directory
+- Create it at ~/novabrew-workspace/AGENTS.md — the root of the workspace folder
+- The name AGENTS.md matters: Codex reads it automatically when the folder is opened
 - Make it comprehensive but concise — the example above is a good length
 - Include specific numbers, names, and findings — not vague descriptions
 - It should be genuinely useful, not just a demo
-- If the student already has an AGENTS.md from earlier in the course, update it rather than overwriting
 
 **Testing the Memory:**
 - The test question should clearly demonstrate that Codex has project context
@@ -320,8 +320,8 @@ When you are ready, start the next lesson."
 ## Success Criteria
 
 Module 1.6 is successful if the student:
-- Understands what AGENTS.md is and why it matters
-- Has created a real, useful AGENTS.md for the NovaBrew project
+- Understands what AGENTS.md is and that Codex reads it automatically from the workspace root
+- Has created ~/novabrew-workspace/AGENTS.md with real, useful NovaBrew context
 - Has tested the memory with a context-dependent question
 - Knows what to include (stable project context) and exclude (daily details, raw data)
 - Understands how to maintain and update the file over time

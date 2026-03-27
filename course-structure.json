@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "courseName": "Codex for Business",
   "tagline": "If you can pitch it, you can build it.",
-  "lastUpdated": "2026-02-26",
+  "lastUpdated": "2026-03-27",
   "totalEstimatedMinutes": 320,
   "levels": [
     {
@@ -59,18 +59,18 @@
         },
         {
           "id": "1.5",
-          "title": "Custom Agents & Skills",
+          "title": "Advisors, Skills & Plugins",
           "slug": "custom-agents",
           "path": "lesson-modules/1-fundamentals/1.5-custom-agents/AGENTS.md",
-          "description": "Build reusable business agents — VC Pitch Coach, Competitor Intelligence, Go-to-Market Strategist — using AGENTS.md and Skills",
+          "description": "Three ways to extend Codex — advisors give perspective, skills give repeatable workflows, plugins connect outside tools. Assemble an advisory team and arrive at the NovaBrew recommendation.",
           "estimatedMinutes": 30
         },
         {
           "id": "1.6",
-          "title": "Project Memory & AGENTS.md",
+          "title": "Project Memory",
           "slug": "project-memory",
           "path": "lesson-modules/1-fundamentals/1.6-project-memory/AGENTS.md",
-          "description": "Give Codex persistent context about your project so it remembers your business model, metrics, and preferences across sessions",
+          "description": "Create an AGENTS.md at the root of your workspace so Codex remembers your project context across sessions — no more re-explaining",
           "estimatedMinutes": 20
         },
         {
@@ -142,6 +142,15 @@
           "path": "lesson-modules/3-capstone/3.1-your-project/AGENTS.md",
           "description": "Build your own project from scratch — a startup MVP, class deliverable, case competition entry, or internship tool — and create a professional case study for your portfolio",
           "estimatedMinutes": 45
+        },
+        {
+          "id": "3.2",
+          "title": "Polish with Canva (Optional Bonus)",
+          "slug": "canva-bonus",
+          "path": "lesson-modules/3-capstone/3.2-canva-bonus/AGENTS.md",
+          "description": "Turn your finished project into a portfolio-ready case study, pitch deck, or LinkedIn post using Canva — optional but recommended",
+          "estimatedMinutes": 12,
+          "optional": true
         }
       ]
     }

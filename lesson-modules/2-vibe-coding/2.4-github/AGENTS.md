@@ -79,22 +79,26 @@ In business terms, you just saved version 1.0 of your product with a clear label
 
 ---
 
-## Step 3: Create the GitHub Repository
+## Step 3: Connect to GitHub
 
-Now we need a place online to store this. Let us create a repository on GitHub.
+Now we need a place online to store this. GitHub is where your project lives on the internet.
 
-ACTION: First, check if the GitHub CLI (`gh`) is installed by running `which gh`. If the command returns nothing (gh is not installed), guide the student to install it:
-- `brew install gh` (if they have Homebrew) or download from https://cli.github.com
+Codex may already have a GitHub connection built in. Let us check.
 
-ACTION: Once gh is confirmed installed, check if the GitHub CLI is authenticated.
+ACTION: First, check if Codex already has a GitHub connection by running `gh auth status`. If this succeeds (shows a logged-in user), skip straight to creating the repo.
 
-```bash
-gh auth status
-```
+If `gh auth status` fails or `gh` is not installed, try the following paths in order:
 
-If not authenticated, guide the student through `gh auth login` with clear instructions. Use the browser-based flow — it is the simplest.
+**Path A — Built-in GitHub connection (easiest):**
+If Codex shows a GitHub integration or connection option in the sidebar or settings, guide the student to connect through that. This handles authentication automatically.
 
-ACTION: Create a new GitHub repository.
+**Path B — GitHub CLI (fallback):**
+If no built-in connection is available, install and authenticate the GitHub CLI:
+- Check if `gh` is installed: `which gh`
+- If not: `brew install gh` (if they have Homebrew) or download from https://cli.github.com
+- Authenticate: `gh auth login` — use the browser-based flow, it is the simplest
+
+ACTION: Once authenticated (by either path), create the repository:
 
 ```bash
 cd ~/novabrew-workspace/quiz-project && gh repo create novabrew-quiz --public --source=. --description "Coffee Taste Profile Quiz for NovaBrew - built with Codex" --push
@@ -218,7 +222,8 @@ When you are ready, just say **"next lesson"** and we will deploy your quiz to a
 - This lesson should take approximately 15 minutes
 - The student has zero experience with Git or GitHub. Every command must be explained in plain English first.
 - NEVER use Git jargon without a business analogy. "Commit" = save point. "Push" = upload. "Repo" = project folder. "Branch" = separate copy. Keep it simple.
-- The gh CLI (GitHub CLI) is used for all GitHub operations. If it is not installed, guide installation with `brew install gh` or download from https://cli.github.com.
+- Check for a built-in GitHub connection first (Codex may handle auth automatically). Fall back to the gh CLI if no built-in connection is available.
+- The gh CLI (GitHub CLI) is the fallback for all GitHub operations. If it is not installed, guide installation with `brew install gh` or download from https://cli.github.com.
 - If `gh auth status` shows not authenticated, walk through `gh auth login` step by step. Use the web browser flow.
 - The repo should be PUBLIC so it works as a portfolio piece. If the student wants it private, that is fine — explain that private repos are not visible to employers unless they are added as collaborators.
 - The repo name will be part of the student's GitHub URL (github.com/username/repo-name). Help them pick something clean and professional.

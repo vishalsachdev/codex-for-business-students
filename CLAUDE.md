@@ -60,6 +60,15 @@ Maintenance pass complete. Next: end-to-end student walkthrough test.
 
 ## Session Log
 
+### 2026-03-27
+- Completed: Curriculum update for Codex changes. Four changes across 6 files:
+  1. **Fixed 1.6** — Students now create `~/novabrew-workspace/AGENTS.md` (not `novabrew-agents.md`). Removed false claim about automatic reading of non-AGENTS.md files. Clear framing: AGENTS.md at workspace root = auto-read.
+  2. **Rewrote 1.5** — New title "Advisors, Skills & Plugins." Step 1 teaches the three-role model. Step 5 explains all three with cheat sheet table. Advisory team review + AHA moment unchanged.
+  3. **Refreshed 2.4** — GitHub framed as "back up and share." Built-in GitHub connection is easy path; `gh` CLI is fallback.
+  4. **Added 3.2 Canva bonus** — Optional lesson for turning finished project into case study, deck, or LinkedIn asset. Not part of main build path.
+- Also updated: course-structure.json (titles, descriptions, new 3.2 entry), root AGENTS.md (course map, workspace paths, timing).
+- Propagated: Added roadmap note in ai-for-marketing CLAUDE.md to consider advisors/skills/plugins update for 1.5 during pilot run.
+
 ### 2026-03-24
 - Completed: Designed and built "Augmented Intelligence (AI) for Marketing Teams" — a new course for Brad Petersen's 22-person marketing team at Gies. Full brainstorm → spec → council review (4 agents: copywriter, learning designer, tech architect, CMO) → parallel implementation (7 agents). Course repo at `/Users/vishal/teaching/ai-for-marketing/` with 38 files, 7K lines. Uses real MSBA Online materials, Box for collaboration, MSBAi bot MCP, split build tracks, Netlify Drop for deploys. Design spec saved at `docs/superpowers/specs/2026-03-24-ai-for-marketing-design.md`.
 - Next: Box folder provisioning (via MCP), knowledge-base curation from msba-online, test setup-connections.sh, pilot run simulating a staff member, push ai-for-marketing to GitHub.
