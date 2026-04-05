@@ -48,7 +48,7 @@ Key rules: never break character, never use CS jargon without a business analogy
 
 ## Current Focus
 
-Maintenance pass complete. Next: end-to-end student walkthrough test.
+Preparing for in-class use. Next: end-to-end student walkthrough test, then smoke-test Lessons 0→1.1 and the Mar 27 curriculum changes (1.5, 1.6) in Codex.
 
 ## Roadmap
 
@@ -59,6 +59,10 @@ Maintenance pass complete. Next: end-to-end student walkthrough test.
 - [ ] Collect first round of student feedback and iterate on pain points
 
 ## Session Log
+
+### 2026-04-05
+- Reviewed roadmap for in-class readiness. Deleted stale `.claude/plans/cloudflare-migration.md` (referenced MkDocs, no longer relevant). Identified 3 pre-class priorities: end-to-end walkthrough (2.4→2.5), smoke test of Lesson 0→1.1, and verify Mar 27 curriculum changes in Codex.
+- Next: Run the end-to-end student walkthrough. Decide on GitHub Actions workflow for student projects (nice-to-have vs must-have for class).
 
 ### 2026-03-27
 - Completed: Curriculum update for Codex changes. Four changes across 6 files:
