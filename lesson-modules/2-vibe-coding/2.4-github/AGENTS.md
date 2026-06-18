@@ -98,23 +98,27 @@ If no built-in connection is available, install and authenticate the GitHub CLI:
 - If not: `brew install gh` (if they have Homebrew) or download from https://cli.github.com
 - Authenticate: `gh auth login` — use the browser-based flow, it is the simplest
 
-ACTION: Once authenticated (by either path), create the repository:
+STOP: The default name is "novabrew-quiz." Want to name it something different? The name shows up on your GitHub profile and in the URL, so pick something you would be proud to share.
+
+USER: (student either approves the name or suggests a different one)
+
+STOP: Creating a public GitHub repository publishes your project online. Do you want me to create the public GitHub repository and push your quiz now?
+
+USER: (wait for a clear yes before continuing. If the student does not clearly approve, pause and answer questions.)
+
+ACTION: Once authenticated (by either path) and after the student clearly approves, create the repository. If they chose a different repo name, use that name instead of `novabrew-quiz`:
 
 ```bash
-cd ~/novabrew-workspace/quiz-project && gh repo create novabrew-quiz --public --source=. --description "Coffee Taste Profile Quiz for NovaBrew - built with Codex" --push
+cd ~/novabrew-workspace/quiz-project && gh repo create [repo-name] --public --source=. --description "Coffee Taste Profile Quiz for NovaBrew - built with Codex" --push
 ```
 
 Let me explain what just happened:
-- We created a new repository on GitHub called "novabrew-quiz"
+- We created a new repository on GitHub with the name you chose
 - We made it **public** — anyone can see it (this is what you want for a portfolio piece)
 - We uploaded ("pushed") all your files to it
 - The description will show up on your GitHub profile
 
-STOP: Want to name it something different than "novabrew-quiz"? The name shows up on your GitHub profile and in the URL, so pick something you would be proud to share.
-
-USER: (student either approves the name or suggests a different one)
-
-ACTION: If they want a different name, use that name instead. If the repo was already created, rename it with `gh repo rename`.
+ACTION: If the repo was created with the wrong name, ask for explicit approval before renaming it with `gh repo rename`, because renaming changes a public URL.
 
 ---
 
@@ -178,6 +182,10 @@ Built as a customer personalization prototype to improve subscriber retention th
 
 ACTION: Commit and push the README update.
 
+STOP: This will update the public GitHub repository. Do you want me to push the README update now?
+
+USER: (wait for a clear yes before continuing.)
+
 ```bash
 cd ~/novabrew-workspace/quiz-project && git add README.md && git commit -m "Add project README" && git push
 ```
@@ -226,6 +234,7 @@ When you are ready, just say **"next lesson"** and we will deploy your quiz to a
 - The gh CLI (GitHub CLI) is the fallback for all GitHub operations. If it is not installed, guide installation with `brew install gh` or download from https://cli.github.com.
 - If `gh auth status` shows not authenticated, walk through `gh auth login` step by step. Use the web browser flow.
 - The repo should be PUBLIC so it works as a portfolio piece. If the student wants it private, that is fine — explain that private repos are not visible to employers unless they are added as collaborators.
+- Creating or renaming a GitHub repo and pushing code are external actions. Ask for explicit approval immediately before doing them.
 - The repo name will be part of the student's GitHub URL (github.com/username/repo-name). Help them pick something clean and professional.
 - The README should be genuinely portfolio-quality. Include the personality types the student created. Make it something they would be proud to share.
 - If any git command fails, diagnose and fix it calmly. Common issues: git not installed, gh not authenticated, repo name already taken.

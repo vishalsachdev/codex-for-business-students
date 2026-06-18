@@ -45,10 +45,10 @@ So far, you have been talking to Codex as one generalist. That is powerful, but 
 You describe a role — a CEO, a product lead, a customer success manager — and Codex thinks from that point of view. It is like having a board of advisors, each with different expertise, that you can call on anytime.
 
 **2. Skills** — Give Codex a repeatable workflow.
-A skill is a set of instructions Codex follows step by step — like a playbook. 'Analyze a competitor' or 'Write a campaign brief' or 'Prepare a board update.' You write it once, and Codex can run it over and over, consistently.
+A skill is a reusable playbook Codex can load when the task calls for it. It can include step-by-step instructions, reference materials, and sometimes helper scripts. 'Analyze a competitor' or 'Write a campaign brief' or 'Prepare a board update.' You write it once, and Codex can run it over and over, consistently.
 
 **3. Plugins** — Connect Codex to outside tools.
-Plugins let Codex reach beyond your files — pull data from a database, check a website, query a knowledge base. They are the bridge between Codex and the rest of your toolkit.
+Plugins bundle reusable capabilities for Codex. A plugin can include skills, connections to outside apps, or tool integrations. They are the bridge between Codex and the rest of your toolkit.
 
 In the business world:
 - **Advisors** are your advisory board — different lenses on the same problem
@@ -150,6 +150,12 @@ Now. Let us connect the dots."
 
 **STOP:** Pause for a beat. Then continue.
 
+**Say:** "Before we move on, write one sentence: what is the single most important insight from hearing all three perspectives? Not what Codex produced — what YOU now understand."
+
+**STOP:** Wait.
+
+**Say:** "That reflection matters more than you think. The analysis Codex produced will be forgotten in a week. The insight you just articulated? That is yours. That is learning. Now — ready for the breakthrough?"
+
 ---
 
 ### Step 4: The AHA Moment (3 minutes)
@@ -220,9 +226,9 @@ You can create advisors for anything:
 - **Devil's Advocate** — Deliberately challenges every assumption
 - **Target Customer** — Responds as your ideal buyer persona would
 
-**Skills** are step-by-step playbooks. Instead of typing the same complex request every time, you write it once as a skill: 'Analyze a competitor: first find their pricing page, then compare to ours, then identify three differentiators, then write a one-page summary.' Now you can run that skill on any competitor and get consistent results. Skills are Codex's version of standard operating procedures.
+**Skills** are step-by-step playbooks. Instead of typing the same complex request every time, you write it once as a skill: 'Analyze a competitor: first find their pricing page, then compare to ours, then identify three differentiators, then write a one-page summary.' Codex can choose a relevant skill automatically, or you can explicitly ask for one. Skills are Codex's version of standard operating procedures.
 
-**Plugins** connect Codex to the outside world. Want Codex to check your company's knowledge base? Pull live data from an API? Read a shared document from Box or Google Drive? That is what plugins do. We will not build a plugin today, but you should know they exist — they are what turn Codex from a smart assistant into an integrated part of your workflow.
+**Plugins** connect Codex to packaged capabilities and outside tools. Want Codex to use a shared workflow, read from an authorized app, or work with a team-approved integration? That is what plugins are for. We will not build a plugin today, but you should know they exist — they are what turn Codex from a smart assistant into an integrated part of your workflow.
 
 Here is a quick cheat sheet:
 
@@ -230,7 +236,7 @@ Here is a quick cheat sheet:
 |------|-----|
 | A different perspective on a problem | **Advisor** |
 | A repeatable process you run often | **Skill** |
-| Data or tools outside your files | **Plugin** |
+| A packaged capability or outside tool | **Plugin** |
 
 Want to create an advisor right now? Just tell me who they are and what they care about, and we will build one together.
 

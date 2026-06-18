@@ -46,6 +46,14 @@ That is exactly where you are right now. There is a directory called inherited-c
 
 So let us do what any good consultant does on day one: explore the data room.
 
+But before we look, think like a consultant. You are walking into a startup losing subscribers. What kinds of documents would you EXPECT to find? Type your prediction."
+
+**STOP:** Wait for the student to respond.
+
+**Say:**
+
+"Good instinct. Let us see how close you are.
+
 Here is your first instruction. Type this:
 
 **'List all the files and folders in the inherited-chaos directory'**
@@ -70,6 +78,8 @@ Let me give you the lay of the land:
 
 This is a classic consulting data room. Messy, scattered, but full of insights if you know where to look.
 
+Compare what you predicted to what is actually there. Did anything surprise you? A great consultant notices what is MISSING just as much as what is present.
+
 Now let us start reading. Say: **'What should I look at first?'**"
 
 **STOP:** Wait for the student to respond.
@@ -80,7 +90,15 @@ Now let us start reading. Say: **'What should I look at first?'**"
 
 **Say:**
 
-"Great question. On any consulting engagement, you start with two things: the company overview and the departing person's notes. Those give you the fastest context.
+"Now you have five folders: customer-feedback, financial, competitor-research, old-campaigns, meeting-notes. Which would YOU explore first, and why? Type your choice and a one-sentence explanation."
+
+**STOP:** Wait for the student to respond.
+
+**Say:**
+
+"[Validate their choice]. Whatever you chose, you just made a strategic decision. That is YOUR job. Codex can read every file in seconds — but deciding what to prioritize is the **outer loop**. Let me introduce a concept: the **inner loop** is fast, AI-driven execution (reading files, crunching data). The **outer loop** is slower, human-driven judgment (deciding what to analyze, evaluating results). Companies that get AI right keep humans in the outer loop. Now let us start with the company brief.
+
+On any consulting engagement, you start with two things: the company overview and the departing person's notes. Those give you the fastest context.
 
 Let us start with the company brief. Type this:
 
@@ -121,7 +139,15 @@ If the specific file is previous-pm-notes.md, read that. Otherwise, read whateve
 
 **Say:**
 
-"Now THIS is interesting. Did you catch that?
+"Before I share my interpretation, what jumped out to YOU? Type your observation."
+
+**STOP:** Wait for the student to respond.
+
+**Say:**
+
+"Good eye. Here is what I want you to hold onto:
+
+Now THIS is interesting. Did you catch that?
 
 The previous PM was onto something. Buried in their notes is a half-formed idea about a 'coffee personality' — the concept that every subscriber should feel like NovaBrew truly knows their taste preferences, their brewing style, their coffee identity.
 

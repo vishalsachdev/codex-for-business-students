@@ -1,9 +1,9 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "courseName": "Codex for Business",
   "tagline": "If you can pitch it, you can build it.",
-  "lastUpdated": "2026-03-27",
-  "totalEstimatedMinutes": 320,
+  "lastUpdated": "2026-06-18",
+  "totalEstimatedMinutes": 293,
   "levels": [
     {
       "id": "0",
@@ -27,19 +27,19 @@
       "modules": [
         {
           "id": "1.1",
-          "title": "Your First Business Prompt",
+          "title": "Course Introduction",
           "slug": "intro",
           "path": "lesson-modules/1-fundamentals/1.1-intro/AGENTS.md",
-          "description": "Run your first Codex prompt, understand how it reads and writes files, process the inherited PM notes from NovaBrew",
-          "estimatedMinutes": 20
+          "description": "Step into the NovaBrew consultant role, understand the Module 1 arc, and prepare to explore the data room",
+          "estimatedMinutes": 5
         },
         {
           "id": "1.2",
           "title": "File Exploration & Context",
           "slug": "file-exploration",
           "path": "lesson-modules/1-fundamentals/1.2-file-exploration/AGENTS.md",
-          "description": "Navigate messy files like a consultant — parse meeting notes, earnings transcripts, and survey data using Codex",
-          "estimatedMinutes": 25
+          "description": "Navigate the messy NovaBrew data room like a consultant and identify the first high-value documents",
+          "estimatedMinutes": 15
         },
         {
           "id": "1.3",
@@ -47,15 +47,15 @@
           "slug": "working-with-files",
           "path": "lesson-modules/1-fundamentals/1.3-working-with-files/AGENTS.md",
           "description": "Create, edit, and organize deliverables — financial models, customer analyses, strategy docs — all through Codex",
-          "estimatedMinutes": 30
+          "estimatedMinutes": 25
         },
         {
           "id": "1.4",
           "title": "Parallel Agents",
           "slug": "parallel-agents",
           "path": "lesson-modules/1-fundamentals/1.4-parallel-agents/AGENTS.md",
-          "description": "Launch multiple agents simultaneously — market researcher, financial modeler, and UX critic working in parallel on NovaBrew's retention problem",
-          "estimatedMinutes": 25
+          "description": "Use explicitly requested parallel agents to process independent campaign files and synthesize the retention pattern",
+          "estimatedMinutes": 20
         },
         {
           "id": "1.5",
@@ -63,15 +63,15 @@
           "slug": "custom-agents",
           "path": "lesson-modules/1-fundamentals/1.5-custom-agents/AGENTS.md",
           "description": "Three ways to extend Codex — advisors give perspective, skills give repeatable workflows, plugins connect outside tools. Assemble an advisory team and arrive at the NovaBrew recommendation.",
-          "estimatedMinutes": 30
+          "estimatedMinutes": 15
         },
         {
           "id": "1.6",
           "title": "Project Memory",
           "slug": "project-memory",
           "path": "lesson-modules/1-fundamentals/1.6-project-memory/AGENTS.md",
-          "description": "Create an AGENTS.md at the root of your workspace so Codex remembers your project context across sessions — no more re-explaining",
-          "estimatedMinutes": 20
+          "description": "Create an AGENTS.md at the root of your workspace so Codex starts future sessions with the right project context",
+          "estimatedMinutes": 15
         },
         {
           "id": "1.7",
@@ -93,8 +93,8 @@
           "title": "Project Setup & Idea Selection",
           "slug": "setup",
           "path": "lesson-modules/2-vibe-coding/2.1-setup/AGENTS.md",
-          "description": "Choose your project — NovaBrew retention dashboard, your own startup idea, or a class project — and scaffold it with Codex",
-          "estimatedMinutes": 20
+          "description": "Set up the NovaBrew quiz project folder and learn the vibe-coding mindset",
+          "estimatedMinutes": 10
         },
         {
           "id": "2.2",
@@ -110,7 +110,7 @@
           "slug": "build",
           "path": "lesson-modules/2-vibe-coding/2.3-build/AGENTS.md",
           "description": "Build your app by describing what you want in plain English — iterate on UI, features, and business logic without writing code",
-          "estimatedMinutes": 30
+          "estimatedMinutes": 40
         },
         {
           "id": "2.4",
@@ -150,6 +150,15 @@
           "path": "lesson-modules/3-capstone/3.2-canva-bonus/AGENTS.md",
           "description": "Turn your finished project into a portfolio-ready case study, pitch deck, or LinkedIn post using Canva — optional but recommended",
           "estimatedMinutes": 12,
+          "optional": true
+        },
+        {
+          "id": "3.3",
+          "title": "The Innermost Loop (Optional)",
+          "slug": "meta-module",
+          "path": "lesson-modules/3-capstone/3.3-meta-module/AGENTS.md",
+          "description": "Use Codex to modify the very course that taught you — recursive self-improvement as a concrete experience of the innermost loop concept",
+          "estimatedMinutes": 16,
           "optional": true
         }
       ]

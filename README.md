@@ -2,7 +2,7 @@
 
 **If you can pitch it, you can build it.**
 
-[![Works on FREE ChatGPT plan](https://img.shields.io/badge/Works%20on-FREE%20ChatGPT%20plan-00A67E?style=for-the-badge&logo=openai&logoColor=white)](https://chatgpt.com)
+[![Included on FREE ChatGPT plan](https://img.shields.io/badge/Included%20on-FREE%20ChatGPT%20plan-00A67E?style=for-the-badge&logo=openai&logoColor=white)](https://chatgpt.com)
 
 A hands-on course that teaches business students, PMs, and aspiring founders how to use OpenAI's Codex to turn ideas into working prototypes — without writing a single line of code.
 
@@ -22,13 +22,24 @@ A hands-on course that teaches business students, PMs, and aspiring founders how
 
 ---
 
+## Where Your Work Goes
+
+The course files and student work are kept separate:
+
+- **Course folder:** this repo, which contains the lessons and NovaBrew scenario data.
+- **Student workspace:** `~/novabrew-workspace/`, where your analyses, advisor feedback, quiz app, and project memory are saved.
+
+That means you can update or re-download the course without overwriting what you built.
+
+---
+
 ## What You'll Build
 
 You play a **strategy consultant** for NovaBrew Coffee Co., a real-feeling startup with messy data, board pressure, and 8 months of runway. Every lesson uses NovaBrew as your sandbox. By the end, you'll have:
 
 - Synthesized chaotic meeting notes into an actionable brief
 - Run parallel market research, financial modeling, and competitive analysis
-- Built custom AI agents (VC Pitch Coach, Competitor Intel, Go-to-Market Strategist)
+- Used advisors, skills, plugins, and parallel agents to expand what Codex can do
 - Shipped a working web app — deployed with a live URL
 - A portfolio-ready case study for your resume or LinkedIn
 
@@ -39,20 +50,22 @@ You play a **strategy consultant** for NovaBrew Coffee Co., a real-feeling start
 | # | Module | Time | What You'll Do |
 |---|--------|------|----------------|
 | **0** | **Getting Started** | 10 min | Meet NovaBrew, run your first prompt |
-| **1.1** | Your First Business Prompt | 20 min | Process inherited PM notes, learn how Codex reads/writes files |
-| **1.2** | File Exploration & Context | 25 min | Parse meeting notes, earnings transcripts, survey data |
-| **1.3** | Working with Business Files | 30 min | Create financial models, customer analyses, strategy docs |
-| **1.4** | Parallel Agents | 25 min | Launch 3 agents simultaneously on NovaBrew's retention problem |
-| **1.5** | Custom Agents & Skills | 30 min | Build reusable business agents with AGENTS.md and Skills |
-| **1.6** | Project Memory | 20 min | Give Codex persistent context about your business |
+| **1.1** | Course Introduction | 5 min | Step into the NovaBrew consultant role |
+| **1.2** | File Exploration & Context | 15 min | Explore the messy data room and choose what to inspect first |
+| **1.3** | Working with Business Files | 25 min | Create customer and financial analyses |
+| **1.4** | Parallel Agents | 20 min | Use parallel agents on NovaBrew's retention campaigns |
+| **1.5** | Advisors, Skills & Plugins | 15 min | Use business advisors and learn when skills/plugins help |
+| **1.6** | Project Memory | 15 min | Give Codex durable context about your business |
 | **1.7** | What's Next | 10 min | Review fundamentals, prepare for vibe coding |
-| **2.1** | Project Setup | 20 min | Choose your project and scaffold it |
+| **2.1** | Project Setup | 10 min | Create the quiz project workspace |
 | **2.2** | The Planning Interview | 25 min | Codex runs a Socratic planning session like a senior PM |
-| **2.3** | Build & Iterate | 30 min | Describe features in plain English, watch them appear |
+| **2.3** | Build & Iterate | 40 min | Describe features in plain English, watch them appear |
 | **2.4** | GitHub & Version Control | 15 min | Push to GitHub with a professional README |
 | **2.5** | Deploy & Go Live | 15 min | Ship to GitHub Pages — get a live URL for your portfolio |
 | **3.1** | Capstone Project | 45 min | Build your own project, write a case study, export portfolio assets |
-| | **Total** | **~5.5 hrs** | |
+| **3.2** | Canva Bonus | 12 min | Optional polish for portfolio materials |
+| **3.3** | The Innermost Loop | 16 min | Optional course-improvement challenge |
+| | **Total** | **~4-5 hrs core** | Optional bonuses add ~30 min |
 
 ---
 

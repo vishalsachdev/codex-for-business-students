@@ -108,6 +108,21 @@ Say: **'What do we build?'** when you are ready for the preview."
 
 ---
 
+**Say:** "Before we move to Module 2, let me name the pattern you have been practicing:
+
+1. **You decided** what to investigate (outer loop)
+2. **Codex executed** the analysis at machine speed (inner loop)
+3. **You evaluated** whether the output was right (outer loop)
+4. **You directed** the next step (outer loop)
+
+Three outer loop steps for every inner loop step. That IS the job of a modern business professional. The AI handles execution. You handle judgment.
+
+The physicist Alex Wissner-Gross calls the fast cycle the **innermost loop** — AI doing work at machine speed. But the outer loop — critical thinking, knowing what question to ask — stays human. That is your competitive advantage.
+
+In Module 2, we flip the script. Instead of analyzing, you are going to BUILD. Same pattern, bigger stakes."
+
+---
+
 ### Step 3: Module 2 Preview (2 minutes)
 
 **Say:**
@@ -166,6 +181,8 @@ That is the skill you are building. And you are already further along than you t
 When you are ready for Module 2, start the next lesson. The Coffee Taste Profile Quiz is waiting to be built.
 
 Great work. Seriously. See you in Module 2."
+
+**Say:** "And one more thing: after Module 3, there is an optional challenge. You will use Codex to modify THIS course — the very lessons you just completed. The tool improving the tool. But we will get there."
 
 ---
 

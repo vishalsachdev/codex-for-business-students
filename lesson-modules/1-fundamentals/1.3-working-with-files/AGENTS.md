@@ -60,15 +60,11 @@ Let us start with the customer feedback. Say: **'Let us start with the feedback'
 
 "Perfect. The customer-feedback folder has files with real subscriber comments — cancellation surveys, support tickets, reviews, and open-ended feedback. It is the qualitative gold mine of any subscription business.
 
-Here is what I want you to do. Type this:
+Here is your task: you need Codex to read all the customer feedback and create a structured analysis. But instead of me telling you exactly what to type, I want YOU to write the instruction. Think: if you were asking a junior analyst to summarize customer feedback, what would you tell them? Write your instruction in plain English."
 
-**'Read all the customer feedback files in inherited-chaos/customer-feedback and create a synthesis document called ~/novabrew-workspace/analysis/customer-feedback-synthesis.md. Identify the top themes, include direct quotes, and note the overall sentiment.'**
+**STOP:** Wait.
 
-That is a big ask — and that is exactly the point. You are going to ask Codex to do something that would normally take hours. Go ahead."
-
-**STOP:** Wait for the student to type the instruction.
-
-**ACTION:** First, ensure the workspace directories exist: `mkdir -p ~/novabrew-workspace/analysis ~/novabrew-workspace/reviews`. Then read all files in business-scenario/inherited-chaos/customer-feedback/. Create ~/novabrew-workspace/analysis/customer-feedback-synthesis.md with:
+**ACTION:** First, ensure the workspace directories exist: `mkdir -p ~/novabrew-workspace/analysis ~/novabrew-workspace/reviews`. Then read all files in business-scenario/inherited-chaos/customer-feedback/. Whatever phrasing the student used, execute the analysis by creating ~/novabrew-workspace/analysis/customer-feedback-synthesis.md with:
 
 1. **Executive Summary** — 3-4 sentence overview of what customers are saying
 2. **Top 5 Themes** — Ranked by frequency, with direct quotes supporting each theme
@@ -88,9 +84,21 @@ If the customer feedback files are empty or do not exist yet, create realistic, 
 
 **Say:**
 
+"Nice work. Here is how a senior consultant might phrase that same request: *'Read all the customer feedback files in inherited-chaos/customer-feedback and create a synthesis document. Identify the top themes, include direct quotes, and note the overall sentiment.'* Compare your instruction to that. The more specific you are, the more useful the output. That is prompt engineering — it is really just clear communication."
+
+**Say:**
+
 "Done! I just created ~/novabrew-workspace/analysis/customer-feedback-synthesis.md.
 
-If you have a file explorer open, go take a look. If not, you can ask me to show you what is in it. Either way, let me highlight the most important finding:
+If you have a file explorer open, go take a look. If not, you can ask me to show you what is in it. Either way, let me give you a moment with it first.
+
+Before I share my interpretation, I want yours. Scan the themes and quotes in the synthesis. What is YOUR diagnosis of why subscribers are leaving?"
+
+**STOP:** Wait.
+
+**Say:**
+
+"Interesting. Now here is what the data actually reveals:
 
 **The customers are not angry. They are indifferent.**
 
@@ -165,6 +173,16 @@ Do you see it? The customer feedback says 'I did not feel a personal connection.
 **Subscribers sign up, love month 1-2, then quietly leave because there is nothing keeping them emotionally invested. They are not angry — they are indifferent.**
 
 You just connected qualitative and quantitative data to find the real story. That is consulting work. And you did it in about 15 minutes."
+
+**Say:**
+
+"You now have two professional deliverables. But AI outputs always have blind spots. Find one: an assumption without evidence, an oversimplification, or a question Codex should have raised but did not. Type what you found."
+
+**STOP:** Wait.
+
+**Say:**
+
+"Exactly. This is the outer loop — you are the quality control layer. Codex is a brilliant first-draft machine. The person who reviews and refines? That is where the real value lives."
 
 ---
 

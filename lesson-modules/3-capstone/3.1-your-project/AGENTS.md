@@ -225,11 +225,15 @@ Continue until the student is satisfied.
 
 Same deployment process as Lesson 2.5, adapted for their project.
 
-ACTION: Initialize Git, create a GitHub repo, commit, and push.
+ACTION: Initialize Git and create the first local commit.
 
 ```bash
 cd [project-name] && git init && git add -A && git commit -m "Initial commit: [Project Name]"
 ```
+
+STOP: Creating a public GitHub repository publishes this project online. Do you want me to create the public GitHub repository and push your project now?
+
+USER: (wait for a clear yes before continuing. If the student does not clearly approve, pause and answer questions.)
 
 ```bash
 cd [project-name] && gh repo create [project-name] --public --source=. --description "[Short description]" --push
@@ -239,16 +243,20 @@ ACTION: Configure for static export and deploy to GitHub Pages.
 
 IMPORTANT: Before building, update `next.config.ts` (or `.js`) to include `output: 'export'`, `basePath: '/[project-name]'`, and `images: { unoptimized: true }`. The basePath MUST match the GitHub repo name — verify with `gh repo view --json name --jq '.name'`.
 
-ACTION: Remove `/out/` from `.gitignore` (Next.js includes it by default), then build and push:
+STOP: Deploying will publish the project to a public URL. Do you want me to deploy it to GitHub Pages now?
+
+USER: (wait for a clear yes before continuing. If the student does not clearly approve, pause and answer questions.)
+
+ACTION: Build the static site and publish the generated `out/` folder to a dedicated `gh-pages` branch:
 
 ```bash
-cd [project-name] && sed -i '' '/^\/out\/$/d' .gitignore && npm run build && touch out/.nojekyll && git add -A && git commit -m "Add static build for GitHub Pages" && git push
+cd [project-name] && npm run build && touch out/.nojekyll && npx gh-pages -d out -b gh-pages
 ```
 
 ACTION: Enable GitHub Pages on the repo.
 
 ```bash
-cd [project-name] && gh api repos/{owner}/{repo}/pages -X POST -f "build_type=legacy" -f "source[branch]=main" -f "source[path]=/out" 2>/dev/null || echo "Pages may already be enabled"
+cd [project-name] && gh api repos/{owner}/{repo}/pages -X POST -f "build_type=legacy" -f "source[branch]=gh-pages" -f "source[path]=/" 2>/dev/null || gh api repos/{owner}/{repo}/pages -X PUT -f "build_type=legacy" -f "source[branch]=gh-pages" -f "source[path]=/"
 ```
 
 ACTION: Open the live URL.
@@ -293,6 +301,10 @@ ACTION: Create a polished README.md for their GitHub repo. This should be genuin
 ```
 
 ACTION: Commit and push the README.
+
+STOP: This will update the public GitHub repository. Do you want me to push the README update now?
+
+USER: (wait for a clear yes before continuing.)
 
 ```bash
 cd [project-name] && git add README.md && git commit -m "Add professional README" && git push
@@ -417,7 +429,8 @@ Go make things.
 - The motivational close should feel earned, not generic. Reference specific things the student built and decisions they made throughout the course.
 - If the student wants to keep going after the capstone (add features, build a second project, explore new tools), encourage it enthusiastically. The goal is to create a habit, not just complete a course.
 - Do NOT break the fourth wall. Never say "this is a course" or "this lesson teaches you." Stay in the role of a collaborator helping them build something real.
-- If deploying to GitHub Pages has issues (build errors, 404 after deploy), troubleshoot patiently. Common fixes: ensure `output: 'export'` is in next.config, add `.nojekyll` to the `out/` directory, verify `basePath` matches the repo name, and wait 1-2 minutes for the first deploy. If all else fails, show the localhost version and deploy later.
+- Creating a GitHub repo, pushing code, and deploying to GitHub Pages are external actions. Ask for explicit approval immediately before each publishing step.
+- If deploying to GitHub Pages has issues (build errors, 404 after deploy), troubleshoot patiently. Common fixes: ensure `output: 'export'` is in next.config, add `.nojekyll` to the `out/` directory, verify `basePath` matches the repo name, check that the `gh-pages` branch exists on GitHub, and wait 1-2 minutes for the first deploy. If all else fails, show the localhost version and deploy later.
 - The LinkedIn post draft should only be offered, never forced. Some students find self-promotion uncomfortable — respect that.
 
 ## Success Criteria

@@ -26,8 +26,8 @@ We now adapt it **specifically for business students** — people who need to mo
 | Original Claude Concept     | Codex Equivalent                  | Business-Student Adaptation |
 |-----------------------------|-----------------------------------|-----------------------------|
 | General file ops            | Codex file reading/editing        | Process meeting notes, synthesize customer interviews, build financial models |
-| Parallel agents             | Cloud tasks + custom Skills       | Run market research, competitor analysis, and financial sensitivity models simultaneously |
-| CLAUDE.md / project memory  | AGENTS.md + Skills                | Create reusable “Business Analyst”, “VC Pitch Coach”, “Ops Automator” agents |
+| Parallel agents             | Explicit subagent / parallel-agent workflows | Run market research, competitor analysis, and financial sensitivity models simultaneously |
+| Project memory              | AGENTS.md + Skills                | Create durable project briefs, reusable business workflows, and advisor perspectives |
 | Vibe coding                 | Describe the business outcome     | “Build me a SaaS dashboard that looks like Linear but for my consulting firm” |
 | Deploy to GitHub Pages      | Push-to-deploy                    | Live URL you can send to your professor/investor/LinkedIn |
 
@@ -63,7 +63,7 @@ Create `course-materials/` with business-flavored starter projects and lesson sc
 1.1 File ops & context → Process real case-study PDFs, earnings transcripts, survey data.  
 1.2 Visual workspace → Split-screen for building pitch decks + financial models side-by-side.  
 1.3 Parallel agents → Launch three agents at once: Market Researcher + Financial Modeler + UX Critic.  
-1.4 Custom Skills & AGENTS.md → Build permanent agents: “VC Roaster”, “Competitor Intelligence”, “Go-to-Market Strategist”.  
+1.4 Skills, advisors & AGENTS.md → Build reusable workflows and advisor perspectives: “VC Roaster”, “Competitor Intelligence”, “Go-to-Market Strategist”.
 1.5 Business command shortcuts → Create reusable templates for OKRs, PRDs, financial projections.  
 1.6 Data & Excel/Google Sheets automation → Codex writes Python scripts you can run instantly or connect via APIs.
 
@@ -104,5 +104,3 @@ Reply with “Phase 0 started” and I’ll immediately generate:
 - The full AGENTS.md template for business students, or  
 - The exact first lesson script (Module 1.1) tailored for MBAs, or  
 - The complete course-structure.json with business examples.
-
-
