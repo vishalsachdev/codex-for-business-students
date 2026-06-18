@@ -9,7 +9,7 @@ An interactive course ("Codex for Business") delivered through AI agent scripts.
 ## Architecture
 
 - **`AGENTS.md`** (root) — Course conductor. Manages lesson routing, progress tracking (`~/.codex-for-business/progress.json`), and workspace init (`~/novabrew-workspace/`).
-- **`lesson-modules/`** — 14 lessons across 4 modules (0-3), each an `AGENTS.md` file. Modules: Getting Started → Fundamentals → Vibe Coding → Capstone.
+- **`lesson-modules/`** — 16 lessons across 4 modules (0-3), each an `AGENTS.md` file. There are 14 required lessons plus 2 optional bonus lessons. Modules: Getting Started → Fundamentals → Vibe Coding → Capstone.
 - **`business-scenario/`** — NovaBrew Coffee Co. case study data (read-only). Students discover these files during Module 1.
 - **`templates/`** — Reusable business frameworks (BMC, competitive analysis, pitch deck, case study).
 - **`docs/`** — Landing page (static HTML + CSS). Deployed via GitHub Actions to GitHub Pages.
@@ -17,9 +17,9 @@ An interactive course ("Codex for Business") delivered through AI agent scripts.
 
 ## Deployment
 
-**Landing page**: Auto-deploys from `docs/` on push to main via GitHub Actions (`.github/workflows/pages.yml`).
+**Landing page**: GitHub Pages serves `docs/` from the `main` branch. Pushes to `main` update the public site after Pages rebuilds.
 
-**Student apps** (built during lessons 2.5 and 3.1) deploy to GitHub Pages via static export (`output: 'export'` in next.config).
+**Student apps** (built during lessons 2.5 and 3.1) deploy to GitHub Pages via static export (`output: 'export'` in next.config) published to a `gh-pages` branch.
 
 ## Lesson Script Conventions
 
@@ -42,23 +42,29 @@ Key rules: never break character, never use CS jargon without a business analogy
 
 ## Gotchas
 
-- Student deploy instructions use GitHub Pages with static export. The default `create-next-app` `.gitignore` excludes `/out/` — lessons explicitly remove that line before committing.
+- Student deploy instructions use GitHub Pages with static export. Lessons publish the generated `out/` folder to a dedicated `gh-pages` branch using `npx gh-pages -d out -b gh-pages`, instead of committing `out/` to `main`.
 - `basePath` in student next.config must match their GitHub repo name exactly, or the deployed site 404s.
 - The `.nojekyll` file in `out/` is critical — without it GitHub Pages ignores `_next/` directories.
 
 ## Current Focus
 
-Preparing for in-class use. Next: end-to-end student walkthrough test, then smoke-test Lessons 0→1.1 and the Mar 27 curriculum changes (1.5, 1.6) in Codex.
+Preparing for in-class use. Next: end-to-end student walkthrough test, especially Lessons 2.4→2.5 with the updated `gh-pages` deployment flow.
 
 ## Roadmap
 
 - [x] Replace Vercel with GitHub Pages as student deployment target
 - [x] Fix UX issues in deploy flow (gitignore, basePath verification, messaging)
+- [x] Refresh course materials for current Codex docs and make workspace separation explicit on the site
 - [ ] End-to-end test: run a fresh student through Lessons 2.4 → 2.5 to verify GitHub Pages deploy works
 - [ ] Add GitHub Actions workflow for student projects (eliminate local `npm run build` requirement)
 - [ ] Collect first round of student feedback and iterate on pain points
 
 ## Session Log
+
+### 2026-06-18
+- Completed: Refreshed Codex for Business course materials for current Codex docs and pushed/deployed the public site. Updated language around Free plan inclusion, skills/plugins/subagents, AGENTS.md behavior, explicit approval before external actions, and student GitHub Pages deployment via `gh-pages`. Added optional 3.3 innermost-loop lesson, bumped course version to 1.1.0, and made clear that student artifacts live in `~/novabrew-workspace/` outside the course repo.
+- Verified: Course structure is valid (16 lessons, 265 core minutes + 28 optional), landing page renders on desktop/mobile, GitHub Pages rebuilt from `main:/docs`, and live site includes the workspace-separation message.
+- Next: Run a fresh end-to-end student walkthrough through Lessons 2.4 → 2.5 to confirm the new deployment flow works in student conditions.
 
 ### 2026-04-05
 - Reviewed roadmap for in-class readiness. Deleted stale `.claude/plans/cloudflare-migration.md` (referenced MkDocs, no longer relevant). Identified 3 pre-class priorities: end-to-end walkthrough (2.4→2.5), smoke test of Lesson 0→1.1, and verify Mar 27 curriculum changes in Codex.
