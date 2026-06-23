@@ -12,7 +12,7 @@ Here's how it happened, what I learned, and how you can do the same thing for yo
 
 ## The Spark: A Developer Course That Shouldn't Stay Developer-Only
 
-It started when I found [Carl Vellotti's Claude Code for Everyone](https://www.yourfirstcursor.com/) — a clever course that teaches Claude Code by having students use Claude Code. Each lesson is a `CLAUDE.md` file that scripts the AI to be a teacher. The student opens the tool, and the tool walks them through itself. Brilliant concept.
+It started when I found [Carl Vellotti's Claude Code for Everyone](https://ccforeveryone.com/) — a clever course that teaches Claude Code by having students use Claude Code. Each lesson is a `CLAUDE.md` file that scripts the AI to be a teacher. The student opens the tool, and the tool walks them through itself. Brilliant concept.
 
 But it was aimed at developers. The examples were technical, the language was code-native, the exercises assumed you knew what a function was. I kept thinking: the people who would benefit *most* from AI coding tools are exactly the people this course doesn't reach. Business students. Product managers. Non-technical founders who have ideas but no engineering team.
 
@@ -157,4 +157,4 @@ This article was written during a live collaboration session.
 
 ---
 
-*The course is open source at [github.com/vishalsachdev/codex-for-business-students](https://github.com/vishalsachdev/codex-for-business-students). Inspired by and crediting [Carl Vellotti's Claude Code for Everyone](https://www.yourfirstcursor.com/) — the original and excellent course that pioneered teaching AI tools from inside the tool itself.*
+*The course is open source at [github.com/vishalsachdev/codex-for-business-students](https://github.com/vishalsachdev/codex-for-business-students). Inspired by and crediting [Carl Vellotti's Claude Code for Everyone](https://ccforeveryone.com/) — the original and excellent course that pioneered teaching AI tools from inside the tool itself.*

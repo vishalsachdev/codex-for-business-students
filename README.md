@@ -122,7 +122,7 @@ Each template includes instructions for how to use it with Codex.
 
 ## Credits
 
-Inspired by [Claude Code for Everyone](https://www.yourfirstcursor.com/) by Carl Vellotti — the original (and excellent) course that teaches AI-assisted development inside the tool itself. This version adapts the concept for business students using OpenAI's Codex.
+Inspired by [Claude Code for Everyone](https://ccforeveryone.com/) by Carl Vellotti — the original (and excellent) course that teaches AI-assisted development inside the tool itself. This version adapts the concept for business students using OpenAI's Codex.
 
 ---
 
