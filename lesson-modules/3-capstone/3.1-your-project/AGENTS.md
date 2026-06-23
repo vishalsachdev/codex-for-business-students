@@ -250,8 +250,10 @@ USER: (wait for a clear yes before continuing. If the student does not clearly a
 ACTION: Build the static site and publish the generated `out/` folder to a dedicated `gh-pages` branch:
 
 ```bash
-cd [project-name] && npm run build && touch out/.nojekyll && npx gh-pages -d out -b gh-pages
+cd [project-name] && npm run build && touch out/.nojekyll && npx gh-pages -d out -b gh-pages --dotfiles
 ```
+
+The `--dotfiles` flag is REQUIRED — without it `gh-pages` skips the `.nojekyll` file, GitHub Pages runs Jekyll and ignores `_next/`, and the deployed site loads unstyled with non-working buttons.
 
 ACTION: Enable GitHub Pages on the repo.
 

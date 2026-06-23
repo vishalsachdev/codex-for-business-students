@@ -42,9 +42,9 @@ Key rules: never break character, never use CS jargon without a business analogy
 
 ## Gotchas
 
-- Student deploy instructions use GitHub Pages with static export. Lessons publish the generated `out/` folder to a dedicated `gh-pages` branch using `npx gh-pages -d out -b gh-pages`, instead of committing `out/` to `main`.
+- Student deploy instructions use GitHub Pages with static export. Lessons publish the generated `out/` folder to a dedicated `gh-pages` branch using `npx gh-pages -d out -b gh-pages --dotfiles`, instead of committing `out/` to `main`.
 - `basePath` in student next.config must match their GitHub repo name exactly, or the deployed site 404s.
-- The `.nojekyll` file in `out/` is critical — without it GitHub Pages ignores `_next/` directories.
+- The `.nojekyll` file in `out/` is critical — without it GitHub Pages ignores `_next/` directories (site loads unstyled, buttons dead). `npx gh-pages` drops dotfiles unless you pass `--dotfiles`, so `touch out/.nojekyll` alone is NOT enough — the flag is mandatory. Verified end-to-end 2026-06-23.
 
 ## Current Focus
 

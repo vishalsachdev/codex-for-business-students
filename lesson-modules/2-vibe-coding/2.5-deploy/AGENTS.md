@@ -107,8 +107,10 @@ touch ~/novabrew-workspace/quiz-project/out/.nojekyll
 ACTION: Publish the contents of the `out/` folder to a dedicated `gh-pages` branch. This keeps the source code on `main` and puts the finished website files at the root of the branch GitHub Pages serves.
 
 ```bash
-cd ~/novabrew-workspace/quiz-project && npx gh-pages -d out -b gh-pages
+cd ~/novabrew-workspace/quiz-project && npx gh-pages -d out -b gh-pages --dotfiles
 ```
+
+The `--dotfiles` flag is REQUIRED. Without it, the `gh-pages` tool silently skips dotfiles like `.nojekyll`, which means GitHub Pages runs Jekyll and ignores the `_next/` folder — the site loads but its CSS and JavaScript 404, so it looks unstyled and buttons do nothing.
 
 ACTION: Enable GitHub Pages on the repository using the `gh` CLI. This tells GitHub to serve the site from the root of the `gh-pages` branch:
 
@@ -174,7 +176,7 @@ USER: (wait for a clear yes before continuing.)
 ACTION: Rebuild and publish the updated `out/` folder again.
 
 ```bash
-cd ~/novabrew-workspace/quiz-project && npm run build && touch out/.nojekyll && npx gh-pages -d out -b gh-pages
+cd ~/novabrew-workspace/quiz-project && npm run build && touch out/.nojekyll && npx gh-pages -d out -b gh-pages --dotfiles
 ```
 
 STOP: Wait about 60-90 seconds, then refresh your live URL. See the change? You made an update and it went live. No server configuration, no IT department, no complicated deploy process. Change, build, publish, live. That is the workflow.
@@ -245,6 +247,8 @@ When you are ready for Module 3, just say **"next lesson"** or **"start Module 3
 - The `output: 'export'` setting is required for static export. The `images: { unoptimized: true }` setting is required because GitHub Pages cannot run the Next.js image optimizer.
 - Deploying to GitHub Pages is an external action. Ask for explicit approval immediately before publishing the `gh-pages` branch or changing Pages settings.
 - The `.nojekyll` file in the `out/` directory is important — without it, GitHub Pages may try to process files with Jekyll, which breaks Next.js output (especially files/folders starting with underscores like `_next/`).
+- CRITICAL: `npx gh-pages` defaults to NOT publishing dotfiles, so you MUST pass `--dotfiles` or the `.nojekyll` file never reaches the `gh-pages` branch. Symptom of a missing `.nojekyll`: the deployed page renders as plain unstyled HTML and buttons/interactivity do nothing, because `_next/` assets 404. If a student reports this, confirm `.nojekyll` is on the `gh-pages` branch (`git ls-tree -r origin/gh-pages --name-only | grep nojekyll`) and redeploy with `--dotfiles`.
+- After deploying, GitHub Pages can take 1-2 minutes to serve the new `_next/` assets even once `.nojekyll` is correct. A brief asset 404 right after deploy is usually propagation lag, not a config error — wait and refresh before troubleshooting further.
 - If deployment fails, troubleshoot calmly. Common issues:
   - Build errors: run `npm run build` locally first to check
   - 404 after deploy: wait 1-2 minutes (GitHub Pages takes time on first deploy), then check that the `gh-pages` branch exists on GitHub with `git ls-remote --heads origin gh-pages`
