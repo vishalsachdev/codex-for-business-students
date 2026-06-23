@@ -2,7 +2,7 @@
 
 **Teaching Script for Codex**
 
-> **Before starting:** This is a verbatim teaching script. Follow it precisely. Deliver "Say:" blocks naturally. Stop at "STOP:" markers and wait. Execute "ACTION:" blocks as specified. Never break the fourth wall. You are the instructor. Start teaching immediately.
+> **Before starting:** This is a verbatim teaching script. Follow it precisely. Before the first "Say:" block, follow the Course Conductor instructions from the root AGENTS.md: check progress, show the lesson progress line, and use the student's workspace for any created work. Deliver "Say:" blocks naturally. Stop at "STOP:" markers and wait. Execute "ACTION:" blocks as specified. Never break the fourth wall. You are the instructor.
 
 ---
 
@@ -80,7 +80,9 @@ The themes should include things like:
 - Wishing NovaBrew knew their preferences better
 - Not seeing a reason to stay beyond the discount period
 
-If the customer feedback files are empty or do not exist yet, create realistic, detailed content that reflects these themes.
+Use the actual customer feedback files as the source of truth. If the folder is unexpectedly missing, say that plainly and create a clearly labeled sample deliverable only to keep the classroom exercise moving.
+
+Before saying the file is done, read ~/novabrew-workspace/analysis/customer-feedback-synthesis.md back and confirm it includes the required sections and at least a few real customer quotes.
 
 **Say:**
 
@@ -149,7 +151,9 @@ The critical pattern to surface:
 - This pattern is consistent across cohorts — it is not seasonal or campaign-driven
 - The subscriber who leaves at month 3 is not the one who complained — it is the one who went silent
 
-If financial files are empty or do not exist yet, create realistic data and analysis that supports these patterns.
+Use the actual financial files as the source of truth. If the folder is unexpectedly missing, say that plainly and create a clearly labeled sample deliverable only to keep the classroom exercise moving.
+
+Before saying the file is done, read ~/novabrew-workspace/analysis/financial-analysis.md back and confirm it includes the required sections and the numbers are consistent with the source files.
 
 **Say:**
 
@@ -221,6 +225,8 @@ Say: **'What is next?'** when you are ready."
 
 ### Step 5: Wrap Up & Transition
 
+**ACTION:** Before saying the lesson is complete, confirm both deliverables exist and contain meaningful content: ~/novabrew-workspace/analysis/customer-feedback-synthesis.md and ~/novabrew-workspace/analysis/financial-analysis.md. If the success criteria are met, update `~/.codex-for-business/progress.json`: add `"1.3"` to `completed_lessons` if it is not already there, set `current_lesson` to `"1.4"`, and log both deliverables in `artifacts_created` if they are not already listed.
+
 **Say:**
 
 "That is Module 1.3 complete!
@@ -241,7 +247,7 @@ These findings are going to become very important in the next few lessons.
 
 Get ready. You are about to learn one of the most powerful features of Codex — the ability to run multiple analyses at the same time. Imagine spinning up 10 junior analysts simultaneously. That is what parallel agents do.
 
-When you are ready, start the next lesson. We have campaigns to analyze and patterns to find."
+When you are ready, just say **'next lesson'** and I will take you there. We have campaigns to analyze and patterns to find."
 
 ---
 
@@ -261,7 +267,8 @@ When you are ready, start the next lesson. We have campaigns to analyze and patt
 
 **File Creation:**
 - Always create files in the analysis/ directory
-- If source files in inherited-chaos are empty, create realistic content that supports the narrative
+- Use the real inherited-chaos source files whenever they are present
+- If source files are unexpectedly missing, clearly label any classroom sample content as sample content
 - The deliverables should look professional — executive summaries, clear headers, data tables
 - Use markdown formatting that looks good in any editor
 
@@ -275,10 +282,9 @@ When you are ready, start the next lesson. We have campaigns to analyze and patt
 - But gently redirect: "Let us save the deep dive for the next lesson where we can use parallel agents"
 
 **If files do not exist:**
-- Create them with realistic, detailed content
-- The customer feedback should feel like real customer voices
-- The financial data should have realistic numbers that support the narrative
-- Everything should be internally consistent with the about-novabrew.md document
+- Say what is missing in plain English
+- Use the available source files first
+- If you must create sample content to keep the lesson moving, label it clearly as a classroom sample and keep it internally consistent with the about-novabrew.md document
 
 ---
 

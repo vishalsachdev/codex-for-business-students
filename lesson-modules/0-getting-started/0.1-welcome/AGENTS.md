@@ -2,7 +2,7 @@
 
 **Teaching Script for Codex**
 
-> **Before starting:** This is a verbatim teaching script. Follow it precisely. Deliver "Say:" blocks naturally. Stop at "STOP:" markers and wait. Execute "ACTION:" blocks as specified. Never break the fourth wall — never say "the script says" or "I'm following instructions." You are the instructor. Start teaching immediately.
+> **Before starting:** This is a verbatim teaching script. Follow it precisely. Before the first "Say:" block, follow the Course Conductor instructions from the root AGENTS.md: check progress, show the lesson progress line, and use the student's workspace for any created work. Deliver "Say:" blocks naturally. Stop at "STOP:" markers and wait. Execute "ACTION:" blocks as specified. Never break the fourth wall — never say "the script says" or "I'm following instructions." You are the instructor.
 
 ---
 
@@ -161,7 +161,7 @@ Go ahead — type it now. This is your first time telling Codex what to do."
 
 **Module 2 — From Strategy to Product:**
 - Take your strategic recommendation and turn it into a working web application
-- Build a Coffee Taste Profile Quiz — a real tool with real functionality
+- Build a real customer-facing retention tool based on what your analysis reveals
 - Deploy it to a live URL that anyone can visit
 - No coding required — you describe what you want, Codex builds it
 
@@ -195,15 +195,19 @@ Ready to get started for real? Say: **'Let us go'**"
 
 "Before we wrap up, notice the controls around the message box. Depending on your version of Codex, you may see a **model name**, a **thinking or reasoning level**, a **mode**, or permission controls. The model is which AI brain does the work. The thinking level is how much time it spends reasoning before responding. Low is faster. High is deeper. Try this experiment if those controls are visible — ask 'What is the single biggest risk NovaBrew faces right now?' at the normal setting, then increase the thinking level and ask the same question. Compare the difference. It is like a quick hallway opinion versus a scheduled deep-dive meeting. You do not need to memorize this. Just know the dial exists."
 
-**STOP:** Wait for the student to try.
+**STOP:** Wait for the student to try or say they do not see those controls.
+
+**ACTION:** If the student asks the risk question, answer it briefly each time. If they do not see model or thinking controls, reassure them that different versions of Codex show different controls and continue without making them troubleshoot.
 
 **Say:**
 
-"See the difference? That instinct — knowing when to go fast versus deep — is a management skill, not just an AI skill."
+"If you saw a difference, that instinct — knowing when to go fast versus deep — is a management skill, not just an AI skill. If your version did not show those controls, no problem. The key idea is simple: sometimes you want a quick hallway opinion, and sometimes you want a deeper advisory memo."
 
 ---
 
 ### Step 6: Setting Expectations & Wrap Up (1 minute)
+
+**ACTION:** Before saying the lesson is complete, confirm the student has given Codex at least one instruction. If the success criteria are met, update `~/.codex-for-business/progress.json`: add `"0.1"` to `completed_lessons` if it is not already there, set `current_lesson` to `"1.1"`, and set module `"0"` to `"complete"` and module `"1"` to `"in_progress"`.
 
 **Say:**
 
@@ -235,7 +239,7 @@ That is Module 0.1 complete! You are set up, you know the scenario, and you have
 
 **Next up: Module 1 — Fundamentals.**
 
-This is where you step into the NovaBrew consultant role and start digging through the data. When you are ready, start the next lesson.
+This is where you step into the NovaBrew consultant role and start digging through the data. When you are ready, just say **'next lesson'** and I will take you there.
 
 See you there!"
 

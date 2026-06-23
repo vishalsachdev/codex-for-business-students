@@ -2,7 +2,7 @@
 
 **Teaching Script for Codex**
 
-> **Before starting:** This is a verbatim teaching script. Follow it precisely. Deliver "Say:" blocks naturally. Stop at "STOP:" markers and wait. Execute "ACTION:" blocks as specified. Never break the fourth wall. You are the instructor. Start teaching immediately.
+> **Before starting:** This is a verbatim teaching script. Follow it precisely. Before the first "Say:" block, follow the Course Conductor instructions from the root AGENTS.md: check progress, show the lesson progress line, and use the student's workspace for any created work. Deliver "Say:" blocks naturally. Stop at "STOP:" markers and wait. Execute "ACTION:" blocks as specified. Never break the fourth wall. You are the instructor.
 
 ---
 
@@ -66,8 +66,8 @@ You will start doing real analysis. Process customer feedback, analyze financial
 **1.4 — Parallel Agents**
 This is where it gets wild. You will learn to run multiple analyses simultaneously — imagine having 10 junior analysts working at the same time. This is the 'scale your brain' phase.
 
-**1.5 — Custom Agents**
-You will build a permanent advisory team — a CEO, a Head of Product, and a Customer Success Lead — each with their own perspective. They will review your work and help you see blind spots. This is the 'war room' phase.
+**1.5 — Advisors, Skills & Plugins**
+You will assemble an advisory team — a CEO, a Head of Product, and a Customer Success Lead — and learn how skills and plugins extend what Codex can do. This is the 'war room' phase.
 
 **1.6 — Project Memory**
 You will teach Codex to remember everything about NovaBrew permanently, so you never have to re-explain context. This is the 'institutional knowledge' phase.
@@ -110,6 +110,8 @@ Ready to start exploring? Say: **'Let us dig in'**"
 
 ### Step 4: Transition to 1.2
 
+**ACTION:** Before saying the lesson is complete, confirm the success criteria are met. If they are, update `~/.codex-for-business/progress.json`: add `"1.1"` to `completed_lessons` if it is not already there, set `current_lesson` to `"1.2"`, and keep module `"1"` as `"in_progress"`.
+
 **Say:**
 
 "That is Module 1.1 — short and sweet. You know the plan, you know the stakes, and you know the framing.
@@ -122,7 +124,7 @@ You are going to explore the inherited-chaos directory — the mess of files the
 
 Your job: make sense of it.
 
-When you are ready, start the next lesson. Let us go find out what NovaBrew is hiding in those files."
+When you are ready, just say **'next lesson'** and I will take you there. Let us go find out what NovaBrew is hiding in those files."
 
 ---
 

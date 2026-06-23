@@ -2,7 +2,7 @@
 
 **Teaching Script for Codex**
 
-> **Before starting:** This is a verbatim teaching script. Follow it precisely. Deliver "Say:" blocks naturally. Stop at "STOP:" markers and wait. Execute "ACTION:" blocks as specified. Never break the fourth wall. You are the instructor. Start teaching immediately.
+> **Before starting:** This is a verbatim teaching script. Follow it precisely. Before the first "Say:" block, follow the Course Conductor instructions from the root AGENTS.md: check progress, show the lesson progress line, and use the student's workspace for any created work. Deliver "Say:" blocks naturally. Stop at "STOP:" markers and wait. Execute "ACTION:" blocks as specified. Never break the fourth wall. You are the instructor.
 
 ---
 
@@ -206,10 +206,15 @@ We are going to dig into all of these in the next lesson. But first, let me show
 
 Why? Because when Codex creates files or analyzes documents, you will want to see the results in real time. Having a file explorer open next to Codex means you can watch files appear and read them in a nice, formatted view.
 
+There are two places worth knowing:
+
+- The **course folder** has the NovaBrew source documents we are reading.
+- **~/novabrew-workspace/** is your personal workspace. Starting in the next lesson, the reports you create will appear there.
+
 Here is how to set it up:
 
-- **Mac:** Open Finder and navigate to the course folder. Put it side-by-side with Codex (drag the windows to split the screen).
-- **Windows:** Open File Explorer and navigate to the course folder. Use Snap Layouts (drag to the edge of the screen) to put it side-by-side with Codex.
+- **Mac:** Open Finder and navigate to ~/novabrew-workspace/. If you also want to browse the source documents, open the course folder too. Put the window side-by-side with Codex.
+- **Windows:** Open File Explorer and navigate to ~/novabrew-workspace/. If you also want to browse the source documents, open the course folder too. Use Snap Layouts to put the window side-by-side with Codex.
 - **VS Code or Cursor:** Open the course folder in the editor. The sidebar shows all your files. Put it next to the Codex app.
 
 You do not HAVE to do this. Codex can read files and show you the contents right here in this conversation. But the dual-pane setup makes it faster because you can browse files visually while talking to Codex.
@@ -236,6 +241,8 @@ The pattern is always the same: you have a pile of information, you need to make
 
 ### Step 6: Wrap Up & Transition
 
+**ACTION:** Before saying the lesson is complete, confirm the student has asked Codex to list files and read the two key documents. If the success criteria are met, update `~/.codex-for-business/progress.json`: add `"1.2"` to `completed_lessons` if it is not already there and set `current_lesson` to `"1.3"`.
+
 **Say:**
 
 "That is Module 1.2 complete!
@@ -253,7 +260,7 @@ You are oriented. You know what data is available, you know the stakes, and you 
 
 This is where we go from exploring to analyzing. You are going to process customer feedback, crunch financial data, and start building real deliverables. The kind of work that takes a junior analyst a full day — you will do it in 20 minutes.
 
-When you are ready, start the next lesson. The data room is open and you have got work to do."
+When you are ready, just say **'next lesson'** and I will take you there. The data room is open and you have got work to do."
 
 ---
 
@@ -268,8 +275,8 @@ When you are ready, start the next lesson. The data room is open and you have go
 **File handling:**
 - When listing files, present them in a clean, business-friendly format
 - When reading files, summarize the key business insights, not the file structure
-- If files do not exist yet in inherited-chaos, describe what WOULD be there and note that the full data files will be available in the course materials
-- The student should come away knowing the TYPES of data available even if specific files are still being created
+- The current course materials include the inherited-chaos files. If a file is unexpectedly missing, say that plainly, use the available source files, and keep the lesson moving without inventing hidden source material.
+- The student should come away knowing the TYPES of data available even if they do not read every document in detail
 
 **The coffee personality seed:**
 - This is a crucial plot point — do not oversell it, but make sure the student notices it

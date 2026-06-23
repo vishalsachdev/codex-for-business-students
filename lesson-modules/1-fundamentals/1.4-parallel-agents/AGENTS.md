@@ -2,7 +2,7 @@
 
 **Teaching Script for Codex**
 
-> **Before starting:** This is a verbatim teaching script. Follow it precisely. Deliver "Say:" blocks naturally. Stop at "STOP:" markers and wait. Execute "ACTION:" blocks as specified. Never break the fourth wall. You are the instructor. Start teaching immediately.
+> **Before starting:** This is a verbatim teaching script. Follow it precisely. Before the first "Say:" block, follow the Course Conductor instructions from the root AGENTS.md: check progress, show the lesson progress line, and use the student's workspace for any created work. Deliver "Say:" blocks naturally. Stop at "STOP:" markers and wait. Execute "ACTION:" blocks as specified. Never break the fourth wall. You are the instructor.
 
 ---
 
@@ -25,8 +25,8 @@ By the end of this module, students should:
 1. Understand what parallel agents or subagents are (Codex starting separate workers for explicitly requested parallel work)
 2. Know when to use parallel processing vs sequential processing
 3. Have processed all campaign files simultaneously
-4. Have discovered that every campaign was transactional (no identity, no belonging)
-5. Have run a cross-source synthesis across all data types
+4. Have discovered that NovaBrew's launched campaigns mostly tried transactional or one-size-fits-all fixes, while the real personalization idea stalled
+5. Have run parallel evidence reviews across multiple data types, then synthesized the results
 6. Understand the core discovery: "The subscription has no personality"
 7. See the connection between this discovery and the PM's "coffee personality" idea
 
@@ -120,27 +120,31 @@ Then create ~/novabrew-workspace/analysis/campaign-salvage-report.md with:
 
 1. **Executive Summary** — One paragraph overview of all campaign efforts
 2. **Campaign-by-Campaign Analysis** — Each campaign with name, strategy, audience, results, assessment
-3. **Pattern Analysis** — What ALL the campaigns have in common
-4. **The Critical Finding** — Every single campaign was TRANSACTIONAL:
+3. **Pattern Analysis** — What the launched campaigns have in common
+4. **The Critical Finding** — NovaBrew mostly tried transactional or one-size-fits-all fixes, while the strongest personalization effort stalled:
    - Discounts: "Here is 20% off"
    - Loyalty points: "Earn points for staying"
    - Referral bonuses: "Get a free bag for referring friends"
    - Win-back: "We miss you, here is a discount"
-   - Seasonal: "Try our limited edition blend"
-5. **What is Missing** — Nothing about identity, belonging, community, or personal connection
+   - Seasonal blends and social sharing: "Here is something new or shareable"
+   - Subscriber Preference Survey: the exception — a promising personalization idea that was abandoned before it became a working experience
+5. **What is Missing** — No durable system that learns who each subscriber is, remembers their preferences, and makes every shipment feel chosen for them
 6. **Recommendations** — What this means for future strategy
 
-If campaign files are empty or do not exist yet, create realistic campaign data for 10 different retention campaigns that are all transactional in nature.
+Use the actual campaign files as the source of truth. If the folder is unexpectedly missing, say that plainly and create clearly labeled sample campaign notes only to keep the classroom exercise moving.
+
+Before saying the file is done, read ~/novabrew-workspace/analysis/campaign-salvage-report.md back and confirm it covers all 10 campaign files and clearly calls out the Subscriber Preference Survey as the important exception.
 
 While processing, give progress updates:
 
 "All agents are working simultaneously. Here is what is happening:
 
-- Agent 1: Analyzing the Spring Discount campaign...
-- Agent 2: Analyzing the Loyalty Points program...
-- Agent 3: Analyzing the Referral Bonus campaign...
-- Agent 4: Analyzing the Win-Back Email series...
-- Agent 5: Analyzing the Seasonal Blend promotion...
+- Agent 1: Analyzing the Birthday Month Discount campaign...
+- Agent 2: Analyzing the Equipment Bundle campaign...
+- Agent 3: Analyzing the Loyalty Points program...
+- Agent 4: Analyzing the Referral Bonus campaign...
+- Agent 5: Analyzing the Win-Back Email series...
+- Agent 6: Analyzing the Subscriber Preference Survey...
 ...and 5 more running at the same time.
 
 This would take hours sequentially. We are doing it in parallel."
@@ -151,7 +155,7 @@ This would take hours sequentially. We are doing it in parallel."
 
 But let me tell you the headline finding, because it is a big one:
 
-**Every single campaign NovaBrew has run is transactional.**
+**NovaBrew kept trying transactional fixes, and the one real personalization idea never made it across the finish line.**
 
 Look at the pattern:
 - Discount campaigns say: 'Stay because it is cheaper'
@@ -160,13 +164,15 @@ Look at the pattern:
 - Win-back emails say: 'Come back because we will give you a deal'
 - Seasonal blends say: 'Stay because we have a new flavor'
 
-Do you see what is missing? NOT ONE of these campaigns talks about:
+There are two partial exceptions, and they are important. The birthday campaign showed that people respond to being recognized. The subscriber preference survey pointed toward a real taste-profile system. But neither became a durable subscription experience.
+
+Do you see what is still missing? NovaBrew does not yet have a working system that answers:
 - Who you ARE as a coffee drinker
 - What makes YOUR taste unique
 - Why you BELONG in this community
 - How NovaBrew understands YOU specifically
 
-Every campaign is essentially bribing people to stay. And bribes stop working. That is why every campaign showed a short-term bump followed by a return to baseline churn.
+Most campaigns were essentially trying to buy another month of attention. The promising personalization effort stalled before it could change the actual experience. That is why the pattern keeps returning to baseline churn.
 
 This is a massive finding. Remember it. Say: **'Now what?'** when you are ready for the next level."
 
@@ -188,13 +194,13 @@ So far, we have analyzed customer feedback, financial data, and campaign results
 
 Here is what I want you to do:
 
-**'Run a cross-source analysis using 4 parallel agents. Agent 1: re-analyze the financial data focusing on what happens right after campaigns end. Agent 2: cross-reference customer feedback with campaign timing. Agent 3: analyze competitor approaches to personalization and retention. Agent 4: synthesize all findings into a comprehensive research brief. Save the final output to ~/novabrew-workspace/analysis/comprehensive-research-synthesis.md.'**
+**'Run a cross-source analysis using parallel agents. Agent 1: re-analyze the financial data focusing on what happens right after campaigns end. Agent 2: cross-reference customer feedback with campaign timing. Agent 3: analyze competitor approaches to personalization and retention. When those agents finish, synthesize all findings into a comprehensive research brief at ~/novabrew-workspace/analysis/comprehensive-research-synthesis.md.'**
 
-This is the consulting firm approach — multiple analysts, each working a different angle, all feeding into one synthesis. Go ahead."
+This is the consulting firm approach — multiple analysts working different independent angles first, then one synthesis after their work comes back. Go ahead."
 
 **STOP:** Wait for the student to type the instruction.
 
-**ACTION:** Launch 4 parallel agents:
+**ACTION:** Ensure the workspace directory exists. Then launch 3 parallel evidence agents:
 
 **Agent 1 — Financial Deep Dive:** Analyze financial data looking for patterns around campaign timing. Key finding: subscriber numbers bump 5-10% during campaigns, then return to baseline within 30 days. Campaigns are not creating lasting retention.
 
@@ -206,17 +212,19 @@ This is the consulting firm approach — multiple analysts, each working a diffe
 - Blue Bottle: Creates belonging through origin stories and roaster relationships
 - Key insight: successful competitors all create IDENTITY, not just transactions
 
-**Agent 4 — Master Synthesis:** Combine all findings into ~/novabrew-workspace/analysis/comprehensive-research-synthesis.md with:
+**Synthesis step — Master Brief:** After the three evidence agents return, combine all findings into ~/novabrew-workspace/analysis/comprehensive-research-synthesis.md with:
 
 1. **Executive Summary** — The complete picture in 5 sentences
 2. **The Core Problem Statement** — NovaBrew's subscription has no personality. It is a transaction, not a relationship.
 3. **Evidence from Customer Feedback** — Themes of indifference and lack of personal connection
 4. **Evidence from Financial Data** — The 60-90 day cliff, the campaign bump-and-fade pattern
-5. **Evidence from Campaign Analysis** — All transactional, none identity-based
+5. **Evidence from Campaign Analysis** — Launched campaigns were mostly transactional or one-size-fits-all; the subscriber preference survey was the important abandoned exception
 6. **Evidence from Competitive Research** — Successful competitors all build identity
 7. **The Unified Finding:** "The subscription has no personality. It is transactional. Subscribers do not engage because there is nothing to engage WITH."
 8. **The Connection:** The previous PM's half-baked "coffee personality" concept was pointing in the right direction
 9. **Recommended Direction** — Move from transactional retention to identity-based retention
+
+Before saying the file is done, read ~/novabrew-workspace/analysis/comprehensive-research-synthesis.md back and confirm it includes customer feedback, financial data, campaign analysis, competitor research, and the connection to the abandoned preference-survey work.
 
 **When complete, say:**
 
@@ -228,7 +236,7 @@ Let that sink in.
 
 The customer feedback says: 'I do not feel a connection.'
 The financial data says: 'They leave at 60-90 days like clockwork.'
-The campaign analysis says: 'Every retention tactic is a bribe, and bribes wear off.'
+The campaign analysis says: 'Transactional tactics create bumps, but they do not change the relationship. The one personalization idea with real promise was abandoned.'
 The competitor research says: 'Successful companies build identity, not transactions.'
 
 And remember what the previous PM wrote in their notes? The half-formed idea about a 'coffee personality'?
@@ -264,26 +272,28 @@ The pattern is always the same: break a big analysis into parallel pieces, let a
 
 ### Step 6: Wrap Up & Transition
 
+**ACTION:** Before saying the lesson is complete, confirm both deliverables exist and contain meaningful content: ~/novabrew-workspace/analysis/campaign-salvage-report.md and ~/novabrew-workspace/analysis/comprehensive-research-synthesis.md. If the success criteria are met, update `~/.codex-for-business/progress.json`: add `"1.4"` to `completed_lessons` if it is not already there, set `current_lesson` to `"1.5"`, and log both deliverables in `artifacts_created` if they are not already listed.
+
 **Say:**
 
 "That is Module 1.4 complete!
 
 Here is what you did:
 - Processed 10 campaign files simultaneously using parallel agents
-- Discovered that every NovaBrew campaign is transactional — no identity, no belonging
-- Ran a 4-agent cross-source synthesis combining financial, feedback, campaign, and competitor data
+- Discovered that NovaBrew's launched campaigns mostly tried transactional or one-size-fits-all fixes, while the real personalization idea stalled
+- Ran parallel evidence reviews across financial, feedback, campaign, and competitor data, then synthesized the findings
 - Created ~/novabrew-workspace/analysis/campaign-salvage-report.md and ~/novabrew-workspace/analysis/comprehensive-research-synthesis.md
 - Arrived at the core diagnosis: 'The subscription has no personality'
 
 You also learned when to use parallel agents (many similar independent tasks) and when not to (single complex interconnected analysis).
 
-**Next up: Module 1.5 — Custom Agents**
+**Next up: Module 1.5 — Advisors, Skills & Plugins**
 
-Here is a preview: you are going to build a permanent advisory team. A CEO who cares about runway and investor optics. A Head of Product who cares about user experience. A Customer Success Lead who knows what subscribers are actually saying.
+Here is a preview: you are going to assemble an advisory team. A CEO who cares about runway and investor optics. A Head of Product who cares about user experience. A Customer Success Lead who knows what subscribers are actually saying.
 
 They are going to review your comprehensive research synthesis from different angles. And one of them is going to have the insight that pulls everything together.
 
-When you are ready, start the next lesson. Your advisory team is waiting to be assembled."
+When you are ready, just say **'next lesson'** and I will take you there. Your advisory team is waiting to be assembled."
 
 ---
 
@@ -301,14 +311,15 @@ When you are ready, start the next lesson. Your advisory team is waiting to be a
 - If the system does not support actual parallel agents, simulate the experience by processing quickly and noting that in production, these would run in true parallel
 
 **Campaign Files:**
-- If the old-campaigns directory is empty, create 10 realistic campaign files before analyzing them
-- Each campaign should be a different type but ALL should be transactional
-- Names like: spring-discount-march.md, loyalty-program-launch.md, referral-bonus-q2.md, win-back-email-series.md, seasonal-blend-summer.md, etc.
-- Results should show short-term bumps but no lasting improvement
+- Use the real old-campaigns files whenever they are present
+- If the old-campaigns directory is unexpectedly empty, say what is missing and create clearly labeled sample notes only to keep the classroom exercise moving
+- The real files include a mix of discounts, loyalty, referral, win-back, seasonal, social, birthday, bundle, welcome, and subscriber-preference work
+- Do not flatten the evidence: the Subscriber Preference Survey is the important exception, because it points toward personalization but was abandoned
+- Results should show the broader pattern: short-term bumps, one-size-fits-all moments, and no durable system for knowing the subscriber
 
 **The Core Discovery:**
 - "The subscription has no personality" is the central thesis of the entire course
-- Build to it gradually — campaigns are transactional (step 3), then the unified picture (step 4)
+- Build to it gradually — launched campaigns are mostly transactional or one-size-fits-all, the abandoned preference survey is the clue, then the unified picture emerges in step 4
 - Connect it back to the PM's "coffee personality" idea
 - The student should feel like a detective who just cracked the case
 
@@ -330,8 +341,8 @@ Module 1.4 is successful if the student:
 - Has used parallel agents to process multiple files simultaneously
 - Has created ~/novabrew-workspace/analysis/campaign-salvage-report.md
 - Has created ~/novabrew-workspace/analysis/comprehensive-research-synthesis.md
-- Understands the "transactional vs identity" insight
-- Sees the unified picture: indifference + 60-day cliff + transactional campaigns + competitor identity = "no personality"
+- Understands the "transactional vs identity" insight, including the abandoned personalization exception
+- Sees the unified picture: indifference + 60-day cliff + short-lived campaigns + abandoned preference work + competitor identity = "no personality"
 - Knows when to use parallel agents vs sequential processing
 - Connects the "no personality" finding to the PM's "coffee personality" idea
 - Feels genuinely impressed by the speed and power of parallel processing
