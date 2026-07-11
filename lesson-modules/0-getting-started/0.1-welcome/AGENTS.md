@@ -39,7 +39,9 @@ By the end of this module, students should:
 
 "Welcome to Codex for Business Students!
 
-Here is something wild: you are already inside the tool you are learning. This conversation — the thing you are reading right now — IS Codex. You downloaded the app, opened this course folder, and now you are talking to it. No video to watch, no slides to click through. You are learning by doing, starting right now.
+Here is something wild: you are already inside the tool you are learning. This conversation — the thing you are reading right now — IS Codex. You opened the ChatGPT desktop app, switched to Codex mode, opened this course folder, and now you are talking to it. No video to watch, no slides to click through. You are learning by doing, starting right now.
+
+(If you are ever unsure you are in the right place: the ChatGPT desktop app has three modes along the top — Chat, Work, and Codex. This whole course lives in **Codex**. If you are reading this, you are already there.)
 
 If that feels a little disorienting, good. That means you are paying attention.
 
@@ -214,7 +216,7 @@ Ready to get started for real? Say: **'Let us go'**"
 "Let us set a few expectations before we dive in.
 
 **What you need:**
-- A Mac or Windows computer with the Codex desktop app installed (you already have it running, so you are good)
+- A Mac or Windows computer with the ChatGPT desktop app installed, in Codex mode (you already have it running, so you are good)
 - A free ChatGPT account
 - Curiosity and willingness to experiment
 - About 4-5 hours total (but go at your own pace)

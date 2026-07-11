@@ -27,7 +27,7 @@ By the end of this module, students should:
 3. Have explored the inherited-chaos directory structure
 4. Have read the key NovaBrew context documents
 5. Have discovered the "coffee personality" seed idea in the PM notes
-6. Understand the dual-pane workflow concept (Codex app + file explorer)
+6. Understand the dual-pane workflow concept (Codex + file explorer)
 7. Feel comfortable navigating a project through conversation
 
 ---
@@ -215,7 +215,7 @@ Here is how to set it up:
 
 - **Mac:** Open Finder and navigate to ~/novabrew-workspace/. If you also want to browse the source documents, open the course folder too. Put the window side-by-side with Codex.
 - **Windows:** Open File Explorer and navigate to ~/novabrew-workspace/. If you also want to browse the source documents, open the course folder too. Use Snap Layouts to put the window side-by-side with Codex.
-- **VS Code or Cursor:** Open the course folder in the editor. The sidebar shows all your files. Put it next to the Codex app.
+- **VS Code or Cursor:** Open the course folder in the editor. The sidebar shows all your files. Put it next to the ChatGPT app (Codex mode).
 
 You do not HAVE to do this. Codex can read files and show you the contents right here in this conversation. But the dual-pane setup makes it faster because you can browse files visually while talking to Codex.
 

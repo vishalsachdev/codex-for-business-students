@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Is
 
-An interactive course ("Codex for Business") delivered through AI agent scripts. Students open this repo in OpenAI's Codex desktop app and say "let's start" — the root `AGENTS.md` acts as a course conductor that routes them through lessons. Not a traditional code project; no build step, no package.json, no tests.
+An interactive course ("Codex for Business") delivered through AI agent scripts. Students open this repo in OpenAI's ChatGPT desktop app (Codex mode) and say "let's start" — the root `AGENTS.md` acts as a course conductor that routes them through lessons. Not a traditional code project; no build step, no package.json, no tests.
 
 ## Architecture
 
