@@ -48,7 +48,7 @@ Key rules: never break character, never use CS jargon without a business analogy
 
 ## Current Focus
 
-Preparing for in-class use. The class-blocking deploy path (Lessons 2.4→2.5) is now verified end-to-end. Remaining before class is optional: a GitHub Actions workflow for student projects (deferred), then collecting first-round student feedback.
+Preparing for in-class use. The class-blocking deploy path (Lessons 2.4→2.5) is verified end-to-end, and setup copy is updated for OpenAI's July 2026 Codex→ChatGPT-desktop-app merger (Codex is now a mode inside the ChatGPT app). Remaining before class is optional: a GitHub Actions workflow for student projects (deferred), then collecting first-round student feedback.
 
 ## Roadmap
 
@@ -56,14 +56,15 @@ Preparing for in-class use. The class-blocking deploy path (Lessons 2.4→2.5) i
 - [x] Fix UX issues in deploy flow (gitignore, basePath verification, messaging)
 - [x] Refresh course materials for current Codex docs and make workspace separation explicit on the site
 - [x] End-to-end test: run a fresh student through Lessons 2.4 → 2.5 to verify GitHub Pages deploy works (found + fixed missing `--dotfiles` deploy bug)
+- [x] Update setup copy for the July 2026 Codex→ChatGPT-desktop-app merger (Codex is now a mode inside the ChatGPT app)
 - [ ] Add GitHub Actions workflow for student projects (eliminate local `npm run build` requirement)
 - [ ] Collect first round of student feedback and iterate on pain points
 
 ## Session Log
 
-### 2026-06-23
-- Completed: Committed in-Codex refinements to Module 0–1 lesson scripts (Course Conductor deference + progress.json tracking, "use real files / label samples" guidance, nuanced campaign narrative, Module 2 decoupled from the hardcoded quiz). Replaced the dead Carl Vellotti course links (`carlvellotti/claude-code-for-everyone` 404, `yourfirstcursor.com` unreachable) with `https://ccforeveryone.com/` across the landing page, README, and launch article after a full link check of the public site.
-- Verified + fixed: Ran the Lessons 2.4→2.5 end-to-end walkthrough with a real throwaway Next.js quiz and public repo (`novabrew-quiz-deploytest`, deployed live, confirmed fully interactive in-browser, then cleaned up locally). Caught a ship-blocking deploy bug — `npx gh-pages` drops `.nojekyll` without `--dotfiles`, so Jekyll stripped `_next/` and every deployed student site loaded unstyled with dead buttons. Added `--dotfiles` to both 2.5 commands and the capstone 3.1, documented the symptom/verification, and updated the CLAUDE.md gotcha.
-- Next: Optional pre-class item deferred — decide manual-vs-GitHub-Actions deploy for student projects, then build the workflow. (Throwaway test repo `novabrew-quiz-deploytest` has been deleted.)
+### 2026-07-12
+- Completed: Researched OpenAI's 2026-07-09 Codex→ChatGPT-desktop-app merger (Codex is now a mode alongside Chat and Work; existing Codex users just update; still free-plan-included). Updated student-facing setup copy across the welcome lesson, README, landing page (`docs/index.html`), SPEC, and file-exploration lesson to point at the ChatGPT desktop app + Codex mode and tell students to select the Codex tab. Kept the "this conversation IS Codex" hook and free-plan claims. Committed + pushed to `main`; GitHub Pages redeployed successfully.
+- Cross-project: Applied the same terminology fix to the `ai-for-marketing` course (README + landing page) and saved a reusable "Codex→ChatGPT-app terminology" checklist to auto-memory (`reference_codex_chatgpt_app_merger.md`).
+- Next: Optional pre-class item still deferred — decide manual-vs-GitHub-Actions deploy for student projects, then build the workflow.
 
 *Older entries archived to `docs/session-archive.md`.*

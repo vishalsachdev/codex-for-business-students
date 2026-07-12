@@ -2,6 +2,11 @@
 
 Older session-log entries moved out of `CLAUDE.md` to keep it concise. claude-mem stores the full session history; this file is a human-readable backup of past entries.
 
+### 2026-06-23
+- Completed: Committed in-Codex refinements to Module 0–1 lesson scripts (Course Conductor deference + progress.json tracking, "use real files / label samples" guidance, nuanced campaign narrative, Module 2 decoupled from the hardcoded quiz). Replaced the dead Carl Vellotti course links (`carlvellotti/claude-code-for-everyone` 404, `yourfirstcursor.com` unreachable) with `https://ccforeveryone.com/` across the landing page, README, and launch article after a full link check of the public site.
+- Verified + fixed: Ran the Lessons 2.4→2.5 end-to-end walkthrough with a real throwaway Next.js quiz and public repo (`novabrew-quiz-deploytest`, deployed live, confirmed fully interactive in-browser, then cleaned up locally). Caught a ship-blocking deploy bug — `npx gh-pages` drops `.nojekyll` without `--dotfiles`, so Jekyll stripped `_next/` and every deployed student site loaded unstyled with dead buttons. Added `--dotfiles` to both 2.5 commands and the capstone 3.1, documented the symptom/verification, and updated the CLAUDE.md gotcha.
+- Next: Optional pre-class item deferred — decide manual-vs-GitHub-Actions deploy for student projects, then build the workflow. (Throwaway test repo `novabrew-quiz-deploytest` has been deleted.)
+
 ### 2026-06-18
 - Completed: Refreshed Codex for Business course materials for current Codex docs and pushed/deployed the public site. Updated language around Free plan inclusion, skills/plugins/subagents, AGENTS.md behavior, explicit approval before external actions, and student GitHub Pages deployment via `gh-pages`. Added optional 3.3 innermost-loop lesson, bumped course version to 1.1.0, and made clear that student artifacts live in `~/novabrew-workspace/` outside the course repo.
 - Verified: Course structure is valid (16 lessons, 265 core minutes + 28 optional), landing page renders on desktop/mobile, GitHub Pages rebuilt from `main:/docs`, and live site includes the workspace-separation message.
